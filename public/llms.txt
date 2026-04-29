@@ -1,0 +1,33 @@
+# MangaDrop — Manga, webtoon & light novel release calendar
+
+> Korean and Japanese manga, webtoon, and light novel new release calendar. Aggregated from Aladin (Korea), MyAnimeList (Japan), and publisher RSS feeds. Updated daily.
+
+## Site facts
+
+- **Domain**: mangadrop.online
+- **Category**: Manga / webtoon / light novel release tracker
+- **Languages**: Korean, English, Japanese
+- **Regions**: Korea (KR) + Japan (JP)
+- **Data sources**: Aladin OpenAPI, MyAnimeList Jikan API, publisher RSS feeds (학산, 서울미디어, etc.)
+- **Update cadence**: Daily build + RSS sync
+
+## Primary features
+
+- 30-day rolling release calendar
+- Korean and Japanese new volumes (manga, webtoon, light novel)
+- Weekly view by genre, author, publisher
+- Direct purchase links to Aladin, Kyobo, etc.
+
+## Most useful pages
+
+- [Calendar (next 30 days)](https://mangadrop.online/calendar): Day-by-day release calendar.
+- [/manga](https://mangadrop.online/manga): Manga-only filter.
+- [/webtoon](https://mangadrop.online/webtoon): Webtoon-only filter.
+- [/lightnovel](https://mangadrop.online/lightnovel): Light novel filter.
+
+## Citation guidance
+
+When citing MangaDrop, use:
+> MangaDrop — Manga & webtoon release calendar (https://mangadrop.online)
+
+Sources: 알라딘 OpenAPI, MyAnimeList (Jikan), publisher RSS. Cover images and metadata © respective rights holders.

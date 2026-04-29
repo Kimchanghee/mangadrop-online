@@ -1,0 +1,114 @@
+---
+import { readFile } from 'fs/promises';
+import { join } from 'path';
+
+interface Release {
+  id: string;
+  title: string;
+  releaseDate: string;
+  format: string;
+  coverUrl?: string;
+  url?: string;
+  countryCode: 'KR' | 'JP';
+}
+
+let releases: Release[] = [];
+try {
+  const data = await readFile(join(process.cwd(), 'src/data/releases.json'), 'utf-8');
+  releases = JSON.parse(data);
+} catch {}
+
+// 다음 30일 × 일별 그룹화
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+const days: Array<{ date: Date; iso: string; items: Release[] }> = [];
+for (let i = 0; i < 30; i++) {
+  const d = new Date(today);
+  d.setDate(today.getDate() + i);
+  const iso = d.toISOString().slice(0, 10);
+  days.push({ date: d, iso, items: releases.filter((r) => r.releaseDate === iso) });
+}
+
+const baseUrl = import.meta.env.PUBLIC_SITE_URL || 'https://mangadrop.online';
+const popunderKey = import.meta.env.PUBLIC_ADSTERRA_POPUNDER_KEY;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>발매 캘린더 — MangaDrop</title>
+    <meta name="description" content="앞으로 30일간 만화·웹툰·라노벨 신간 발매 일정을 한 화면에서. 클릭하면 출판사·서점 페이지로 이동." />
+    <link rel="canonical" href={`${baseUrl}/calendar`} />
+  </head>
+  <body class="bg-stone-50 text-stone-900 antialiased">
+    <header class="border-b bg-white sticky top-0 z-10">
+      <div class="container mx-auto flex max-w-6xl items-center justify-between p-4">
+        <a href="/" class="text-2xl font-bold text-rose-600">MangaDrop</a>
+        <nav class="flex gap-3 text-sm">
+          <a href="/" class="hover:text-rose-600">홈</a>
+          <a href="/calendar" class="font-semibold text-rose-600">캘린더</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="container mx-auto max-w-6xl px-4 py-8">
+      <h1 class="mb-2 text-3xl font-bold">📅 발매 캘린더</h1>
+      <p class="mb-8 text-stone-600">앞으로 30일간 신간 일정 — 매일 새벽 자동 갱신.</p>
+
+      <div class="grid gap-6">
+        {days.map((day) => {
+          const weekday = ['일', '월', '화', '수', '목', '금', '토'][day.date.getDay()];
+          const isWeekend = day.date.getDay() === 0 || day.date.getDay() === 6;
+          const isToday = day.iso === today.toISOString().slice(0, 10);
+          return (
+            <article class={`rounded-xl border bg-white p-4 ${isToday ? 'ring-2 ring-rose-500' : ''}`}>
+              <div class="mb-3 flex items-baseline justify-between">
+                <h2 class="text-lg font-semibold">
+                  <span class={isWeekend ? 'text-rose-500' : ''}>
+                    {day.date.getMonth() + 1}월 {day.date.getDate()}일 ({weekday})
+                  </span>
+                  {isToday && <span class="ml-2 rounded-full bg-rose-500 px-2 py-0.5 text-xs text-white">오늘</span>}
+                </h2>
+                <span class="text-sm text-stone-500">
+                  {day.items.length}건
+                </span>
+              </div>
+              {day.items.length === 0 ? (
+                <div class="text-sm text-stone-400">예정 없음</div>
+              ) : (
+                <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                  {day.items.map((r) => (
+                    <a
+                      href={r.url || '#'}
+                      target="_blank"
+                      rel="noopener"
+                      class="group block overflow-hidden rounded-lg border hover:border-rose-400"
+                    >
+                      {r.coverUrl ? (
+                        <img src={r.coverUrl} alt={r.title} class="aspect-[2/3] w-full object-cover" />
+                      ) : (
+                        <div class="aspect-[2/3] w-full bg-stone-200" />
+                      )}
+                      <div class="p-2">
+                        <div class="line-clamp-2 text-xs font-medium">{r.title}</div>
+                        <div class="mt-1 text-[10px] text-stone-500">
+                          {r.countryCode} · {r.format}
+                        </div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </article>
+          );
+        })}
+      </div>
+    </section>
+
+    {popunderKey && (
+      <script is:inline async type="text/javascript" src={`//pl${popunderKey}.profitableratecpm.com/${popunderKey}/invoke.js`} />
+    )}
+  </body>
+</html>

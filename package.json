@@ -1,0 +1,30 @@
+{
+  "name": "mangadrop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Manga, webtoon and light novel release calendar (KR/EN/JA)",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync-feeds": "tsx scripts/sync-feeds.ts",
+    "translate:all": "tsx scripts/translate-all.ts",
+    "deploy": "npm run sync-feeds && npm run translate:all && npm run build && cdk deploy --require-approval never"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "@astrojs/tailwind": "^5.1.2",
+    "@astrojs/sitemap": "^3.2.1",
+    "tailwindcss": "^3.4.13",
+    "fast-xml-parser": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3",
+    "tsx": "^4.19.1",
+    "aws-cdk": "^2.160.0",
+    "aws-cdk-lib": "^2.160.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.665.0"
+  }
+}
