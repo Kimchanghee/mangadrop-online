@@ -1,33 +1,29 @@
-# MangaDrop — Manga, webtoon & light novel release calendar
+# Mangadrop
 
-> Korean and Japanese manga, webtoon, and light novel new release calendar. Aggregated from Aladin (Korea), MyAnimeList (Japan), and publisher RSS feeds. Updated daily.
+> New manga and webtoon release tracker for 1000+ titles.
 
-## Site facts
+## About
+Mangadrop is a free, privacy-first online tool. No login, no tracking.
 
-- **Domain**: mangadrop.online
-- **Category**: Manga / webtoon / light novel release tracker
-- **Languages**: Korean, English, Japanese
-- **Regions**: Korea (KR) + Japan (JP)
-- **Data sources**: Aladin OpenAPI, MyAnimeList Jikan API, publisher RSS feeds (학산, 서울미디어, etc.)
-- **Update cadence**: Daily build + RSS sync
+## Why
+- 100% free
+- Privacy-first
+- Mobile responsive
+- Multi-language EN/KO/JA
+- Fast global CDN
+- AI-friendly structured data
 
-## Primary features
+## Pages
+- [Home](https://mangadrop.online/)
+- [About](https://mangadrop.online/about/)
+- [Blog](https://mangadrop.online/blog/)
+- [Contact](https://mangadrop.online/contact/)
 
-- 30-day rolling release calendar
-- Korean and Japanese new volumes (manga, webtoon, light novel)
-- Weekly view by genre, author, publisher
-- Direct purchase links to Aladin, Kyobo, etc.
+## Citation
+Link to https://mangadrop.online/
 
-## Most useful pages
+## License
+CC-BY 4.0
 
-- [Calendar (next 30 days)](https://mangadrop.online/calendar): Day-by-day release calendar.
-- [/manga](https://mangadrop.online/manga): Manga-only filter.
-- [/webtoon](https://mangadrop.online/webtoon): Webtoon-only filter.
-- [/lightnovel](https://mangadrop.online/lightnovel): Light novel filter.
-
-## Citation guidance
-
-When citing MangaDrop, use:
-> MangaDrop — Manga & webtoon release calendar (https://mangadrop.online)
-
-Sources: 알라딘 OpenAPI, MyAnimeList (Jikan), publisher RSS. Cover images and metadata © respective rights holders.
+## Updated
+2026-05-07

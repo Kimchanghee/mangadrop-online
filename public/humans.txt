@@ -1,0 +1,8 @@
+/* TEAM */
+Mangadrop Team
+Site: https://mangadrop.online/
+Location: Seoul, South Korea
+
+/* SITE */
+Standards: HTML5, CSS3, ES2022, JSON-LD
+Last update: 2026-05-07
