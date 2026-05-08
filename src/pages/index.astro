@@ -41,7 +41,99 @@ const amazonUrl = 'https://www.amazon.com/s?k=manga+box+set&tag=amazonfi00681-20
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MangaDrop — 만화·웹툰·라노벨 신간 발매 캘린더</title>
     <meta name="description" content="한국·일본 만화·웹툰·라이트노벨 신간 발매 일정 통합. 알라딘·MyAnimeList·출판사 RSS를 매일 동기화." />
+    <meta name="keywords" content="만화 신간, 웹툰 발매, 라이트노벨 발매일, 만화 캘린더, manga release, webtoon, light novel, 알라딘 만화, 점프 코믹스" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="theme-color" content="#e11d48" />
     <link rel="canonical" href={baseUrl} />
+    <!-- hreflang for international SEO -->
+    <link rel="alternate" hreflang="ko" href={baseUrl} />
+    <link rel="alternate" hreflang="ja" href={`${baseUrl}/ja/`} />
+    <link rel="alternate" hreflang="en" href={`${baseUrl}/en/`} />
+    <link rel="alternate" hreflang="x-default" href={baseUrl} />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MangaDrop — 만화·웹툰·라노벨 신간 발매 캘린더" />
+    <meta property="og:description" content="한국·일본 만화·웹툰·라이트노벨 신간 발매 일정 통합. 매일 자동 동기화." />
+    <meta property="og:url" content={baseUrl} />
+    <meta property="og:site_name" content="MangaDrop" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content={`${baseUrl}/og.png`} />
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MangaDrop — 만화·웹툰·라노벨 신간 발매 캘린더" />
+    <meta name="twitter:description" content="한국·일본 만화·웹툰·라이트노벨 신간 발매 일정 통합. 매일 자동 동기화." />
+    <meta name="twitter:image" content={`${baseUrl}/og.png`} />
+    <!-- Schema.org JSON-LD: Organization + WebSite + ItemList -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": `${baseUrl}/#org`,
+          "name": "MangaDrop",
+          "url": baseUrl,
+          "logo": `${baseUrl}/og.png`,
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": `${baseUrl}/#site`,
+          "url": baseUrl,
+          "name": "MangaDrop",
+          "description": "만화·웹툰·라이트노벨 신간 발매 캘린더",
+          "inLanguage": "ko-KR",
+          "publisher": { "@id": `${baseUrl}/#org` },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${baseUrl}/?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
+            { "@type": "ListItem", "position": 2, "name": "만화", "item": `${baseUrl}/manga` },
+            { "@type": "ListItem", "position": 3, "name": "웹툰", "item": `${baseUrl}/webtoon` },
+            { "@type": "ListItem", "position": 4, "name": "라노벨", "item": `${baseUrl}/lightnovel` },
+            { "@type": "ListItem", "position": 5, "name": "발매 달력", "item": `${baseUrl}/calendar` }
+          ]
+        },
+        ...(upcoming.length > 0 ? [{
+          "@type": "ItemList",
+          "name": "예정 발매",
+          "numberOfItems": upcoming.length,
+          "itemListElement": upcoming.slice(0, 10).map((r, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "name": r.title,
+            "url": r.url || `${baseUrl}/#${r.id}`
+          }))
+        }] : []),
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "MangaDrop은 어디 데이터를 동기화하나요?",
+              "acceptedAnswer": { "@type": "Answer", "text": "알라딘 신간 RSS, MyAnimeList API, 일본 출판사(Shueisha, Kodansha, KakaoPage 등) RSS를 매일 자동으로 동기화합니다." }
+            },
+            {
+              "@type": "Question",
+              "name": "발매 알림을 받을 수 있나요?",
+              "acceptedAnswer": { "@type": "Answer", "text": "네. 작품을 즐겨찾기에 추가하면 발매일 알림을 받을 수 있습니다." }
+            },
+            {
+              "@type": "Question",
+              "name": "회원가입 필요한가요?",
+              "acceptedAnswer": { "@type": "Answer", "text": "아니요. 발매 일정 조회는 회원가입 없이 즉시 가능합니다." }
+            }
+          ]
+        }
+      ]
+    })} />
   </head>
   <body class="bg-stone-50 text-stone-900 antialiased">
     <header class="border-b bg-white">
