@@ -39,6 +39,14 @@ const amazonUrl = 'https://www.amazon.com/s?k=manga+box+set&tag=amazonfi00681-20
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Analytics 4 -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-G0YE8ZCN66"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0YE8ZCN66', { page_path: window.location.pathname });
+    </script>
     <title>MangaDrop — 만화·웹툰·라노벨 신간 발매 캘린더</title>
     <meta name="description" content="한국·일본 만화·웹툰·라이트노벨 신간 발매 일정 통합. 알라딘·MyAnimeList·출판사 RSS를 매일 동기화." />
     <meta name="keywords" content="만화 신간, 웹툰 발매, 라이트노벨 발매일, 만화 캘린더, manga release, webtoon, light novel, 알라딘 만화, 점프 코믹스" />
