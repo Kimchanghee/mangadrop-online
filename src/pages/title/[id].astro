@@ -1,8 +1,15 @@
 ---
-import releases from '../../data/releases.json';
+import { readFile } from 'fs/promises';
+import { join } from 'path';
 
-export function getStaticPaths() {
-  return (releases as any[]).slice(0, 1000).map((item) => ({
+export async function getStaticPaths() {
+  let releases: any[] = [];
+  try {
+    const data = await readFile(join(process.cwd(), 'src/data/releases.json'), 'utf-8');
+    releases = JSON.parse(data);
+  } catch {}
+  const unique = [...new Map(releases.map((item) => [item.id, item])).values()];
+  return unique.slice(0, 1000).map((item) => ({
     params: { id: item.id },
     props: { item },
   }));

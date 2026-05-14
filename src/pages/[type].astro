@@ -1,16 +1,21 @@
 ---
-import releases from '../data/releases.json';
-
-const types = ['manga', 'webtoon', 'lightnovel'];
+import { readFile } from 'fs/promises';
+import { join } from 'path';
 
 export function getStaticPaths() {
+  const types = ['manga', 'webtoon', 'lightnovel'];
   return types.map((type) => ({ params: { type } }));
 }
 
 const { type } = Astro.params;
 const baseUrl = import.meta.env.PUBLIC_SITE_URL || 'https://mangadrop.online';
 const labelMap: Record<string, string> = { manga: 'Manga', webtoon: 'Webtoon', lightnovel: 'Light novel' };
-const items = (releases as any[]).filter((item) => item.format === type).slice(0, 100);
+let releases: any[] = [];
+try {
+  const data = await readFile(join(process.cwd(), 'src/data/releases.json'), 'utf-8');
+  releases = JSON.parse(data);
+} catch {}
+const items = releases.filter((item) => item.format === type).slice(0, 100);
 ---
 <!doctype html>
 <html lang="ko">
