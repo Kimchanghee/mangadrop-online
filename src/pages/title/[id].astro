@@ -1,0 +1,53 @@
+---
+import releases from '../../data/releases.json';
+
+export function getStaticPaths() {
+  return (releases as any[]).slice(0, 1000).map((item) => ({
+    params: { id: item.id },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props as { item: any };
+const baseUrl = import.meta.env.PUBLIC_SITE_URL || 'https://mangadrop.online';
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{item.title} release | MangaDrop</title>
+    <meta name="description" content={`${item.title} release date, author and source link.`} />
+    <link rel="canonical" href={`${baseUrl}/title/${item.id}`} />
+    <meta property="og:url" content={`${baseUrl}/title/${item.id}`} />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-G0YE8ZCN66"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-G0YE8ZCN66', { page_path: window.location.pathname });
+    </script>
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body class="bg-rose-50 text-slate-900">
+    <header class="border-b bg-white">
+      <div class="mx-auto flex max-w-6xl items-center justify-between p-4">
+        <a href="/" class="text-2xl font-bold text-rose-600">MangaDrop</a>
+        <a href="/calendar" class="text-sm hover:text-rose-600">Calendar</a>
+      </div>
+    </header>
+    <main class="mx-auto max-w-4xl px-4 py-10">
+      <h1 class="text-4xl font-bold">{item.title}</h1>
+      <p class="mt-2 text-slate-600">{item.originalTitle || item.author}</p>
+      <div class="mt-6 rounded-xl border bg-white p-6">
+        <dl class="grid gap-4 sm:grid-cols-2">
+          <div><dt class="text-xs uppercase text-slate-500">Release date</dt><dd class="mt-1 font-semibold">{item.releaseDate}</dd></div>
+          <div><dt class="text-xs uppercase text-slate-500">Format</dt><dd class="mt-1 font-semibold">{item.format}</dd></div>
+          <div><dt class="text-xs uppercase text-slate-500">Author</dt><dd class="mt-1 font-semibold">{item.author || '-'}</dd></div>
+          <div><dt class="text-xs uppercase text-slate-500">Source</dt><dd class="mt-1 font-semibold">{item.source}</dd></div>
+        </dl>
+        {item.url && <a href={item.url} target="_blank" rel="noopener noreferrer" class="mt-6 inline-block rounded-lg bg-rose-600 px-5 py-2 text-white hover:bg-rose-700">Open source</a>}
+      </div>
+    </main>
+  </body>
+</html>
