@@ -1,1 +1,2 @@
-adsterra.com, mangadrop.online, DIRECT, f08c47fec0942fa0
+# Display ads are disabled.
+# mangadrop.online does not authorize third-party display ad sellers.

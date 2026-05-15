@@ -28,8 +28,6 @@ const upcoming = releases.filter((r) => r.releaseDate >= today).slice(0, 24);
 const recent = releases.filter((r) => r.releaseDate < today).slice(0, 24);
 
 const baseUrl = import.meta.env.PUBLIC_SITE_URL || 'https://mangadrop.online';
-const popunderKey = import.meta.env.PUBLIC_ADSTERRA_POPUNDER_KEY;
-const displayAdsEnabled = import.meta.env.PUBLIC_ENABLE_DISPLAY_ADS === 'true';
 const coupangUrl = import.meta.env.PUBLIC_COUPANG_PARTNER_URL || 'https://www.coupang.com/np/search?component=&q=%EB%A7%8C%ED%99%94%20%EB%8B%A8%ED%96%89%EB%B3%B8';
 const aliExpressUrl = import.meta.env.PUBLIC_ALIEXPRESS_PARTNER_URL || 'https://www.aliexpress.com/w/wholesale-manga-merchandise.html';
 const amazonUrl = 'https://www.amazon.com/s?k=manga+box+set&tag=amazonfi00681-20&linkCode=ll2';
@@ -235,9 +233,5 @@ const amazonUrl = 'https://www.amazon.com/s?k=manga+box+set&tag=amazonfi00681-20
         </div>
       </div>
     </section>
-
-    {displayAdsEnabled && popunderKey && (
-      <script is:inline async type="text/javascript" src={`//pl${popunderKey}.profitableratecpm.com/${popunderKey}/invoke.js`} />
-    )}
   </body>
 </html>
