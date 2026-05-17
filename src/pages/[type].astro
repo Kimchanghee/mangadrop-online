@@ -10,6 +10,11 @@ export function getStaticPaths() {
 const { type } = Astro.params;
 const baseUrl = import.meta.env.PUBLIC_SITE_URL || 'https://mangadrop.online';
 const labelMap: Record<string, string> = { manga: 'Manga', webtoon: 'Webtoon', lightnovel: 'Light novel' };
+const guideMap: Record<string, string> = {
+  manga: 'Manga readers usually compare magazine cadence, volume release timing, scanlation chatter, and official publisher links. This page keeps the release list readable first, then sends users to a title page for context instead of opening an external destination immediately.',
+  webtoon: 'Webtoon schedules can differ by platform, country, and translation status. Use this board to check recent movement, source labels, and title pages before deciding which series deserves a deeper follow.',
+  lightnovel: 'Light novel releases often move between web serialization, print volume, and translated editions. The list below is built as a planning board for readers who want release timing and source context in one place.'
+};
 let releases: any[] = [];
 try {
   const data = await readFile(join(process.cwd(), 'src/data/releases.json'), 'utf-8');
@@ -45,6 +50,15 @@ const items = releases.filter((item) => item.format === type).slice(0, 100);
     <main class="mx-auto max-w-6xl px-4 py-10">
       <h1 class="text-4xl font-bold">{labelMap[type]} releases</h1>
       <p class="mt-3 text-slate-600">Release dates, source links and cover art for tracked titles.</p>
+      <section class="mt-6 rounded-xl border bg-white p-6">
+        <h2 class="text-xl font-semibold">How to read this board</h2>
+        <p class="mt-3 leading-7 text-slate-700">{guideMap[type]}</p>
+        <div class="mt-5 grid gap-3 md:grid-cols-3">
+          <div class="rounded-lg bg-rose-50 p-4 text-sm leading-6">Open the title page first to confirm author, original title, and source before leaving the site.</div>
+          <div class="rounded-lg bg-rose-50 p-4 text-sm leading-6">Use release date changes as a signal, not as a final publisher announcement.</div>
+          <div class="rounded-lg bg-rose-50 p-4 text-sm leading-6">Save high-priority titles by format so manga, webtoon, and light novel updates do not blur together.</div>
+        </div>
+      </section>
       <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <a href={`/title/${encodeURIComponent(item.id)}`} class="rounded-xl border bg-white p-5 hover:border-rose-400">
