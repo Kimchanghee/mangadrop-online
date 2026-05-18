@@ -142,7 +142,18 @@ const amazonUrl = 'https://www.amazon.com/s?k=manga+box+set&tag=amazonfi00681-20
         }
       ]
     })} />
-  </head>
+    <script is:inline>
+  window.addEventListener('click', function(event) {
+    var link = event.target && event.target.closest ? event.target.closest('a[rel*="sponsored"], [data-affiliate-link]') : null;
+    if (!link || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'affiliate_click', {
+      merchant: (link.textContent || '').trim().slice(0, 60) || 'partner',
+      placement: link.getAttribute('data-placement') || link.getAttribute('aria-label') || 'sponsored-link',
+      page_location: window.location.href
+    });
+  }, { capture: true });
+</script>
+</head>
   <body class="bg-stone-50 text-stone-900 antialiased">
     <header class="border-b bg-white">
       <div class="container mx-auto flex max-w-6xl items-center justify-between p-4">
@@ -218,15 +229,15 @@ const amazonUrl = 'https://www.amazon.com/s?k=manga+box+set&tag=amazonfi00681-20
         <h2 class="mb-2 text-2xl font-semibold">Partner Picks</h2>
         <p class="mb-4 text-sm text-stone-600">만화/굿즈/정리용품 관련 추천 링크입니다.</p>
         <div class="grid gap-3 sm:grid-cols-3">
-          <a href={amazonUrl} target="_blank" rel="sponsored noopener noreferrer" class="rounded-lg border border-amber-300 bg-amber-50 p-4 hover:border-amber-400">
+          <a href={amazonUrl} target="_blank" rel="sponsored noopener noreferrer nofollow" class="rounded-lg border border-amber-300 bg-amber-50 p-4 hover:border-amber-400" data-affiliate-link>
             <p class="text-xs font-semibold uppercase tracking-wide text-amber-700">Amazon</p>
             <p class="mt-1 text-sm">Manga Box Set</p>
           </a>
-          <a href={coupangUrl} target="_blank" rel="sponsored noopener noreferrer" class="rounded-lg border border-blue-300 bg-blue-50 p-4 hover:border-blue-400">
+          <a href={coupangUrl} target="_blank" rel="sponsored noopener noreferrer nofollow" class="rounded-lg border border-blue-300 bg-blue-50 p-4 hover:border-blue-400" data-affiliate-link>
             <p class="text-xs font-semibold uppercase tracking-wide text-blue-700">Coupang</p>
             <p class="mt-1 text-sm">만화 단행본</p>
           </a>
-          <a href={aliExpressUrl} target="_blank" rel="sponsored noopener noreferrer" class="rounded-lg border border-rose-300 bg-rose-50 p-4 hover:border-rose-400">
+          <a href={aliExpressUrl} target="_blank" rel="sponsored noopener noreferrer nofollow" class="rounded-lg border border-rose-300 bg-rose-50 p-4 hover:border-rose-400" data-affiliate-link>
             <p class="text-xs font-semibold uppercase tracking-wide text-rose-700">AliExpress</p>
             <p class="mt-1 text-sm">Manga Merchandise</p>
           </a>

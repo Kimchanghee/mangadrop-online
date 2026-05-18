@@ -35,7 +35,18 @@ const baseUrl = import.meta.env.PUBLIC_SITE_URL || 'https://mangadrop.online';
       gtag('config', 'G-G0YE8ZCN66', { page_path: window.location.pathname });
     </script>
     <link rel="stylesheet" href="/global.css" />
-  </head>
+    <script is:inline>
+  window.addEventListener('click', function(event) {
+    var link = event.target && event.target.closest ? event.target.closest('a[rel*="sponsored"], [data-affiliate-link]') : null;
+    if (!link || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'affiliate_click', {
+      merchant: (link.textContent || '').trim().slice(0, 60) || 'partner',
+      placement: link.getAttribute('data-placement') || link.getAttribute('aria-label') || 'sponsored-link',
+      page_location: window.location.href
+    });
+  }, { capture: true });
+</script>
+</head>
   <body class="bg-rose-50 text-slate-900">
     <header class="border-b bg-white">
       <div class="mx-auto flex max-w-6xl items-center justify-between p-4">
