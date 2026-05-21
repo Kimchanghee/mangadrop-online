@@ -29,5 +29,12 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
 Sitemap: https://mangadrop.online/sitemap.xml
-Host: https://mangadrop.online
+Host: mangadrop.online
+IndexNow-Key: a2f8af2f454abe45ee6416cb1b4c74e1

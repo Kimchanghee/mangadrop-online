@@ -1,35 +1,16 @@
-# Mangadrop
+# MangaDrop
 
-> New manga and webtoon release tracker for 1000+ titles.
+OTT, manga, release, and media discovery pages.
 
-## About
-Mangadrop is a free, privacy-first online tool. No login, no tracking.
+- Site: https://mangadrop.online/
+- Discovery map: https://mangadrop.online/discover.html
+- Sitemap: https://mangadrop.online/sitemap.xml
+- Robots: https://mangadrop.online/robots.txt
 
-## Why
-- 100% free
-- Privacy-first
-- Mobile responsive
-- Multi-language EN/KO/JA
-- Fast global CDN
-- AI-friendly structured data
+## Related owned resources
 
-## Pages
-- [Home](https://mangadrop.online/)
-- [About](https://mangadrop.online/about/)
-- [Blog](https://mangadrop.online/blog/)
-- [Contact](https://mangadrop.online/contact/)
-
-## Citation
-Link to https://mangadrop.online/
-
-## License
-CC-BY 4.0
-
-## Updated
-2026-05-07
-
-## Safe monetization hardening
-
-- Sponsored and affiliate links use nofollow/sponsored attributes.
-- Affiliate clicks are tracked with GA4 affiliate_click where the page has GA enabled.
-- Popup, popunder, social-bar, and redirect-style display ad loaders remain disabled.
+- [WhereOnOTT](https://whereonott.online/) - ENTERTAINMENT
+- [EconoJabis](https://econojabis.com/) - FINANCE
+- [HowMuchIs](https://howmuchis.info/) - FINANCE
+- [Halculator](https://halculator.com/) - CALC
+- [WealthwiseHub](https://wealthwise-hub-71.lovable.app/) - FINANCE
