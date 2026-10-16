@@ -1,4 +1,5 @@
 ---
+import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import { site, abs } from '../site.config';
 import '../styles/global.css';
 
@@ -33,7 +34,7 @@ const nav = [
   ...site.categories.map((c) => ({ href: `/category/${c.slug}/`, label: c.name, code: c.code })),
 ];
 const current = Astro.url.pathname;
-const consentRegions = JSON.stringify(site.consentDeniedRegions);
+
 ---
 <!doctype html>
 <html lang="ko">
@@ -66,20 +67,6 @@ const consentRegions = JSON.stringify(site.consentDeniedRegions);
   {site.gscVerification && <meta name="google-site-verification" content={site.gscVerification} />}
   {site.naverVerification && <meta name="naver-site-verification" content={site.naverVerification} />}
   {allLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
-  {site.ga4Id && site.consentReady && (
-    <>
-      <script is:inline define:vars={{ ga4Id: site.ga4Id, consentRegions }}>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        window.gtag = gtag;
-        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: JSON.parse(consentRegions), wait_for_update: 500 });
-        gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted', wait_for_update: 500 });
-        gtag('js', new Date());
-        gtag('config', ga4Id);
-        var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4Id; document.head.appendChild(s);
-      </script>
-    </>
-  )}
   {site.adsEnabled && site.consentReady && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsenseClient}`} crossorigin="anonymous"></script>}
 </head>
 <body>
@@ -122,14 +109,7 @@ const consentRegions = JSON.stringify(site.consentDeniedRegions);
         <li><a href="/rss.xml">RSS</a></li>
       </ul>
     </div>
+    <AnalyticsConsent />
   </footer>
-  <script is:inline>
-    document.addEventListener('click', function (e) {
-      var a = e.target && e.target.closest ? e.target.closest('a[data-product-link]') : null;
-      if (!a || typeof window.gtag !== 'function') return;
-      var host = ''; try { host = new URL(a.href).host; } catch (err) {}
-      window.gtag('event', 'outbound_affiliate_click', { destination_host: host, link_slot: a.getAttribute('data-product-link') });
-    });
-  </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+---
+import { site } from '../site.config';
+---
+{site.ga4Id && <section class="analytics-consent wrap" aria-labelledby="analytics-title">
+  <h2 id="analytics-title">방문 통계 선택</h2>
+  <p>사이트 개선을 위한 Google 애널리틱스는 허용할 때만 사용합니다. 광고는 사용하지 않습니다. <a href="/privacy/">개인정보처리방침</a></p>
+  <p id="analytics-status" role="status" aria-live="polite">현재 분석 꺼짐 · 선택하지 않아도 이용할 수 있습니다.</p>
+  <div id="analytics-options">
+    <button type="button" id="analytics-accept">분석 허용</button>
+    <button type="button" id="analytics-decline">분석 거절</button>
+  </div>
+  <button type="button" id="analytics-change" aria-controls="analytics-options" aria-expanded="false" hidden>분석 설정 변경</button>
+  <noscript>자바스크립트가 꺼져 있어 분석을 사용하지 않습니다.</noscript>
+  <script is:inline defer src="/analytics-consent.js" data-ga4-id={site.ga4Id}></script>
+</section>}
+<style>
+.analytics-consent { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #aaa; }
+.analytics-consent h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+.analytics-consent p { max-width: 70ch; margin: .5rem 0; }
+.analytics-consent button { min-height: 44px; min-width: 44px; padding: .6rem 1rem; margin: .25rem .5rem .25rem 0; border: 1px solid #674158; border-radius: 4px; background: #fffaf4; color: #402839; font: inherit; cursor: pointer; }
+.analytics-consent button:focus-visible { outline: 3px solid #674158; outline-offset: 3px; }
+.analytics-consent [hidden] { display: none; }
+</style>

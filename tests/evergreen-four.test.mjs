@@ -22,6 +22,6 @@ assert.match(read('src/site.config.ts'),/adsEnabled: false/);
 assert.match(read('src/site.config.ts'),/consentReady: false/);
 assert.match(read('src/layouts/Base.astro'),/site.adsEnabled && site.consentReady && <script async/);
 assert.match(read('src/components/AdSlot.astro'),/site.adsEnabled && site.consentReady/);
-assert.match(read('src/pages/privacy.astro'),/동의 배너는 구현·검증되지 않았습니다/);
+assert.match(read('src/pages/privacy.astro'),/인증 광고 동의 관리 플랫폼\(CMP\)이 아닙니다/);
 assert.match(read('scripts/gate.mjs'),/8/);
 });

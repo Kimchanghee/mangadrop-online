@@ -1,0 +1,80 @@
+{
+  "observedAt": "2026-10-16T15:05:49.553Z",
+  "scope": "Intercepted/aborted Google loader; queued commands verified, not GA ingestion or account evidence",
+  "results": [
+    {
+      "width": 390,
+      "geometry": {
+        "viewport": 390,
+        "scroll": 390,
+        "buttons": [
+          {
+            "x": 20,
+            "y": 812.921875,
+            "width": 89.625,
+            "height": 46.6875
+          },
+          {
+            "x": 117.625,
+            "y": 812.921875,
+            "width": 89.625,
+            "height": 46.6875
+          },
+          {
+            "x": 20,
+            "y": 867.609375,
+            "width": 119.3125,
+            "height": 46.6875
+          }
+        ],
+        "position": "static"
+      },
+      "hostInjectedAborted": 5,
+      "undecidedRequests": 0,
+      "deniedRequests": 0,
+      "acceptedLoaderRequests": 2,
+      "postWithdrawalRequests": 0,
+      "ownCookieDeletion": true,
+      "unrelatedCookiePreserved": true,
+      "adConsents": "denied",
+      "googleScriptAborted": true
+    },
+    {
+      "width": 1440,
+      "geometry": {
+        "viewport": 1440,
+        "scroll": 1440,
+        "buttons": [
+          {
+            "x": 150,
+            "y": 813.390625,
+            "width": 89.625,
+            "height": 46.6875
+          },
+          {
+            "x": 247.625,
+            "y": 813.390625,
+            "width": 89.625,
+            "height": 46.6875
+          },
+          {
+            "x": 150,
+            "y": 868.078125,
+            "width": 119.3125,
+            "height": 46.6875
+          }
+        ],
+        "position": "static"
+      },
+      "hostInjectedAborted": 5,
+      "undecidedRequests": 0,
+      "deniedRequests": 0,
+      "acceptedLoaderRequests": 2,
+      "postWithdrawalRequests": 0,
+      "ownCookieDeletion": true,
+      "unrelatedCookiePreserved": true,
+      "adConsents": "denied",
+      "googleScriptAborted": true
+    }
+  ]
+}
