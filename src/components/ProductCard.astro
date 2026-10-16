@@ -1,0 +1,19 @@
+---
+import { providerInfo, type ProviderId } from '../site.config';
+interface Props {
+  product: { name: string; optionDetail: string; provider: ProviderId; url: string; verifiedAt: string; specs: { label: string; value: string }[] };
+  variant: 'side' | 'inline';
+}
+const { product, variant } = Astro.props;
+const p = providerInfo(product.provider);
+---
+<aside class={`product-card ${variant === 'inline' ? 'product-card--inline' : ''}`} aria-label="이 글의 상품">
+  <p class="product-card__label">CHECKED ITEM · {p.name}</p>
+  <p class="product-card__name">{product.name}</p>
+  <p class="product-card__opt">{product.optionDetail}</p>
+  {product.specs.length > 0 && (
+    <dl>{product.specs.slice(0, 4).map((s) => (<><dt>{s.label}</dt><dd>{s.value}</dd></>))}</dl>
+  )}
+  <a class="btn-buy" href={product.url} rel="sponsored nofollow noopener" target="_blank" data-product-link={variant}>{p.name}에서 옵션 확인</a>
+  <p class="product-card__note">제휴 링크 · 링크 확인 {product.verifiedAt.slice(0, 10)} · 가격과 재고는 판매 페이지 기준</p>
+</aside>

@@ -1,0 +1,35 @@
+{
+  "domain": "mangadrop.online",
+  "url": "https://mangadrop.online",
+  "name": "망가드롭",
+  "nameEn": "MangaDrop",
+  "lang": "ko",
+  "locale": "ko_KR",
+  "tagline": "다음 한 권을 위한 수집 서가",
+  "description": "만화·웹툰 단행본과 라이트노벨, 피규어 보관 및 독서 용품을 고르는 한국어 구매 가이드입니다. 판본과 구성, 보관 환경을 먼저 비교하며 출처 없는 가격이나 사용 후기를 만들지 않습니다.",
+  "contactEmail": "contact@mangadrop.online",
+  "adsenseClient": "ca-pub-4490818204529253",
+  "indexNowKey": "b46f109cd2194dbba50959e7d102ac83",
+  "postBase": "picks",
+  "guideBase": "guides",
+  "categories": [
+    {
+      "slug": "editions",
+      "name": "판본과 전집",
+      "code": "01",
+      "blurb": "ISBN부터 박스 구성까지, 같은 작품의 다른 책을 구별합니다."
+    },
+    {
+      "slug": "collection",
+      "name": "수집과 보관",
+      "code": "02",
+      "blurb": "종이책과 피규어가 머무를 공간을 먼저 살펴봅니다."
+    },
+    {
+      "slug": "reading",
+      "name": "읽는 자리",
+      "code": "03",
+      "blurb": "독서대와 조명, 책갈피를 읽는 습관에 맞춥니다."
+    }
+  ]
+}

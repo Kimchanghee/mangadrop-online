@@ -1,0 +1,25 @@
+---
+import TextPage from '../layouts/TextPage.astro';
+import { site } from '../site.config';
+---
+<TextPage title="망가드롭 개인정보처리방침: 분석 도구, 광고 쿠키, 거부 방법" h1="개인정보처리방침" description="망가드롭가 Google 애널리틱스 4와 Google 애드센스로 처리하는 정보, 제3자 광고 쿠키, 유럽·영국 이용자를 위한 동의 관리, 쿠키와 맞춤 광고를 거부하는 방법, 문의처를 안내합니다." path="/privacy/" kicker="PRIVACY" updated="2026-10-15">
+  <p>{site.name}(이하 "사이트")은 회원가입이나 댓글 기능이 없으며, 이름·연락처 같은 개인정보를 직접 수집하지 않습니다. 다만 아래 외부 도구가 쿠키 등을 통해 정보를 처리할 수 있습니다.</p>
+  <h2>Google 애널리틱스 4는 무엇을 수집하나?</h2>
+  <p>방문 페이지, 체류 시간, 대략적 지역, 기기·브라우저 정보, 제휴 링크 클릭 여부(이동한 사이트의 호스트명) 같은 이용 통계를 수집해 사이트 개선에 씁니다. IP 주소는 Google 정책에 따라 처리되며 사이트 운영자는 개인을 식별할 수 있는 정보를 받지 않습니다.</p>
+  <h2>광고와 제3자 쿠키는 어떻게 쓰이나?</h2>
+  <p>사이트는 Google 애드센스 광고를 게재할 수 있습니다. Google을 포함한 제3자 공급업체는 쿠키를 사용해 이용자의 이전 방문 기록을 바탕으로 광고를 게재할 수 있습니다. Google의 광고 쿠키 사용에 대한 설명은 <a href="https://policies.google.com/technologies/ads" rel="noopener">Google 광고 정책</a>에서 볼 수 있습니다.</p>
+  <h2>유럽·영국·스위스 이용자는 어떻게 동의하나?</h2>
+  <p>유럽경제지역(EEA), 영국, 스위스에서 접속하면 광고·분석 저장소가 기본적으로 거부 상태로 시작하며(Google 동의 모드 v2), Google 인증 동의 관리 플랫폼(CMP)을 통해 동의 여부를 선택할 수 있습니다.</p>
+  <h2>쿠키와 맞춤 광고는 어떻게 거부하나?</h2>
+  <ul>
+    <li><a href="https://adssettings.google.com" rel="noopener">Google 광고 설정</a>에서 맞춤 광고를 끌 수 있습니다.</li>
+    <li><a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google 애널리틱스 차단 브라우저 부가기능</a>으로 분석 수집을 막을 수 있습니다.</li>
+    <li>브라우저 설정에서 쿠키를 삭제하거나 차단할 수 있습니다.</li>
+  </ul>
+  <h2>제휴 링크를 누르면 어떻게 되나?</h2>
+  <p>제휴 링크를 누르면 쿠팡, 오늘의집, 토스쇼핑, 네이버 등 판매처로 이동하며, 이후 정보 처리는 각 판매처의 개인정보처리방침을 따릅니다. 판매처는 수수료 정산을 위해 클릭·구매 정보를 처리할 수 있습니다.</p>
+  <h2>체크리스트 저장 기능</h2>
+  <p>체크리스트의 체크 상태는 이용자 브라우저의 로컬 저장소에만 저장되며 서버로 전송되지 않습니다.</p>
+  <h2>문의</h2>
+  <p>개인정보 관련 문의: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p>
+</TextPage>

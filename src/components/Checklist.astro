@@ -1,0 +1,38 @@
+---
+interface Props { items: string[]; id: string; title?: string }
+const { items, id, title = '구매 전 체크리스트' } = Astro.props;
+---
+<section class="checklist" data-checklist={id} aria-labelledby={`cl-${id}`}>
+  <div class="checklist__head">
+    <h2 id={`cl-${id}`}>{title}</h2>
+    <output aria-live="polite" data-count>0 / {items.length}</output>
+  </div>
+  <ol>
+    {items.map((it, i) => (
+      <li><label><input type="checkbox" name={`${id}-${i}`} /><span>{it}</span></label></li>
+    ))}
+  </ol>
+  <p class="checklist__note">체크 상태는 이 기기 브라우저에만 저장됩니다.</p>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-checklist]').forEach((box) => {
+    const key = 'sd-check:' + box.dataset.checklist;
+    const inputs = Array.from(box.querySelectorAll<HTMLInputElement>('input[type=checkbox]'));
+    const out = box.querySelector('output');
+    let saved: boolean[] = [];
+    try { saved = JSON.parse(localStorage.getItem(key) || '[]'); } catch { saved = []; }
+    inputs.forEach((inp, i) => { inp.checked = !!saved[i]; });
+    let reported = false;
+    const update = () => {
+      const n = inputs.filter((i) => i.checked).length;
+      if (out) out.textContent = `${n} / ${inputs.length}`;
+      try { localStorage.setItem(key, JSON.stringify(inputs.map((i) => i.checked))); } catch { /* storage unavailable */ }
+    };
+    inputs.forEach((inp) => inp.addEventListener('change', () => {
+      update();
+      const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+      if (!reported && typeof w.gtag === 'function') { reported = true; w.gtag('event', 'tool_used', { tool: 'checklist', list: box.dataset.checklist }); }
+    }));
+    update();
+  });
+</script>

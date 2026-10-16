@@ -1,0 +1,66 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { allPosts, allGuides, postPath, guidePath, articleLd, faqLd, ymd, disclosureFor, type Post } from '../../lib/content';
+import { categoryBySlug, providerInfo, site } from '../../site.config';
+
+export async function getStaticPaths() {
+  const posts = await allPosts();
+  return posts.map((p) => ({ params: { slug: p.data.slug }, props: { post: p } }));
+}
+interface Props { post: Post }
+const { post } = Astro.props;
+const d = post.data;
+const { Content } = await render(post);
+const cat = categoryBySlug(d.category)!;
+const path = postPath(d.slug);
+const cover = d.images.find((i) => i.role === 'cover') ?? d.images[0];
+const og = `/og/picks/${d.slug}.png`;
+const guides = (await allGuides()).filter((g) => g.data.category === d.category).slice(0, 3);
+const prov = providerInfo(d.product.provider);
+const ld = [articleLd('post', post, path, og), faqLd(d.faq)].filter(Boolean) as Record<string, unknown>[];
+const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/${cat.slug}/` }, { name: d.title, href: path } ];
+---
+<Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} published={d.published} updated={d.updated}>
+  <div class="wrap article-grid">
+    <article class="article" data-gate="article">
+      <p class="disclosure" data-gate="disclosure"><strong>제휴 고지</strong>{disclosureFor(post)}</p>
+      <header>
+        <p class="log-kicker">PICK · {cat.name} · {prov.name}</p>
+        <h1 class="log-title">{d.title}</h1>
+        <p class="meta"><span>발행 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>링크 확인 {ymd(d.product.verifiedAt)}</span></p>
+      </header>
+      <p class="answer" data-gate="answer">{d.answer}</p>
+      <ProductCard product={d.product} variant="inline" />
+      <figure style="margin:0 0 18px">
+        <img src={cover.src} alt={cover.alt} width="1200" height="800" loading="eager" decoding="async" />
+      </figure>
+      <div class="prose" data-gate="body"><Content /></div>
+      {d.faq.length > 0 && (
+        <section class="faq" data-gate="faq" aria-labelledby="faq-h">
+          <h2 id="faq-h">자주 묻는 질문</h2>
+          <dl>{d.faq.map((f) => (<><dt>{f.q}</dt><dd>{f.a}</dd></>))}</dl>
+        </section>
+      )}
+      <div class="end-cta">
+        <p>옵션·사이즈·가격은 판매 페이지에서 마지막으로 확인하세요. ({prov.name} 제휴 링크)</p>
+        <a class="btn-buy" href={d.product.url} rel="sponsored nofollow noopener" target="_blank" data-product-link="end">{d.product.name} 판매 페이지 열기</a>
+      </div>
+      <AdSlot id="pick-end" />
+      <section class="sources" data-gate="sources">
+        <h2>SOURCES</h2>
+        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}</ul>
+      </section>
+      <nav class="related" aria-labelledby="rel-h">
+        <h2 id="rel-h">고르기 전에 볼 체크리스트</h2>
+        <ul>{guides.map((g) => <li><a href={guidePath(g.data.slug)}>{g.data.title}</a></li>)}</ul>
+        <p><a href={`/category/${cat.slug}/`}>{cat.name} 전체 보기</a> · <a href="/methodology/">상품 선정 방법</a></p>
+      </nav>
+    </article>
+    <aside class="side" aria-label="상품 카드">
+      <div class="side__sticky"><ProductCard product={d.product} variant="side" /></div>
+    </aside>
+  </div>
+</Base>

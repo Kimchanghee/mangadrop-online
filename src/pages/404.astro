@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../site.config';
+---
+<Base title={`페이지를 찾을 수 없습니다 (404) | ${site.name}`} description="요청한 주소의 페이지가 없거나 옮겨졌습니다. 홈이나 전체 체크리스트 목록에서 원하는 독서·수집 용품 구매 체크리스트를 다시 찾아 주세요. 링크 오류를 알려 주시면 바로 고치겠습니다." path="/404/">
+  <div class="wrap notfound">
+    <p class="log-kicker">ERROR 404 · NO ENTRY</p>
+    <h1 class="log-title">이 주소에는 기록이 없습니다</h1>
+    <p class="lede">주소가 바뀌었거나 잘못 입력되었을 수 있습니다. 아래에서 다시 찾아보세요.</p>
+    <ul class="cat-sheet" style="margin-top:20px">
+      <li><a href="/"><span class="code">HM</span><span><strong>홈</strong><span class="blurb">분류별 체크리스트 시작점</span></span><span></span></a></li>
+      <li><a href="/guides/"><span class="code">LOG</span><span><strong>전체 체크리스트</strong><span class="blurb">모든 구매 체크리스트 목록</span></span><span></span></a></li>
+    </ul>
+    <p style="margin-top:16px">링크 오류 제보: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p>
+  </div>
+</Base>

@@ -11,3 +11,7 @@ Resume from here after host restart.
 - [ ] 6. QA: build, gate, astro check, curl crawl, screenshots, seo/scorecard.md
 
 Build order: sportsdash first, then reuse pipeline for whereonott, mangadrop.
+
+## 2026-10-16 continuation
+Preservation commit 825a73e. Collector-bookshop shell/config/renderer milestone added. NOT launch-ready: zero guides, dependency install incomplete, build/check/test/gate failed. See HANDOFF.md and qa logs. No deployment or affiliate-account work.
+

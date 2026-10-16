@@ -1,0 +1,17 @@
+---
+import Base from './Base.astro';
+interface Props { title: string; h1: string; description: string; path: string; kicker: string; updated: string; ld?: Record<string, unknown>[] }
+const { title, h1, description, path, kicker, updated, ld = [] } = Astro.props;
+const crumbs = [{ name: '홈', href: '/' }, { name: h1, href: path }];
+---
+<Base title={title} description={description} path={path} crumbs={crumbs} jsonld={ld}>
+  <div class="wrap">
+    <article class="page">
+      <p class="log-kicker">{kicker}</p>
+      <h1 class="log-title">{h1}</h1>
+      <p class="meta" style="font-family:var(--mono);font-size:13px;color:var(--muted)">최종 수정 <time datetime={updated}>{updated}</time></p>
+      <slot />
+      <p style="margin-top:2em"><a href="/">홈</a> · <a href="/guides/">체크리스트</a> · <a href="/about/">소개</a></p>
+    </article>
+  </div>
+</Base>

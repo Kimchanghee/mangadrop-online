@@ -1,0 +1,6 @@
+---
+// Reserved in-content ad container with fixed min-height (no layout shift). Auto ads fill it when approved.
+interface Props { id: string }
+const { id } = Astro.props;
+---
+<div class="ad-slot" id={`ad-${id}`} role="complementary" aria-label="광고 영역"><span class="ad-slot__label">AD</span></div>

@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import {allGuides,guidePath} from '../lib/content';
+import {site} from '../site.config';
+const guides=await allGuides();
+---
+<Base title="망가드롭 | 만화 단행본과 수집 용품을 고르는 작은 서가" description={site.description} path="/">
+<div class="wrap library"><section class="library-intro"><div><p class="catalog-label">MANGADROP / READER’S EDITION</p><h1>좋아하는 이야기를,<br/><em>오래 곁에.</em></h1><p class="lede">읽을 책을 고르고, 소장할 판본을 비교하고, 아끼는 물건의 자리를 마련하는 작은 구매 서가.</p><a class="browse" href="/guides/">구매 가이드 펼치기 ↗</a></div><div class="book-art" aria-hidden="true"><span class="spine s1">판본과 전집 <b>01</b></span><span class="spine s2">수집과 보관 <b>02</b></span><span class="spine s3">읽는 자리 <b>03</b></span><div class="shelf-note">책장에 들이기 전에<br/>한 번 더 살펴볼 것들.</div></div></section>
+<nav class="shelf-categories" aria-label="서가 분류">{site.categories.map(c=><a href={'/category/'+c.slug+'/'}><small>{c.code} / SHELF</small><strong>{c.name}</strong><span>{c.blurb}</span></a>)}</nav>
+<section class="section"><div class="section__head"><h2>수집 노트</h2><a href="/guides/">모든 글 보기 →</a></div><div class="library-list">{guides.map((g,i)=><a href={guidePath(g.data.slug)}><span class="entry-no">{String(i+1).padStart(2,'0')}</span><div><h3>{g.data.title}</h3><p>{g.data.answer}</p></div><span aria-hidden="true">↗</span></a>)}</div></section><section class="editor-note"><h2>가격보다, 내 책장에 맞는 기준.</h2><p>판매 순위나 만들어 낸 사용 후기가 아닌, 판본과 보관 환경을 비교합니다. 현재는 제휴 링크 없는 선택 가이드를 제공합니다.</p><a href="/methodology/">편집 방법 읽기</a> · <a href="/about/">망가드롭 소개</a></section></div></Base>

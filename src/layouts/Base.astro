@@ -1,0 +1,135 @@
+---
+import { site, abs } from '../site.config';
+import '../styles/global.css';
+
+interface Crumb { name: string; href: string }
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  jsonld?: Record<string, unknown>[];
+  crumbs?: Crumb[];
+  published?: string;
+  updated?: string;
+}
+const { title, description, path, ogImage = '/og/home.png', ogType = 'website', jsonld = [], crumbs = [], published, updated } = Astro.props;
+const canonical = abs(path);
+const orgId = `${site.url}/#organization`;
+const baseLd: Record<string, unknown>[] = [
+  { '@context': 'https://schema.org', '@type': 'Organization', '@id': orgId, name: site.name, alternateName: site.nameEn, url: site.url + '/', email: site.contactEmail, description: site.description, logo: abs('/favicon.svg') },
+  { '@context': 'https://schema.org', '@type': 'WebSite', '@id': `${site.url}/#website`, name: site.name, url: site.url + '/', inLanguage: 'ko-KR', publisher: { '@id': orgId } },
+];
+if (crumbs.length) {
+  baseLd.push({
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: abs(c.href) })),
+  });
+}
+const allLd = [...baseLd, ...jsonld];
+const nav = [
+  { href: '/guides/', label: '체크리스트', code: 'LOG' },
+  ...site.categories.map((c) => ({ href: `/category/${c.slug}/`, label: c.name, code: c.code })),
+];
+const current = Astro.url.pathname;
+const consentRegions = JSON.stringify(site.consentDeniedRegions);
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate" type="application/rss+xml" title={`${site.name} RSS`} href="/rss.xml" />
+  <meta name="theme-color" content="#f6f4ee" />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content={site.name} />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={abs(ogImage)} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={abs(ogImage)} />
+  {published && <meta property="article:published_time" content={published} />}
+  {updated && <meta property="article:modified_time" content={updated} />}
+  <meta name="google-adsense-account" content={site.adsenseClient} />
+  {site.gscVerification && <meta name="google-site-verification" content={site.gscVerification} />}
+  {site.naverVerification && <meta name="naver-site-verification" content={site.naverVerification} />}
+  {allLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
+  {site.ga4Id && (
+    <>
+      <script is:inline define:vars={{ ga4Id: site.ga4Id, consentRegions }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', region: JSON.parse(consentRegions), wait_for_update: 500 });
+        gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted', wait_for_update: 500 });
+        gtag('js', new Date());
+        gtag('config', ga4Id);
+        var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4Id; document.head.appendChild(s);
+      </script>
+    </>
+  )}
+  <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsenseClient}`} crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="sheet-head">
+    <div class="sheet-head__row wrap">
+      <a class="brand" href="/" aria-label={`${site.name} 홈`}>
+        <span class="brand__mark" aria-hidden="true">MD</span>
+        <span class="brand__text"><strong>{site.name}</strong><span>{site.tagline}</span></span>
+      </a>
+      <p class="sheet-head__stamp" aria-hidden="true">COLLECTOR LIBRARY</p>
+    </div>
+    <nav class="tabs wrap" aria-label="주요 메뉴">
+      <ul>
+        {nav.map((n) => (
+          <li><a href={n.href} aria-current={current.startsWith(n.href) ? 'page' : undefined}><span class="tabs__code">{n.code}</span>{n.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </header>
+  {crumbs.length > 1 && (
+    <nav class="crumbs wrap" aria-label="현재 위치">
+      <ol>{crumbs.map((c, i) => <li>{i < crumbs.length - 1 ? <a href={c.href}>{c.name}</a> : <span aria-current="page">{c.name}</span>}</li>)}</ol>
+    </nav>
+  )}
+  <main id="main"><slot /></main>
+  <footer class="sheet-foot">
+    <div class="wrap sheet-foot__grid">
+      <div>
+        <p class="sheet-foot__brand">{site.name} <span>{site.nameEn}</span></p>
+        <p class="sheet-foot__disclosure"><strong>제휴 고지</strong> 일부 글에는 쿠팡 파트너스, 오늘의집, 토스쇼핑, 네이버 쇼핑커넥트 제휴 링크가 들어갈 수 있으며, 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있습니다. 해당 글은 맨 위에 제휴 사실을 따로 밝힙니다.</p>
+      </div>
+      <ul class="sheet-foot__links">
+        <li><a href="/about/">소개·편집 원칙</a></li>
+        <li><a href="/methodology/">상품 선정 방법</a></li>
+        <li><a href="/contact/">문의</a></li>
+        <li><a href="/privacy/">개인정보처리방침</a></li>
+        <li><a href="/terms/">이용약관</a></li>
+        <li><a href="/disclaimer/">면책·제휴 안내</a></li>
+        <li><a href="/rss.xml">RSS</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script is:inline>
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[data-product-link]') : null;
+      if (!a || typeof window.gtag !== 'function') return;
+      var host = ''; try { host = new URL(a.href).host; } catch (err) {}
+      window.gtag('event', 'outbound_affiliate_click', { destination_host: host, link_slot: a.getAttribute('data-product-link') });
+    });
+  </script>
+</body>
+</html>

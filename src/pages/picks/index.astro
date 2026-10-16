@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { allPosts, postPath, ymd } from '../../lib/content';
+import { site, categoryBySlug } from '../../site.config';
+const posts = await allPosts();
+const title = '링크를 확인한 독서·수집 용품 추천 글 목록 | 망가드롭';
+const description = '판매 링크가 실제 상품과 옵션으로 연결되는지 확인한 뒤 발행한 독서·수집 용품 추천 글 목록입니다. 모든 추천 글은 제휴 링크를 포함하며 글 맨 위에 제휴 사실을 표시합니다.';
+const crumbs = [{ name: '홈', href: '/' }, { name: '상품 추천', href: '/picks/' }];
+---
+<Base title={title} description={description} path="/picks/" crumbs={crumbs}>
+  <div class="wrap section">
+    <p class="log-kicker">PICKS</p>
+    <h1 class="log-title">상품 추천 글</h1>
+    <p class="lede">추천 글은 모두 제휴 링크를 포함합니다. 기준은 <a href="/methodology/">상품 선정 방법</a>에, 고르는 법은 <a href="/guides/">체크리스트</a>에 있습니다.</p>
+    {posts.length === 0 ? (
+      <p class="empty" style="margin-top:20px">아직 발행된 추천 글이 없습니다. 링크와 옵션 확인을 마친 글부터 순서대로 올라옵니다.</p>
+    ) : (
+      <table class="logtable" style="margin-top:20px"><tbody>{posts.map((p) => (
+        <tr><td class="code">{categoryBySlug(p.data.category)?.code}</td><td><a href={postPath(p.data.slug)}>{p.data.title}</a><span class="sub">{p.data.product.name}</span></td><td class="date">{ymd(p.data.published)}</td></tr>
+      ))}</tbody></table>
+    )}
+  </div>
+</Base>

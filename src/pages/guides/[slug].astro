@@ -1,0 +1,74 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Checklist from '../../components/Checklist.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { allGuides, guidePath, articleLd, faqLd, ymd, type Guide } from '../../lib/content';
+import { categoryBySlug, site } from '../../site.config';
+
+export async function getStaticPaths() {
+  const guides = await allGuides();
+  return guides.map((g, i) => ({ params: { slug: g.data.slug }, props: { guide: g, index: i, all: guides } }));
+}
+interface Props { guide: Guide; index: number; all: Guide[] }
+const { guide, all } = Astro.props;
+const d = guide.data;
+const { Content } = await render(guide);
+const cat = categoryBySlug(d.category)!;
+const path = guidePath(d.slug);
+const og = `/og/guides/${d.slug}.png`;
+const sameCat = all.filter((g) => g.data.category === d.category && g.data.slug !== d.slug).slice(0, 3);
+const others = all.filter((g) => g.data.category !== d.category).slice(0, 2);
+const related = [...sameCat, ...others].slice(0, 4);
+const code = `${cat.code}-${String(all.filter((g) => g.data.category === d.category).sort((a, b) => a.data.published.localeCompare(b.data.published)).findIndex((g) => g.data.slug === d.slug) + 1).padStart(2, '0')}`;
+const ld = [articleLd('guide', guide, path, og), faqLd(d.faq)].filter(Boolean) as Record<string, unknown>[];
+const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/${cat.slug}/` }, { name: d.title, href: path } ];
+---
+<Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} published={d.published} updated={d.updated}>
+  <div class="wrap article-grid article-grid--solo">
+    <article class="article" data-gate="article">
+      <header>
+        <p class="log-kicker">{code} · {cat.name} 체크리스트</p>
+        <h1 class="log-title">{d.title}</h1>
+        <p class="meta"><span>작성 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>자료 기준일 {d.data_asof}</span></p>
+      </header>
+      <p class="answer" data-gate="answer">{d.answer}</p>
+      <Checklist items={d.checklist} id={d.slug} />
+      <div class="prose" data-gate="body"><Content /></div>
+      <AdSlot id="guide-end" />
+      {d.faq.length > 0 && (
+        <section class="faq" data-gate="faq" aria-labelledby="faq-h">
+          <h2 id="faq-h">자주 묻는 질문</h2>
+          <dl>{d.faq.map((f) => (<><dt>{f.q}</dt><dd>{f.a}</dd></>))}</dl>
+        </section>
+      )}
+      <section class="sources" data-gate="sources">
+        <h2>SOURCES · 기준일 {d.data_asof}</h2>
+        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}</ul>
+      </section>
+      <nav class="related" aria-labelledby="rel-h">
+        <h2 id="rel-h">이어서 볼 체크리스트</h2>
+        <ul>{related.map((g) => <li><a href={guidePath(g.data.slug)}>{g.data.title}</a></li>)}</ul>
+        <p><a href={`/category/${cat.slug}/`}>{cat.name} 전체 보기</a> · <a href="/methodology/">상품 선정 방법</a></p>
+      </nav>
+    </article>
+    <aside class="side" aria-label="일지 정보">
+      <div class="side__sticky">
+        <div class="side-card">
+          <h2>LOG CARD</h2>
+          <dl>
+            <dt>코드</dt><dd>{code}</dd>
+            <dt>분류</dt><dd>{cat.name}</dd>
+            <dt>점검 항목</dt><dd>{d.checklist.length}개</dd>
+            <dt>출처</dt><dd>{d.sources.length}건</dd>
+            <dt>수정</dt><dd>{ymd(d.updated)}</dd>
+          </dl>
+        </div>
+        <div class="side-card">
+          <h2>이 글은 제휴 링크가 없습니다</h2>
+          <p style="margin:0">고르는 기준만 다룹니다. 특정 상품을 다루는 글은 맨 위에 제휴 여부를 표시합니다.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

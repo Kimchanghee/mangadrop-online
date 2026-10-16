@@ -310,6 +310,7 @@ if (isMain) {
   let logEntries;
   try { logEntries = readLog(logFile); } catch (err) { console.error(String(err.message)); process.exit(2); }
   const entries = contentEntries();
+  if (!opt('--source') && entries.filter(x => x.kind === 'guide').length < 8) { console.error('FAIL launch: at least 8 substantive guides required'); process.exit(1); }
   const staticPaths = ['/', '/guides/', '/picks/', '/about/', '/methodology/', '/contact/', '/privacy/', '/terms/', '/disclaimer/', ...site.categories.map((c) => `/category/${c.slug}/`)];
   const knownPaths = new Set([...staticPaths, ...entries.map((x) => x.path)]);
   const src = opt('--source');
