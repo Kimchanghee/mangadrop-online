@@ -1,0 +1,21 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,readdirSync} from 'node:fs';
+const dir=new URL('../src/content/guides/',import.meta.url);
+const all=readdirSync(dir).filter(f=>f.endsWith('.md'));
+const additions=["manga-edition-isbn-volumes","bookshelf-load-anchoring","archival-book-boxes","figure-case-clearance"];
+test('eight guides, existing four preserved by addition',()=>assert.equal(all.length,8));
+for(const slug of additions)test(slug+' source contract',()=>{
+const raw=readFileSync(new URL(slug+'.md',dir),'utf8');
+const [,front,body]=raw.match(/^---\n([\s\S]+?)\n---\n([\s\S]+)$/);
+const fm=JSON.parse(front);assert.equal(fm.slug,slug);
+assert.ok(fm.answer.length>=20 && fm.answer.length<=220);
+assert.ok(fm.description.length>=60 && fm.description.length<=160);
+assert.ok(body.replace(/\s/g,'').length>=1400);
+assert.ok((body.match(/^## .*\?/gm)||[]).length>=5);
+assert.ok(fm.sources.length>=2 && fm.faq.length>=2 && fm.checklist.length>=3);
+for(const s of fm.sources)assert.match(s.url,/^https:\/\/(www\.|guides\.|shop\.)?(isbn-international.org|viz.com|cpsc.gov|ikea.com|loc.gov|nedcc.org|goodsmile.com|betterdisplaycases.com)\//);
+const links=[...body.matchAll(/\]\(\/guides\/([a-z-]+)\/\)/g)];assert.ok(links.length>=2);
+for(const l of links)assert.ok(all.includes(l[1]+'.md'));
+assert.match(fm.published,/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/);assert.ok(!fm.product);
+});

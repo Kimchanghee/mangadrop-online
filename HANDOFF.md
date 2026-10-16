@@ -28,3 +28,10 @@ Finish dependency installation, check build, repair fixtures' category and illus
 - Ads default OFF; analytics also held until consentReady. Removed false present-tense certified-CMP claim. No account work or deploy.
 - Targeted dependency-free regression: node --test tests/evergreen-four.test.mjs PASS 5/5. This validates source contract, links and ad guards, not browser rendering or full launch readiness.
 - Dependency installation retried after tool-server interruptions; copy-mode install log qa/install-content-copy.log. Consult final QA receipt for outcome.
+
+## Second four-guide bounded chunk, 2026-10-16
+- Added language/edition/ISBN/completeness, bookshelf load/anti-tip anchoring, archival boxes/materials, figure-case inner dimensions/base clearance. Total 8. Previous four guide files and ads/consent OFF configuration unchanged against 2dea328.
+- Nine primary originals actually read; ops/research/evergreen-eight-source-readings.md records claims, URLs and browser recovery for CPSC/IKEA. Each new guide includes answer, five question sections, FAQ, checklist, sources and two valid internal links.
+- Dependency copy install reconciled: 354 added, Done in 8m31s. Ignored esbuild/sharp scripts warning remains. No install/build overlap, no reinstall or build initiated.
+- Targeted node tests PASS 10/10; qa/evergreen-eight-test.log (ignored local log). This is not full build/render/launch proof. Existing four guide timestamps contain milliseconds whereas the collection schema requires whole seconds; inherited mismatch left untouched for parent reconciliation.
+- No deploy/accounts/publication, copied photos, affiliate links or runtime changes. Full crawler/render and launch gates remain outstanding.
