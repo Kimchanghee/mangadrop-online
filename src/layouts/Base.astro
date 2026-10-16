@@ -66,7 +66,7 @@ const consentRegions = JSON.stringify(site.consentDeniedRegions);
   {site.gscVerification && <meta name="google-site-verification" content={site.gscVerification} />}
   {site.naverVerification && <meta name="naver-site-verification" content={site.naverVerification} />}
   {allLd.map((ld) => <script type="application/ld+json" set:html={JSON.stringify(ld)} />)}
-  {site.ga4Id && (
+  {site.ga4Id && site.consentReady && (
     <>
       <script is:inline define:vars={{ ga4Id: site.ga4Id, consentRegions }}>
         window.dataLayer = window.dataLayer || [];
@@ -80,7 +80,7 @@ const consentRegions = JSON.stringify(site.consentDeniedRegions);
       </script>
     </>
   )}
-  <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsenseClient}`} crossorigin="anonymous"></script>
+  {site.adsEnabled && site.consentReady && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.adsenseClient}`} crossorigin="anonymous"></script>}
 </head>
 <body>
   <a class="skip" href="#main">본문으로 건너뛰기</a>

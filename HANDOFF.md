@@ -20,3 +20,11 @@ Only this repository was edited. No deployment, affiliate accounts, DNS, analyti
 
 ## Next work, strictly this repo
 Finish dependency installation, check build, repair fixtures' category and illustration binding, author independently researched guides (editions/ISBN; omnibus vs individual; box sets; manga sleeves; shelving; figure-case clearance; book stands; reading light), audit inherited publisher safety (trusted evidence/duplicate reconciliation), then run build/check/test/gate/DryRun and screenshot home plus two guides at 1440/390. Inspect rendered content and live localhost response codes. Commit/push milestones. No deploy.
+
+## Four-guide bounded content chunk, 2026-10-16T14:33:04.402Z
+- Added four substantive Korean evergreen guides (reading lamps, book humidity/storage, figure display dust/UV, reading stand fit). Actual total is 4, not 8. Full launch gate still requires at least 8; threshold unchanged.
+- Primary-source reading record: ops/research/evergreen-four-source-readings.md. Five primary pages inspected, including browser recovery for CCI after fetch resets.
+- Answer, visible FAQ, related internal links and source URLs use existing guide renderer. No affiliate links, prices, copied photos or experiential claims.
+- Ads default OFF; analytics also held until consentReady. Removed false present-tense certified-CMP claim. No account work or deploy.
+- Targeted dependency-free regression: node --test tests/evergreen-four.test.mjs PASS 5/5. This validates source contract, links and ad guards, not browser rendering or full launch readiness.
+- Dependency installation retried after tool-server interruptions; copy-mode install log qa/install-content-copy.log. Consult final QA receipt for outcome.

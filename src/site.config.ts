@@ -7,6 +7,9 @@ export type ProviderId = 'coupang' | 'ohou' | 'toss' | 'naver' | 'amazon';
 
 export const site = {
   ...siteData,
+  // Remains off until parent verifies account approval and certified CMP integration.
+  adsEnabled: false,
+  consentReady: false,
   ga4Id: (env.PUBLIC_GA4_ID as string | undefined) ?? '',
   gscVerification: (env.PUBLIC_GSC_VERIFICATION as string | undefined) ?? '',
   naverVerification: (env.PUBLIC_NAVER_VERIFICATION as string | undefined) ?? '',
