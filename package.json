@@ -1,31 +1,25 @@
 {
-  "name": "mangadrop",
-  "version": "0.1.0",
+  "name": "sportsdash-online",
   "private": true,
-  "description": "Manga, webtoon and light novel release calendar (KR/EN/JA)",
   "type": "module",
+  "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "npm run sync-feeds || echo 'sync-feeds failed, continuing with cached data'",
-    "build": "astro build",
-    "preview": "astro preview",
-    "sync-feeds": "tsx scripts/sync-feeds.ts",
-    "translate:all": "tsx scripts/translate-all.ts",
-    "deploy": "npm run sync-feeds && npm run translate:all && npm run build && cdk deploy --require-approval never"
+    "og": "node scripts/og.mjs",
+    "build": "node scripts/og.mjs && astro build --force",
+    "preview": "astro preview --port 4321",
+    "check": "astro check",
+    "gate": "node scripts/gate.mjs",
+    "refresh": "node scripts/refresh.mjs",
+    "test": "node --test \"tests/*.test.mjs\""
   },
   "dependencies": {
-    "astro": "^5.0.0",
-    "@astrojs/tailwind": "^5.1.2",
-    "@astrojs/sitemap": "^3.2.1",
-    "tailwindcss": "^3.4.13",
-    "fast-xml-parser": "^4.5.0",
-    "tsx": "^4.19.1"
+    "astro": "^5.14.0"
   },
   "devDependencies": {
-    "@types/node": "^22.7.5",
-    "typescript": "^5.6.3",
-    "aws-cdk": "^2.160.0",
-    "aws-cdk-lib": "^2.160.0",
-    "@aws-sdk/client-bedrock-runtime": "^3.665.0"
+    "@astrojs/check": "^0.9.4",
+    "sharp": "^0.34.0",
+    "typescript": "^5.9.0",
+    "yaml": "^2.8.0"
   }
 }

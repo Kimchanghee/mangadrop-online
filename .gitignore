@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.env*
+!.env.example
+qa/screens/
+qa/*.png
+
+ops/publish-log.dryrun.jsonl
+qa/*.log
