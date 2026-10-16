@@ -1,0 +1,54 @@
+{
+  "observedAt": "2026-10-16T14:55:27.942Z",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "width": 390,
+      "scroll": 390,
+      "ads": 0,
+      "broken": 0
+    },
+    {
+      "route": "/guides/reading-lamp-glare/",
+      "status": 200,
+      "width": 390,
+      "scroll": 390,
+      "ads": 0,
+      "broken": 0
+    },
+    {
+      "route": "/guides/bookshelf-load-anchoring/",
+      "status": 200,
+      "width": 390,
+      "scroll": 390,
+      "ads": 0,
+      "broken": 0
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "width": 1440,
+      "scroll": 1440,
+      "ads": 0,
+      "broken": 0
+    },
+    {
+      "route": "/guides/reading-lamp-glare/",
+      "status": 200,
+      "width": 1440,
+      "scroll": 1440,
+      "ads": 0,
+      "broken": 0
+    },
+    {
+      "route": "/guides/bookshelf-load-anchoring/",
+      "status": 200,
+      "width": 1440,
+      "scroll": 1440,
+      "ads": 0,
+      "broken": 0
+    }
+  ],
+  "http404": 404
+}

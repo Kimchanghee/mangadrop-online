@@ -5,7 +5,7 @@ import siteData from './data/site.json';
 const categorySlugs = siteData.categories.map((c) => c.slug) as [string, ...string[]];
 const isoWithZone = z
   .string()
-  .regex(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(Z|[+-]\d{2}:\d{2})$/, 'ISO datetime with explicit Z or +09:00');
+  .regex(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(?:\.\d+)?)?(Z|[+-]\d{2}:\d{2})$/, 'ISO datetime with explicit Z or +09:00');
 
 const source = z.object({ title: z.string().min(2), url: z.string().url() });
 const faq = z.object({ q: z.string().min(4), a: z.string().min(10) });

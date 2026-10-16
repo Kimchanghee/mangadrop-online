@@ -92,7 +92,7 @@ export function gateSource(file, { kind, logEntries = [], now = new Date(), know
   if (a.length < RULES.answerChars[0] || a.length > RULES.answerChars[1]) e(`answer length ${a.length} not in ${RULES.answerChars.join('–')}`);
   if (!/^[a-z0-9-]+$/.test(String(fm.slug ?? ''))) e('slug must be lowercase a-z0-9-');
   if (!site.categories.some((c) => c.slug === fm.category)) e(`unknown category ${fm.category}`);
-  const iso = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(Z|[+-]\d{2}:\d{2})$/;
+  const iso = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2}(?:\.\d+)?)?(Z|[+-]\d{2}:\d{2})$/;
   for (const k of ['published', 'updated']) if (fm[k] && !iso.test(String(fm[k]))) e(`${k} must be ISO datetime with explicit zone`);
   if (fm.updated && fm.published && String(fm.updated) < String(fm.published)) e('updated earlier than published');
   if (!Array.isArray(fm.sources) || fm.sources.length === 0) e('sources[] empty');

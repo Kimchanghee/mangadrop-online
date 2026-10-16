@@ -29,7 +29,7 @@ export const site = {
 };
 
 export function providerInfo(id: ProviderId) {
-  return (providers as Record<string, { name: string; hosts: string[]; disclosure: string }>)[id];
+  return providers[id];
 }
 
 export function categoryBySlug(slug: string) {
