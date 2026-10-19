@@ -15,7 +15,7 @@ product:
   url: "https://link.coupang.com/a/hYorfxZDDo"
   landingHost: "www.coupang.com"
   verifiedAt: "2026-10-19T18:01:06+09:00"
-  evidence: "ops/evidence/slamdunk-shinjang-set-checklist.md"
+  evidence: "src/content/posts/_evidence/slamdunk-shinjang-set-checklist.md"
   specs:
     - { label: "출판사", value: "대원씨아이" }
     - { label: "구성", value: "신장재편판 1~20권 세트" }
