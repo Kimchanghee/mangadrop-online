@@ -107,8 +107,21 @@ if ($DryRun) {
 } else {
   $intentStream = [System.IO.File]::Open($intent, [System.IO.FileMode]::CreateNew, [System.IO.FileAccess]::Write, [System.IO.FileShare]::None)
   try { $bytes = [Text.Encoding]::UTF8.GetBytes((@{slug=$Slug; attemptedAt=(Get-Date).ToUniversalTime().ToString('o'); buildSha=$buildSha} | ConvertTo-Json)); $intentStream.Write($bytes,0,$bytes.Length); $intentStream.Flush($true) } finally { $intentStream.Dispose() }
-  npx wrangler deploy
-  if ($LASTEXITCODE -ne 0) { Fail 'wrangler deploy failed' }
+  # Same deploy path as _refs/deploy-site.ps1: pinned toolchain wrangler + generated config that keeps apex/www custom domains.
+  if (-not $global:WRANGLER -or -not (Test-Path $global:WRANGLER)) { Fail 'pinned wrangler not available (_refs/cf-env.ps1 must define $WRANGLER)' }
+  if (-not $env:CLOUDFLARE_ACCOUNT_ID) { Fail 'CLOUDFLARE_ACCOUNT_ID missing' }
+  $domain = ([Uri]$site).Host
+  $cfgObj = ((Get-Content (Join-Path $root 'wrangler.jsonc') -Raw) -replace '(?m)^\s*//.*$','') | ConvertFrom-Json
+  $cfgObj | Add-Member -NotePropertyName routes -NotePropertyValue @(@{pattern=$domain; custom_domain=$true}, @{pattern="www.$domain"; custom_domain=$true}) -Force
+  $cfgObj | Add-Member -NotePropertyName account_id -NotePropertyValue $env:CLOUDFLARE_ACCOUNT_ID -Force
+  $cfgObj | Add-Member -NotePropertyName workers_dev -NotePropertyValue $false -Force
+  $cfgObj | Add-Member -NotePropertyName preview_urls -NotePropertyValue $false -Force
+  $deployCfg = Join-Path $root '.wrangler.deploy.json'
+  $cfgObj | ConvertTo-Json -Depth 10 | Set-Content $deployCfg -Encoding utf8
+  node $global:WRANGLER deploy --config $deployCfg
+  $deployExit = $LASTEXITCODE
+  Remove-Item $deployCfg -Force -ErrorAction SilentlyContinue
+  if ($deployExit -ne 0) { Fail 'wrangler deploy failed' }
   $origin = $site
 }
 
