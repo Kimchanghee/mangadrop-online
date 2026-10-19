@@ -123,7 +123,7 @@ a:hover { color: var(--ink); }
 .article { min-width: 0; }
 .article header { border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 18px; }
 .article .meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font: 500 13px/1.5 var(--mono); color: var(--muted); margin: 8px 0 0; }
-.disclosure { background: var(--tape-soft); border-left: 6px solid var(--tape); color: #3b1d10; padding: 12px 14px; margin: 0 0 18px; font-size: 16px; line-height: 1.6; }
+.disclosure { background: var(--tape-soft); border-left: 6px solid var(--tape); color: #3b1d10; padding: 14px 16px; margin: 0 0 18px; font-size: 19px; line-height: 1.6; }
 .disclosure strong { margin-right: 6px; }
 .answer { font-size: var(--body); line-height: 1.8; background: var(--sheet); border: 1px solid var(--rule); border-left: 6px solid var(--track); padding: 14px 16px; margin: 0 0 18px; }
 .answer::before { content: "결론"; display: block; font: 700 12px/1.6 var(--mono); color: var(--track); letter-spacing: 0.1em; }
@@ -138,6 +138,7 @@ a:hover { color: var(--ink); }
 .prose th { background: var(--paper-2); font-weight: 700; white-space: nowrap; }
 .prose blockquote { margin: 0 0 1.2em; padding: 6px 14px; border-left: 4px solid var(--rule); color: var(--ink-2); }
 .prose img { border: 1px solid var(--rule); margin: 0.4em 0 1.2em; }
+.prose img, .article > figure img { width: 100%; max-width: 540px; }
 .faq { margin-top: 36px; border-top: 2px solid var(--ink); }
 .faq h2 { font-size: var(--h2); margin: 14px 0 8px; }
 .faq dt { font-weight: 700; font-size: 18px; margin-top: 16px; }

@@ -5,7 +5,7 @@ question: "슬램덩크 신장재편판 세트를 사기 전에 무엇을 확인
 answer: "신장재편판은 오리지널판 31권을 20권으로 다시 나눈 판본입니다. 세트를 고를 때는 판본 이름, 1~20 전권 여부, 리소스 같은 추가 구성, 출판사와 판매자를 판매 페이지에서 먼저 맞춰 보세요."
 description: "슬램덩크 신장재편판 1~20 세트를 사기 전에 오리지널판·완전판 프리미엄과의 권수 차이, 분할·리소스 포함 세트 구분, 판매 페이지에서 확인할 항목을 정리했습니다."
 published: "2026-10-19T18:09:00+09:00"
-updated: "2026-10-19T18:09:00+09:00"
+updated: "2026-10-19T18:23:00+09:00"
 category: editions
 primaryKeyword: "슬램덩크 신장재편판 세트"
 product:
@@ -22,17 +22,17 @@ product:
     - { label: "발행언어", value: "한국어" }
     - { label: "낱권 판형", value: "117×175mm (서점 표기)" }
 images:
-  - src: "/images/picks/slamdunk-shinjang-set-checklist/edition-volumes.png"
+  - src: "/images/picks/slamdunk-shinjang-set-checklist/edition-volumes-m.png"
     alt: "오리지널판 31권, 신장재편판 20권, 완전판 프리미엄 24권의 권수를 막대로 비교한 도식"
     role: cover
     credit: "MangaDrop 편집팀"
     rights: own
-  - src: "/images/picks/slamdunk-shinjang-set-checklist/set-variants.png"
+  - src: "/images/picks/slamdunk-shinjang-set-checklist/set-variants-m.png"
     alt: "1~20 세트 20권, 리소스 포함 21권, 1~10·11~20 분할 세트를 나란히 비교한 도식"
     role: comparison
     credit: "MangaDrop 편집팀"
     rights: own
-  - src: "/images/picks/slamdunk-shinjang-set-checklist/listing-checklist.png"
+  - src: "/images/picks/slamdunk-shinjang-set-checklist/listing-checklist-m.png"
     alt: "세트 판매 페이지에서 판본 이름, 권 범위, 추가 구성, 출판사와 언어, 판매자를 확인하는 다섯 줄 목록"
     role: detail
     credit: "MangaDrop 편집팀"
@@ -71,7 +71,7 @@ faq:
 
 판매 목록에는 이름이 비슷한 세트가 여러 개 보입니다. 2026년 10월 19일 쿠팡 검색 결과만 봐도 1~20 세트, 1~20에 리소스를 더한 21권 구성, 1~10이나 11~20처럼 일부 권만 묶은 세트가 함께 나왔습니다.
 
-![1~20 세트 20권, 리소스 포함 21권, 분할 세트를 나란히 비교한 도식](/images/picks/slamdunk-shinjang-set-checklist/set-variants.png)
+![1~20 세트 20권, 리소스 포함 21권, 분할 세트를 나란히 비교한 도식](/images/picks/slamdunk-shinjang-set-checklist/set-variants-m.png)
 
 전권을 한 번에 갖추려면 상품명에 1~20, 전20권처럼 범위가 명확히 적힌 상품을 고르세요. 리소스는 본편과 별개인 책이라, 필요하다면 21권 구성을 고르고 필요 없다면 본편 세트만 고르면 됩니다. 포스터 증정 같은 사은품은 판매자별 조건이므로 상품명과 상세 안내에 적힌 내용만 믿고, 적혀 있지 않으면 들어 있지 않다고 보는 편이 안전합니다.
 
@@ -79,7 +79,7 @@ faq:
 
 결제 전에는 다섯 줄만 확인하면 됩니다. 판본 이름, 권 범위, 추가 구성, 출판사와 언어, 판매자입니다.
 
-![세트 판매 페이지에서 확인할 다섯 줄을 정리한 목록 도식](/images/picks/slamdunk-shinjang-set-checklist/listing-checklist.png)
+![세트 판매 페이지에서 확인할 다섯 줄을 정리한 목록 도식](/images/picks/slamdunk-shinjang-set-checklist/listing-checklist-m.png)
 
 이 글에서 연결한 [쿠팡의 슬램덩크 신장재편판 1~20 세트](https://link.coupang.com/a/hYorfxZDDo)는 확인 시점에 출판사 대원씨아이, 발행언어 한국어, 세트 상품으로 표시돼 있었습니다. 대표 판매자는 (주)씨제이이엔엠(CJ온스타일)이었고, 같은 상품에 다른 판매자도 여럿 연결돼 있었습니다.
 
