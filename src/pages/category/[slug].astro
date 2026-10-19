@@ -11,6 +11,8 @@ const { cat } = Astro.props;
 const guides = (await allGuides()).filter((g) => g.data.category === cat.slug);
 const posts = (await allPosts()).filter((p) => p.data.category === cat.slug);
 const path = `/category/${cat.slug}/`;
+const stamps = [...guides.map((g) => g.data.updated), ...posts.map((p) => p.data.updated)].sort();
+const lastUpdated = stamps.length ? ymd(stamps[stamps.length - 1]) : '';
 const title = `${cat.name} 상품 고르는 법과 구매 체크리스트 | ${site.name}`;
 const description = `${cat.blurb} ${cat.name} 체크리스트 ${guides.length}개와 링크를 확인한 상품 추천 글을 한곳에 모았습니다. 각 글에 출처와 수정일을 표시합니다.`;
 const crumbs = [{ name: '홈', href: '/' }, { name: cat.name, href: path }];
@@ -20,7 +22,8 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name:
   <div class="wrap section">
     <p class="log-kicker">{cat.code} · CATEGORY LOG</p>
     <h1 class="log-title">{cat.name} 상품, 무엇부터 확인할까?</h1>
-    <p class="lede">{cat.blurb} 아래 체크리스트를 먼저 보고, 상품 추천 글은 링크가 실제 옵션으로 연결되는지 확인된 것만 모았습니다.</p>
+    <p class="lede"><strong>{cat.name} 상품은 사기 전에 판본·구성·크기처럼 판매 페이지에서 확인할 수 있는 조건부터 맞춰 보세요.</strong> {cat.blurb} 아래 체크리스트를 먼저 보고, 상품 추천 글은 링크가 실제 옵션으로 연결되는지 확인된 것만 모았습니다.</p>
+    {lastUpdated && <p class="date">최근 수정 <time datetime={lastUpdated}>{lastUpdated}</time> · 체크리스트 {guides.length}개 · 추천 글 {posts.length}개</p>}
     <div class="section__head" style="margin-top:24px"><h2>체크리스트</h2><p>{guides.length} logs</p></div>
     <table class="logtable">
       <tbody>{guides.map((g) => (
