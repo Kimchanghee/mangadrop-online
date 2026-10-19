@@ -68,12 +68,31 @@ $site = $fm.siteUrl
 
 # 2. build + full built-page gate for this slug
 $env:ASTRO_TELEMETRY_DISABLED = '1'
+# Public build env: GA4 id (required) and Naver verification (optional) from the parent _refs folder.
+$refs = Join-Path (Split-Path -Parent $root) '_refs'
+if ($staged) { $refs = Join-Path $stageInfo.sourceRoot '..\_refs' }
+$gaFile = Join-Path $refs 'ga4-ids.json'
+if (-not (Test-Path $gaFile)) { Fail "GA4 id file not found: $gaFile" }
+$gaId = (Get-Content $gaFile -Raw | ConvertFrom-Json).mangadrop.id
+if ($gaId -notmatch '^G-[A-Z0-9]+$') { Fail 'GA4 id for mangadrop missing or malformed' }
+$env:PUBLIC_GA4_ID = $gaId
+$naverFile = Join-Path $refs 'naver-verification\tokens.json'
+if (Test-Path $naverFile) {
+  $naverToken = (Get-Content $naverFile -Raw | ConvertFrom-Json).tokens.'mangadrop.online'
+  if ($naverToken -and $naverToken -notmatch '^[A-Za-z0-9_-]{10,100}$') { Fail 'Naver verification token malformed' }
+  if ($naverToken) { $env:PUBLIC_NAVER_VERIFICATION = $naverToken }
+}
+if (-not $DryRun) { $cfEnv = Join-Path $refs 'cf-env.ps1'; if (Test-Path $cfEnv) { . $cfEnv } }
 node scripts/og.mjs
 if ($LASTEXITCODE -ne 0) { Fail 'OG generation failed' }
 node node_modules/astro/astro.js build --force
 if ($LASTEXITCODE -ne 0) { Fail 'build failed' }
 node scripts/gate.mjs --slug $Slug --log $log
 if ($LASTEXITCODE -ne 0) { Fail 'built-page gate failed' }
+$builtHome = Get-Content (Join-Path $root 'dist/index.html') -Raw
+if (-not $builtHome.Contains($gaId)) { Fail "GA4 id $gaId not found in dist/index.html" }
+if ($env:PUBLIC_NAVER_VERIFICATION -and -not $builtHome.Contains('naver-site-verification')) { Fail 'Naver verification meta missing from dist/index.html' }
+if ($builtHome -match 'adsbygoogle\.js|pagead2\.googlesyndication\.com/pagead/js') { Fail 'ad loader present in build; ads must stay OFF' }
 $buildSha = if ($staged) { $stageInfo.buildSha } else { (git rev-parse --short HEAD).Trim() }
 
 # 3. deploy (skipped in DryRun) and choose verification origin
