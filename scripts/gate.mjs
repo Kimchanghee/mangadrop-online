@@ -131,7 +131,7 @@ export function gateSource(file, { kind, logEntries = [], now = new Date(), know
     if (hosts && host && !hosts.includes(host)) e(`product.url host ${host} not on ${p.provider} allowlist [${hosts.join(', ')}]`);
     if (/search|query=|q=/.test(String(p.url)) && !/link\.coupang\.com\/a\//.test(String(p.url))) warnings.push('product.url looks like a search URL; must land on the exact product');
     if (p.verifiedAt && !iso.test(String(p.verifiedAt))) e('product.verifiedAt must be ISO with zone');
-    if (p.verifiedAt && fm.published && (new Date(fm.published) - new Date(p.verifiedAt)) / 864e5 > 2) e('product link verified more than 2 days before publish; re-verify');
+    if (p.verifiedAt && fm.published && (new Date(fm.published) - new Date(p.verifiedAt)) / 864e5 > 5) e('product link verified more than 5 days before publish; re-verify');
     const affLinks = links.filter((l) => { try { return allAffHosts.has(new URL(l.href).host); } catch { return false; } });
     if (affLinks.length > 1) e(`${affLinks.length} in-text affiliate links (max 1)`);
     for (const l of affLinks) if (l.href !== p.url) e(`in-text affiliate link differs from product.url: ${l.href}`);

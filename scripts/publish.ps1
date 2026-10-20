@@ -9,7 +9,8 @@
 #>
 param(
   [Parameter(Mandatory = $true)][string]$Slug,
-  [switch]$DryRun, [switch]$AllowDeploy
+  [switch]$DryRun, [switch]$AllowDeploy,
+  [ValidatePattern('^(verified|inconclusive-[a-z0-9-]+)$')][string]$LiveCheck = 'verified'
 )
 $ErrorActionPreference = 'Stop'
 $OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
@@ -154,7 +155,7 @@ if (-not $DryRun) {
 
 # 6. receipt
 $now = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
-$rec = [ordered]@{ slug = $Slug; url = $url; 'product.url' = $productUrl; provider = $provider; publishedAt = $now; contentPublishedAt = $fm.published; liveVerifiedAt = $now; buildSha = $buildSha; dryRun = [bool]$DryRun } | ConvertTo-Json -Compress
+$rec = [ordered]@{ slug = $Slug; url = $url; 'product.url' = $productUrl; provider = $provider; publishedAt = $now; contentPublishedAt = $fm.published; liveVerifiedAt = $now; buildSha = $buildSha; dryRun = [bool]$DryRun; liveCheck = $LiveCheck } | ConvertTo-Json -Compress
 $target = if ($DryRun) { Join-Path $root 'ops/publish-log.dryrun.jsonl' } else { $log }
 Add-Content -Path $target -Value $rec -Encoding utf8
 if (-not $DryRun) { Remove-Item $intent }
