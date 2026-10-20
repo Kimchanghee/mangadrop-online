@@ -1,48 +1,5 @@
 [
   {
-    "slug": "naruto-1-72-set-checklist",
-    "productName": "나루토 묶음세트 1-72권 완결 (대원씨아이)",
-    "option": "1~72권 전권 세트 · 한국어 · 쿠팡상품번호 64819755-219242716 · vendorItemId 81460100844",
-    "sourceURL": "https://www.coupang.com/vp/products/64819755?itemId=219242716&vendorItemId=81460100844",
-    "issuedURI": "https://link.coupang.com/a/hYquH5Qg0W",
-    "linkIssuedAt": "2026-10-19T09:29:41.166Z",
-    "factsFile": "ops/queue/evidence/naruto-1-72-set-checklist.md",
-    "images": [
-      "ops/queue/images/naruto-1-72-set-checklist/naruto-numbers-m.png",
-      "ops/queue/images/naruto-1-72-set-checklist/naruto-codes-m.png",
-      "ops/queue/images/naruto-1-72-set-checklist/naruto-arrival-m.png"
-    ],
-    "diagramSpec": "ops/diagrams/naruto-1-72-set-checklist.json",
-    "dryRunPassedAt": "2026-10-19T09:32:49.188Z",
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 32/32 gate)",
-    "publishNotes": [
-      "Gate requires product.verifiedAt within 2 days of published: re-open the Coupang listing and refresh verifiedAt/published/updated before real publish, or re-issue the link.",
-      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
-    ],
-    "serp": {
-      "originalsReadInFull": [
-        "https://m.blog.naver.com/wstpark/221947969103",
-        "https://m.blog.naver.com/PostView.naver?blogId=blue9091&logNo=220374178771",
-        "https://m.blog.naver.com/fkelrhd35/220530415621"
-      ],
-      "retailerFacts": [
-        "Aladin set 238302198: ISBN 9788952811462, 124*176mm B6신, 품절 확인일 2026-09-16 출판사 유통 중단",
-        "YES24 set 3772921: 새 상품 구매 불가",
-        "YES24 eBook set 19596938: ISBN13 9791133686582",
-        "Kyobo vol72 S000060626927: ISBN 9791168944916, 2015-05-30"
-      ],
-      "omitted": [
-        "Aladin weight 15,120g (equals page count; likely data artifact)",
-        "set page counts (YES24 12,380 vs Aladin 15,120)"
-      ]
-    },
-    "verifyTokens": [
-      "1-72권",
-      "9788925283814",
-      "64819755"
-    ]
-  },
-  {
     "slug": "onepiece-part1-box-set-checklist",
     "productName": "원피스 제1부 박스세트 (대원씨아이)",
     "option": "동쪽의 바다 + 모래의 나라 + 하늘의 섬 · 1~32권 · 박스 3개 묶음 · 쿠팡상품번호 8918081728-26058614279 · vendorItemId 93039950997",
