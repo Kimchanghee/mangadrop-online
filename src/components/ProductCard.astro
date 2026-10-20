@@ -1,19 +1,44 @@
 ---
+// Catalogue card. The slipcase graphic is drawn in CSS from frontmatter (product.box): one tick per
+// volume, one segment per box/range, so every number shown stays exact. No retailer or cover art.
 import { providerInfo, type ProviderId } from '../site.config';
+interface Box { label: string; ranges: { from: number; to: number; name?: string }[]; extra?: string }
 interface Props {
-  product: { name: string; optionDetail: string; provider: ProviderId; url: string; verifiedAt: string; specs: { label: string; value: string }[] };
+  product: { name: string; optionDetail: string; provider: ProviderId; url: string; verifiedAt: string; specs: { label: string; value: string }[]; box?: Box };
   variant: 'side' | 'inline';
 }
 const { product, variant } = Astro.props;
 const p = providerInfo(product.provider);
+const box = product.box;
+const total = box ? box.ranges.reduce((n, r) => n + (r.to - r.from + 1), 0) : 0;
+const first = box ? Math.min(...box.ranges.map((r) => r.from)) : 0;
+const last = box ? Math.max(...box.ranges.map((r) => r.to)) : 0;
+const rangeText = box ? `${first}–${last}권${box.extra ? ` · ${box.extra}` : ''}` : '';
+const name = product.name.replace(/\s*\([^)]*\)\s*$/, '');
+const opt = product.optionDetail.split(' · ').filter((s) => !/쿠팡상품번호|vendorItemId/.test(s)).join(' · ');
+const verified = product.verifiedAt.slice(0, 10);
 ---
-<aside class={`product-card ${variant === 'inline' ? 'product-card--inline' : ''}`} aria-label="이 글의 상품">
-  <p class="product-card__label">CHECKED ITEM · {p.name}</p>
-  <p class="product-card__name">{product.name}</p>
-  <p class="product-card__opt">{product.optionDetail}</p>
-  {product.specs.length > 0 && (
-    <dl>{product.specs.slice(0, 4).map((s) => (<><dt>{s.label}</dt><dd>{s.value}</dd></>))}</dl>
+<aside class={`card ${variant === 'inline' ? 'card--inline' : 'card--side'}`} aria-label="이 글의 상품">
+  {box && (
+    <div class="card__box" aria-hidden="true">
+      <span class="card__part">{box.label}</span>
+      <span class={`ticks${total > 40 ? ' ticks--dense' : ''}`}>
+        {box.ranges.map((r) => (
+          <span class="ticks__seg" style={`--n:${r.to - r.from + 1}`}>{Array.from({ length: r.to - r.from + 1 }, () => <i></i>)}</span>
+        ))}
+      </span>
+      <span class="card__range">{rangeText}</span>
+    </div>
   )}
-  <a class="btn-buy" href={product.url} rel="sponsored nofollow noopener" target="_blank" data-product-link={variant}>{p.name}에서 옵션 확인</a>
-  <p class="product-card__note">제휴 링크 · 링크 확인 {product.verifiedAt.slice(0, 10)} · 가격과 재고는 판매 페이지 기준</p>
+  <div class="card__body">
+    <p class="card__label">이 글에서 확인한 상품</p>
+    <p class="card__name">{name}</p>
+    {variant === 'inline' || product.specs.length === 0 ? (
+      <p class="card__opt">{opt}</p>
+    ) : (
+      <dl class="card__specs">{product.specs.slice(0, 5).map((s) => (<><dt>{s.label}</dt><dd>{s.value}</dd></>))}</dl>
+    )}
+    <a class="btn btn--wide" href={product.url} rel="sponsored nofollow noopener" target="_blank" data-product-link={variant}>{p.name.replace(' 파트너스', '')}에서 구성 확인하기</a>
+    <p class="card__note">제휴 링크 · {verified} 확인 · 가격과 재고는 판매 페이지 기준</p>
+  </div>
 </aside>

@@ -9,7 +9,7 @@ const crumbs = [{ name: '홈', href: '/' }, { name: h1, href: path }];
     <article class="page">
       <p class="log-kicker">{kicker}</p>
       <h1 class="log-title">{h1}</h1>
-      <p class="meta" style="font-family:var(--mono);font-size:13px;color:var(--muted)">최종 수정 <time datetime={updated}>{updated}</time></p>
+      <p class="meta">최종 수정 <time datetime={updated}>{updated}</time></p>
       <slot />
       <p style="margin-top:2em"><a href="/">홈</a> · <a href="/guides/">체크리스트</a> · <a href="/about/">소개</a></p>
     </article>

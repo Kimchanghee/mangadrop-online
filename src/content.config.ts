@@ -15,7 +15,17 @@ const image = z.object({
   role: z.enum(['cover', 'context', 'detail', 'comparison', 'use']),
   credit: z.string().min(2),
   rights: z.enum(['generated', 'provider-api', 'own']),
+  // collector-v2: scene photos only; never manga cover art, characters, logos or legible titles.
+  artwork: z.literal('none').optional(),
+  width: z.number().int().positive().optional(),
+  height: z.number().int().positive().optional(),
 });
+const box = z.object({
+  label: z.string().min(1),
+  ranges: z.array(z.object({ from: z.number().int().min(1), to: z.number().int().min(1), name: z.string().optional() })).min(1),
+  extra: z.string().optional(),
+});
+const checkItem = z.object({ label: z.string().min(1), text: z.string().min(4) });
 
 // Hourly affiliate posts. Files in src/content/posts/_examples/ are excluded (pattern is top-level only).
 const posts = defineCollection({
@@ -39,7 +49,11 @@ const posts = defineCollection({
       verifiedAt: isoWithZone,
       evidence: z.string().min(3),
       specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
+      box: box.optional(),
     }),
+    format: z.enum(['collector-v2']).optional(),
+    checklist: z.array(checkItem).max(8).default([]),
+    toc: z.array(z.string()).max(6).optional(),
     images: z.array(image).min(1),
     sources: z.array(source).min(1),
     faq: z.array(faq).default([]),

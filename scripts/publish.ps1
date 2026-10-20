@@ -84,6 +84,8 @@ if (Test-Path $naverFile) {
   if ($naverToken) { $env:PUBLIC_NAVER_VERIFICATION = $naverToken }
 }
 if (-not $DryRun) { $cfEnv = Join-Path $refs 'cf-env.ps1'; if (Test-Path $cfEnv) { . $cfEnv } }
+node scripts/fonts.mjs
+if ($LASTEXITCODE -ne 0) { Fail 'font subset build failed' }
 node scripts/og.mjs
 if ($LASTEXITCODE -ne 0) { Fail 'OG generation failed' }
 node node_modules/astro/astro.js build --force

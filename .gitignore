@@ -9,3 +9,6 @@ qa/*.png
 
 ops/publish-log.dryrun.jsonl
 qa/*.log
+
+# build-time font subset (scripts/fonts.mjs)
+public/fonts/GowunBatang-Bold.subset.woff2

@@ -12,10 +12,12 @@ interface Props {
   ogType?: 'website' | 'article';
   jsonld?: Record<string, unknown>[];
   crumbs?: Crumb[];
+  showCrumbs?: boolean;
   published?: string;
   updated?: string;
+  preloadImage?: string;
 }
-const { title, description, path, ogImage = '/og/home.png', ogType = 'website', jsonld = [], crumbs = [], published, updated } = Astro.props;
+const { title, description, path, ogImage = '/og/home.png', ogType = 'website', jsonld = [], crumbs = [], showCrumbs = true, published, updated, preloadImage } = Astro.props;
 const canonical = abs(path);
 const orgId = `${site.url}/#organization`;
 const baseLd: Record<string, unknown>[] = [
@@ -30,11 +32,10 @@ if (crumbs.length) {
 }
 const allLd = [...baseLd, ...jsonld];
 const nav = [
-  { href: '/guides/', label: '체크리스트', code: 'LOG' },
-  ...site.categories.map((c) => ({ href: `/category/${c.slug}/`, label: c.name, code: c.code })),
+  { href: '/guides/', label: '체크리스트' },
+  ...site.categories.map((c) => ({ href: `/category/${c.slug}/`, label: c.name })),
 ];
 const current = Astro.url.pathname;
-
 ---
 <!doctype html>
 <html lang="ko">
@@ -47,7 +48,9 @@ const current = Astro.url.pathname;
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="alternate" type="application/rss+xml" title={`${site.name} RSS`} href="/rss.xml" />
-  <meta name="theme-color" content="#f6f4ee" />
+  <link rel="preload" href="/fonts/GowunBatang-Bold.subset.woff2" as="font" type="font/woff2" crossorigin />
+  {preloadImage && <link rel="preload" href={preloadImage} as="image" fetchpriority="high" />}
+  <meta name="theme-color" content="#f4efe5" />
   <meta property="og:type" content={ogType} />
   <meta property="og:site_name" content={site.name} />
   <meta property="og:locale" content="ko_KR" />
@@ -71,35 +74,31 @@ const current = Astro.url.pathname;
 </head>
 <body>
   <a class="skip" href="#main">본문으로 건너뛰기</a>
-  <header class="sheet-head">
-    <div class="sheet-head__row wrap">
-      <a class="brand" href="/" aria-label={`${site.name} 홈`}>
-        <span class="brand__mark" aria-hidden="true">MD</span>
-        <span class="brand__text"><strong>{site.name}</strong><span>{site.tagline}</span></span>
-      </a>
-      <p class="sheet-head__stamp" aria-hidden="true">COLLECTOR LIBRARY</p>
+  <header class="mast">
+    <div class="mast__in wrap">
+      <a class="mast__brand" href="/" aria-label={`${site.name} 홈`}>{site.name}<small>{site.tagline}</small></a>
+      <nav aria-label="주요 메뉴">
+        <ul>
+          {nav.map((n) => (
+            <li><a href={n.href} aria-current={current.startsWith(n.href) ? 'page' : undefined}>{n.label}</a></li>
+          ))}
+        </ul>
+      </nav>
     </div>
-    <nav class="tabs wrap" aria-label="주요 메뉴">
-      <ul>
-        {nav.map((n) => (
-          <li><a href={n.href} aria-current={current.startsWith(n.href) ? 'page' : undefined}><span class="tabs__code">{n.code}</span>{n.label}</a></li>
-        ))}
-      </ul>
-    </nav>
   </header>
-  {crumbs.length > 1 && (
+  {showCrumbs && crumbs.length > 1 && (
     <nav class="crumbs wrap" aria-label="현재 위치">
       <ol>{crumbs.map((c, i) => <li>{i < crumbs.length - 1 ? <a href={c.href}>{c.name}</a> : <span aria-current="page">{c.name}</span>}</li>)}</ol>
     </nav>
   )}
   <main id="main"><slot /></main>
-  <footer class="sheet-foot">
-    <div class="wrap sheet-foot__grid">
+  <footer class="foot">
+    <div class="wrap foot__grid">
       <div>
-        <p class="sheet-foot__brand">{site.name} <span>{site.nameEn}</span></p>
-        <p class="sheet-foot__disclosure"><strong>제휴 고지</strong> 일부 글에는 쿠팡 파트너스, 오늘의집, 토스쇼핑, 네이버 쇼핑커넥트 제휴 링크가 들어갈 수 있으며, 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있습니다. 해당 글은 맨 위에 제휴 사실을 따로 밝힙니다.</p>
+        <p class="foot__brand">{site.name} <span>{site.tagline}</span></p>
+        <p class="foot__disclosure"><strong>제휴 고지</strong> 일부 글에는 쿠팡 파트너스, 오늘의집, 토스쇼핑, 네이버 쇼핑커넥트 제휴 링크가 들어갈 수 있으며, 링크를 통해 구매하면 운영자가 일정 수수료를 받을 수 있습니다. 해당 글은 맨 위에 제휴 사실을 따로 밝힙니다.</p>
       </div>
-      <ul class="sheet-foot__links">
+      <ul class="foot__links">
         <li><a href="/about/">소개·편집 원칙</a></li>
         <li><a href="/methodology/">상품 선정 방법</a></li>
         <li><a href="/contact/">문의</a></li>

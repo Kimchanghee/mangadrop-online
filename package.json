@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "og": "node scripts/og.mjs",
-    "build": "node scripts/og.mjs && astro build --force",
+    "fonts": "node scripts/fonts.mjs",
+    "build": "node scripts/fonts.mjs && node scripts/og.mjs && astro build --force",
     "preview": "astro preview --port 4321",
     "check": "astro check",
     "gate": "node scripts/gate.mjs",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "sharp": "^0.34.0",
+    "subset-font": "2.4.0",
     "typescript": "^5.9.0",
     "yaml": "^2.8.0"
   }

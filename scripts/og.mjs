@@ -1,5 +1,5 @@
 // Build-time OG image generator: designed SVG -> 1200x630 PNG via sharp. Writes public/og/**.
-// Design: training-log sheet (ruled paper, code tab, stamped date). Skips files that are already up to date.
+// Design: collector's bookshop card (warm paper, double rule, serif title, volume ticks). Skips up-to-date files.
 import { readFileSync, readdirSync, mkdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -27,25 +27,24 @@ function frontmatter(file) {
 }
 
 function svg({ code, kicker, title, date }) {
-  const lines = wrap(title, 17);
-  const rules = Array.from({ length: 19 }, (_, i) => `<line x1="0" y1="${i * 34}" x2="1200" y2="${i * 34}" stroke="#17201c" stroke-opacity="0.06"/>`).join('');
+  // Collector's bookshop card: warm paper, double rule, oxblood accent, serif title, CSS-like volume ticks.
+  const lines = wrap(title, 16);
+  const serif = "'Gowun Batang', 'Batang', 'Noto Serif KR', serif";
+  const sans = "'Pretendard', 'Malgun Gothic', sans-serif";
+  const ticks = Array.from({ length: 17 }, (_, i) => `<rect x="${806 + i * 20}" y="472" width="16" height="74" fill="${i === 0 || i === 16 ? '#f2d9cf' : '#fbf8f2'}" stroke="${i === 0 || i === 16 ? '#8a2f22' : '#bfae92'}" stroke-width="2"/>`).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#f8f3e9"/>${rules}
-  <rect x="0" y="0" width="1200" height="96" fill="#fffdf8"/><line x1="0" y1="96" x2="1200" y2="96" stroke="#17201c" stroke-width="4"/>
-  <rect x="56" y="26" width="64" height="44" fill="none" stroke="#17201c" stroke-width="3"/>
-  <text x="88" y="57" font-family="Consolas, monospace" font-size="22" font-weight="700" fill="#17201c" text-anchor="middle">MD</text>
-  <text x="140" y="58" font-family="Malgun Gothic, sans-serif" font-size="28" font-weight="700" fill="#17201c">${esc(site.name)}</text>
-  <g transform="rotate(-3 1030 50)"><rect x="900" y="28" width="250" height="44" fill="none" stroke="#a8431a" stroke-width="3"/>
-  <text x="1025" y="58" font-family="Consolas, monospace" font-size="20" font-weight="700" fill="#a8431a" text-anchor="middle">${esc(date)}</text></g>
-  <rect x="56" y="150" width="120" height="52" fill="#78344d"/>
-  <text x="116" y="185" font-family="Consolas, monospace" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">${esc(code)}</text>
-  <text x="196" y="186" font-family="Malgun Gothic, sans-serif" font-size="26" fill="#56615b">${esc(kicker)}</text>
-  ${lines.map((l, i) => `<text x="56" y="${290 + i * 78}" font-family="Malgun Gothic, sans-serif" font-size="62" font-weight="700" fill="#17201c">${esc(l)}</text>`).join('')}
-  <rect x="56" y="540" width="30" height="30" fill="none" stroke="#17201c" stroke-width="3"/><path d="M62 554 l7 8 l13 -16" fill="none" stroke="#78344d" stroke-width="4"/>
-  <text x="102" y="565" font-family="Malgun Gothic, sans-serif" font-size="26" fill="#3a4540">사기 전에 체크할 항목 · ${esc(site.domain)}</text>
+  <rect width="1200" height="630" fill="#f4efe5"/>
+  <text x="64" y="78" font-family="${serif}" font-size="38" font-weight="700" fill="#231e18">${esc(site.name)}</text>
+  <text x="232" y="76" font-family="${sans}" font-size="22" fill="#6e6457">${esc(site.tagline)}</text>
+  <line x1="0" y1="106" x2="1200" y2="106" stroke="#2b241d" stroke-width="2"/><line x1="0" y1="112" x2="1200" y2="112" stroke="#2b241d" stroke-width="2"/>
+  <text x="64" y="180" font-family="${sans}" font-size="26" font-weight="700" fill="#8a2f22">${esc(kicker)}</text>
+  ${lines.map((l, i) => `<text x="64" y="${270 + i * 76}" font-family="${serif}" font-size="60" font-weight="700" fill="#231e18">${esc(l)}</text>`).join('')}
+  <rect x="790" y="430" width="362" height="150" fill="#e9e1d2" stroke="#cdbfa8" stroke-width="2"/>${ticks}
+  <text x="806" y="460" font-family="${serif}" font-size="22" font-weight="700" fill="#231e18">${esc(code)}</text>
+  <rect x="64" y="520" width="28" height="28" fill="#fbf8f2" stroke="#231e18" stroke-width="3"/>
+  <text x="108" y="544" font-family="${sans}" font-size="24" fill="#4a4239">사기 전에 확인할 것 · ${esc(site.domain)} · ${esc(date)}</text>
 </svg>`;
 }
-
 async function render(rel, spec) {
   const file = join(out, rel);
   mkdirSync(dirname(file), { recursive: true });
@@ -60,9 +59,9 @@ async function render(rel, spec) {
 
 const today = 'SINCE 2026-10';
 const jobs = [
-  ['home.png', { code: 'LOG', kicker: 'COLLECTOR LIBRARY', title: '만화책과 독서 용품, 사기 전에 체크할 항목', date: today }],
-  ['guides.png', { code: 'ALL', kicker: '전체 체크리스트', title: '만화책과 독서 용품 구매 체크리스트 전체 목록', date: today }],
-  ...site.categories.map((c) => [`category/${c.slug}.png`, { code: c.code, kicker: 'CATEGORY', title: `${c.name} 장비 고르는 법`, date: today }]),
+  ['home.png', { code: '서가', kicker: '수집 서가', title: '만화책과 독서 용품, 사기 전에 체크할 항목', date: today }],
+  ['guides.png', { code: '체크리스트', kicker: '전체 체크리스트', title: '만화책과 독서 용품 구매 체크리스트 전체 목록', date: today }],
+  ...site.categories.map((c) => [`category/${c.slug}.png`, { code: c.name, kicker: '서가 분류', title: `${c.name}, 무엇부터 확인할까`, date: today }]),
 ];
 for (const [dir, base] of [['src/content/guides', 'guides'], ['src/content/posts', 'picks']]) {
   const p = join(root, dir);
@@ -71,7 +70,7 @@ for (const [dir, base] of [['src/content/guides', 'guides'], ['src/content/posts
     const fm = frontmatter(join(p, f));
     if (!fm) continue;
     const cat = site.categories.find((c) => c.slug === fm.category);
-    jobs.push([`${base}/${fm.slug}.png`, { code: cat?.code ?? 'SD', kicker: base === 'guides' ? `${cat?.name ?? ''} 체크리스트` : `${cat?.name ?? ''} 추천`, title: fm.title, date: String(fm.updated).slice(0, 10) }]);
+    jobs.push([`${base}/${fm.slug}.png`, { code: cat?.name ?? '망가드롭', kicker: base === 'guides' ? `${cat?.name ?? ''} 체크리스트` : `${cat?.name ?? ''} 추천`, title: fm.title, date: String(fm.updated).slice(0, 10) }]);
   }
 }
 let made = 0;

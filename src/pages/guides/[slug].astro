@@ -25,26 +25,29 @@ const ld = [articleLd('guide', guide, path, og), faqLd(d.faq)].filter(Boolean) a
 const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/${cat.slug}/` }, { name: d.title, href: path } ];
 ---
 <Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} published={d.published} updated={d.updated}>
-  <div class="wrap article-grid article-grid--solo">
+  <div class="wrap article-grid">
     <article class="article" data-gate="article">
-      <header>
-        <div class="log-kicker">{code} · {cat.name} 체크리스트</div>
-        <h1 class="log-title">{d.title}</h1>
+      <header class="lede-block">
+        <p class="kicker"><a href={`/category/${cat.slug}/`}>{cat.name}</a><span aria-hidden="true">·</span>체크리스트 {code}</p>
+        <h1>{d.title}</h1>
+        <p class="byline">{site.name} 편집팀 · 작성 <time datetime={d.published}>{ymd(d.published)}</time> · 수정 <time datetime={d.updated}>{ymd(d.updated)}</time> · 자료 기준일 {d.data_asof}</p>
       </header>
-      <p class="answer" data-gate="answer">{d.answer}</p>
-      <div class="meta" style="margin:0 0 18px"><span>작성 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>자료 기준일 {d.data_asof}</span></div>
+      <section class="answer-box" aria-labelledby="answer-h">
+        <h2 id="answer-h" class="answer-box__label">짧은 답</h2>
+        <p class="answer" data-gate="answer">{d.answer}</p>
+      </section>
       <Checklist items={d.checklist} id={d.slug} />
       <div class="prose" data-gate="body"><Content /></div>
       <AdSlot id="guide-end" />
       {d.faq.length > 0 && (
         <section class="faq" data-gate="faq" aria-labelledby="faq-h">
           <h2 id="faq-h">자주 묻는 질문</h2>
-          <dl>{d.faq.map((f) => (<><dt>{f.q}</dt><dd>{f.a}</dd></>))}</dl>
+          {d.faq.map((f, i) => (<details open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>))}
         </section>
       )}
       <section class="sources" data-gate="sources">
-        <h2>SOURCES · 기준일 {d.data_asof}</h2>
-        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}</ul>
+        <h2>참고한 자료 · 기준일 {d.data_asof}</h2>
+        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener" target="_blank">{s.title}</a></li>)}</ul>
       </section>
       <nav class="related" aria-labelledby="rel-h">
         <h2 id="rel-h">이어서 볼 체크리스트</h2>
@@ -52,10 +55,10 @@ const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/
         <p><a href={`/category/${cat.slug}/`}>{cat.name} 전체 보기</a> · <a href="/methodology/">상품 선정 방법</a></p>
       </nav>
     </article>
-    <aside class="side" aria-label="서가 분류 정보">
-      <div class="side__sticky">
+    <aside class="rail" aria-label="서가 분류 정보">
+      <div class="rail__sticky">
         <div class="side-card">
-          <h2>LIBRARY CARD</h2>
+          <h2>서가 카드</h2>
           <dl>
             <dt>코드</dt><dd>{code}</dd>
             <dt>분류</dt><dd>{cat.name}</dd>

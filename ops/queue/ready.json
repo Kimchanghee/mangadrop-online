@@ -8,16 +8,18 @@
     "linkIssuedAt": "2026-10-20T05:36:37.000Z",
     "factsFile": "ops/queue/evidence/onepiece-part1-box-set-checklist.md",
     "images": [
-      "ops/queue/images/onepiece-part1-box-set-checklist/op1-boxes-m.png",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op1-extras-m.png",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op1-check-m.png"
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-delivery-carton.webp",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-extras-acrylic.webp",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-hero-sideboard.webp",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-row-count.webp",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-three-widths.webp",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-white-shelf-gap.webp",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op-window-seat.webp"
     ],
-    "diagramSpec": "ops/diagrams/onepiece-part1-box-set-checklist.json",
-    "dryRunPassedAt": "2026-10-20T12:57:13.644Z",
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, collector-v2 gate)",
     "publishNotes": [
-      "Gate requires product.verifiedAt within 2 days of published: re-open the Coupang listing and refresh verifiedAt/published/updated before real publish, or re-issue the link.",
-      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
+      "shop-publisher re-checks sourceURL, refreshes verifiedAt/published/updated, copies images by basename to the src paths named in frontmatter (lib.mjs imageTargets), then runs scripts/publish.ps1.",
+      "Format contract: ops/POSTING-RULES.md (collector-v2)."
     ],
     "serp": {
       "originalsReadInFull": [
@@ -53,7 +55,12 @@
       "원피스 제1부 박스세트",
       "9791160073416",
       "8918081728"
-    ]
+    ],
+    "manuscript": "ops/queue/onepiece-part1-box-set-checklist.md",
+    "format": "collector-v2",
+    "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass",
+    "imageJobs": "channel-ops/ops/state/mangadrop-redesign-20261021",
+    "dryRunPassedAt": "2026-10-20T15:49:03.957Z"
   },
   {
     "slug": "aot-box-set-part1-checklist",
@@ -67,16 +74,18 @@
     "evidence": "ops/queue/evidence/aot-box-set-part1-checklist.md",
     "factsFile": "ops/queue/evidence/aot-box-set-part1-checklist.md",
     "images": [
-      "ops/queue/images/aot-box-set-part1-checklist/aot-boxes-m.png",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-confuse-m.png",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-check-m.png"
+      "ops/queue/images/aot-box-set-part1-checklist/aot-box-corner-check.webp",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-care-storage.webp",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-hero-shelf.webp",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-reading-nook.webp",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-shelf-measure.webp",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-two-boxes.webp",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-unboxing.webp"
     ],
-    "diagramSpec": "ops/diagrams/aot-box-set-part1-checklist.json",
-    "dryRunPassedAt": "2026-10-20T12:56:39.855Z",
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, collector-v2 gate)",
     "publishNotes": [
-      "Gate requires product.verifiedAt within 5 days of published: the shop-publisher re-checks sourceURL and refreshes verifiedAt/published/updated at publish.",
-      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
+      "shop-publisher re-checks sourceURL, refreshes verifiedAt/published/updated, copies images by basename to the src paths named in frontmatter (lib.mjs imageTargets), then runs scripts/publish.ps1.",
+      "Format contract: ops/POSTING-RULES.md (collector-v2)."
     ],
     "serp": {
       "googleQuery": "진격의 거인 박스세트 part1",
@@ -107,7 +116,11 @@
       "진격의 거인 박스세트 PART 1",
       "6911263923",
       "PVC카드 17매"
-    ]
+    ],
+    "format": "collector-v2",
+    "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass",
+    "imageJobs": "channel-ops/ops/state/mangadrop-concept-aot-20261020",
+    "dryRunPassedAt": "2026-10-20T15:35:19.777Z"
   },
   {
     "slug": "haikyu-1-45-set-checklist",
@@ -121,16 +134,18 @@
     "evidence": "ops/queue/evidence/haikyu-1-45-set-checklist.md",
     "factsFile": "ops/queue/evidence/haikyu-1-45-set-checklist.md",
     "images": [
-      "ops/queue/images/haikyu-1-45-set-checklist/hq-volumes-m.png",
-      "ops/queue/images/haikyu-1-45-set-checklist/hq-confuse-m.png",
-      "ops/queue/images/haikyu-1-45-set-checklist/hq-check-m.png"
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-bookends-desk.webp",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-carton-bundles.webp",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-floor-cushion.webp",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-hero-long-row.webp",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-shelf-depth.webp",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-spine-run-check.webp",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-stacks-of-five.webp"
     ],
-    "diagramSpec": "ops/diagrams/haikyu-1-45-set-checklist.json",
-    "dryRunPassedAt": "2026-10-20T12:56:57.517Z",
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, collector-v2 gate)",
     "publishNotes": [
-      "Gate requires product.verifiedAt within 5 days of published: the shop-publisher re-checks sourceURL and refreshes verifiedAt/published/updated at publish.",
-      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
+      "shop-publisher re-checks sourceURL, refreshes verifiedAt/published/updated, copies images by basename to the src paths named in frontmatter (lib.mjs imageTargets), then runs scripts/publish.ps1.",
+      "Format contract: ops/POSTING-RULES.md (collector-v2)."
     ],
     "serp": {
       "googleQuery": "하이큐 1-45 전권 세트",
@@ -162,6 +177,10 @@
       "하이큐!! 1~45권 세트 전 45권",
       "9791133448180",
       "6058152764"
-    ]
+    ],
+    "format": "collector-v2",
+    "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass",
+    "imageJobs": "channel-ops/ops/state/mangadrop-redesign-20261021",
+    "dryRunPassedAt": "2026-10-20T15:49:40.412Z"
   }
 ]

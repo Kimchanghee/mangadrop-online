@@ -11,6 +11,7 @@ import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse as parseYaml } from 'yaml';
+import { createHash } from 'node:crypto';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const site = JSON.parse(readFileSync(join(root, 'src/data/site.json'), 'utf8'));
@@ -33,6 +34,22 @@ export const RULES = {
   answerChars: KO ? [20, 220] : [60, 320],
   duplicateWindowDays: 30,
 };
+// collector-v2 posting contract (ops/POSTING-RULES.md). Applies to every post with format: collector-v2,
+// every manuscript under ops/queue/, and every post published on/after the cutoff.
+export const V2 = {
+  cutoff: '2026-10-21',
+  minPhotos: 6,
+  maxPhotos: 8,
+  questionH2: [4, 5],
+  maxH2: 6,
+  bodyChars: [1800, 2600], // visible body characters incl. spaces (whitespace collapsed); RULES.bodyMinNonSpaceKo still applies
+  faq: [2, 3],
+  checklist: [4, 6],
+  imageExt: /\.webp$/,
+};
+const PRICE_RE = /\d[\d,]*\s?원(?!피스|작|서|판|래|본|칙|인)|\d+\s?%\s?할인|최저가|특가/;
+const AI_CAPTION_RE = /AI|인공지능|생성\s?이미지|연출\s?이미지|합성\s?이미지/i;
+export const isV2 = (file, fm) => fm?.format === 'collector-v2' || /[\\/]ops[\\/]queue[\\/]/.test(file) || String(fm?.published ?? '') >= V2.cutoff;
 export const BANNED_FIRST_HAND = [
   /직접\s?써\s?보니/, /직접\s?사용해\s?보니/, /제가\s?(직접\s?)?(사용|써)\s?(해\s?)?보니/, /사용해\s?본\s?결과/, /써\s?본\s?결과/,
   /내돈내산/, /실사용\s?후기/, /한\s?달\s?(동안\s?)?써\s?보/, /I tested/i, /in my experience/i, /we tested/i, /hands-on review/i,
@@ -147,13 +164,57 @@ export function gateSource(file, { kind, logEntries = [], now = new Date(), know
     if (!imgs.some((i) => i?.role === 'cover')) e('no cover image');
     for (const img of imgs) {
       if (!img?.src?.startsWith('/')) { e(`image src must be site-absolute: ${img?.src}`); continue; }
-      const candidates = [join(root, 'public', img.src), join(dirname(file), 'public', img.src)];
+      const candidates = [join(root, 'public', img.src), join(dirname(file), 'public', img.src), join(dirname(file), 'images', String(fm.slug), img.src.split('/').pop())];
       if (!candidates.some((c) => existsSync(c) && statSync(c).size > 0)) e(`image file missing: ${img.src}`);
       if (!img.alt || String(img.alt).length < 4) e(`image alt missing: ${img.src}`);
       if (!['cover', 'context', 'detail', 'comparison', 'use'].includes(img.role)) e(`image role invalid: ${img.src}`);
       if (!['generated', 'provider-api', 'own'].includes(img.rights)) e(`image rights invalid: ${img.src}`);
       if (!img.credit) e(`image credit missing: ${img.src}`);
       if (/AI로 만든|실제 상품 사진이 아닙니다|가상 인물/.test(String(img.alt))) e(`image alt contains production disclaimer: ${img.src}`);
+    }
+    if (isV2(file, fm)) {
+      if (fm.format !== 'collector-v2') e('collector-v2: frontmatter format: collector-v2 required');
+      const slugDir = `/images/picks/${fm.slug}/`;
+      const bases = imgs.map((i) => String(i?.src ?? '').split('/').pop());
+      if (imgs.length < V2.minPhotos || imgs.length > V2.maxPhotos) e(`collector-v2: ${imgs.length} images, need ${V2.minPhotos}-${V2.maxPhotos} distinct scene photos`);
+      if (new Set(bases).size !== bases.length) e('collector-v2: image basenames must be unique');
+      const digests = new Map();
+      for (const img of imgs) {
+        const src = String(img?.src ?? '');
+        if (!src.startsWith(slugDir)) e(`collector-v2: image src must live under ${slugDir}: ${src}`);
+        if (!V2.imageExt.test(src)) e(`collector-v2: image must be WebP: ${src}`);
+        if (img?.rights !== 'generated' && img?.rights !== 'own') e(`collector-v2: image rights must be generated/own: ${src}`);
+        if (img?.artwork !== 'none') e(`collector-v2: image must declare artwork: none (no cover art/characters/logos/legible titles): ${src}`);
+        if (AI_CAPTION_RE.test(String(img?.alt ?? ''))) e(`collector-v2: alt must describe the scene, not the production method: ${src}`);
+        const f = [join(root, 'public', src), join(dirname(file), 'public', src), join(dirname(file), 'images', fm.slug, src.split('/').pop())].find((c) => existsSync(c));
+        if (f) { const h = createHash('sha256').update(readFileSync(f)).digest('hex'); if (digests.has(h)) e(`collector-v2: duplicate image bytes ${src} = ${digests.get(h)}`); digests.set(h, src); }
+        if (img?.role !== 'cover' && !body.includes(`(${src}`)) e(`collector-v2: image ${src} not placed beside a paragraph in the body`);
+      }
+      const bodyImgs = [...body.matchAll(/!\[[^\]]*\]\(([^)\s]+)/g)].map((m) => m[1]);
+      for (const s of bodyImgs) if (!imgs.some((i) => i.src === s)) e(`collector-v2: body image not listed in frontmatter images: ${s}`);
+      const cov = imgs.find((i) => i?.role === 'cover');
+      if (cov && bodyImgs.includes(cov.src)) e('collector-v2: cover is rendered by the template; do not repeat it in the body');
+      if (cov && !(cov.width > cov.height)) e('collector-v2: cover needs landscape width/height (e.g. 1536x1024) for the full-width hero');
+      const withSpaces = plain.replace(/\s+/g, ' ').trim().length;
+      if (withSpaces < V2.bodyChars[0] || withSpaces > V2.bodyChars[1]) e(`collector-v2: body ${withSpaces} chars not in ${V2.bodyChars.join('-')}`);
+      if (qHeads.length < V2.questionH2[0] || qHeads.length > V2.questionH2[1]) e(`collector-v2: ${qHeads.length} question H2s, need ${V2.questionH2.join('-')}`);
+      if (heads.length > V2.maxH2) e(`collector-v2: ${heads.length} H2s > ${V2.maxH2}`);
+      if (/^#{3,}\s/m.test(body)) warnings.push('collector-v2: H3 used; prefer short question H2 sections');
+      if (!/^\|.+\|\s*\r?\n\|\s*:?-{3,}/m.test(body)) e('collector-v2: body needs one ledger table (markdown table)');
+      if (/```|`[^`\n]+`/.test(body)) e('collector-v2: no code/monospace spans in the body');
+      if (/<[a-z][^>]*>/i.test(body)) e('collector-v2: no raw HTML in the body');
+      const faqN = (fm.faq ?? []).length;
+      if (faqN < V2.faq[0] || faqN > V2.faq[1]) e(`collector-v2: faq has ${faqN} items, need ${V2.faq.join('-')}`);
+      const clN = Array.isArray(fm.checklist) ? fm.checklist.length : 0;
+      if (clN < V2.checklist[0] || clN > V2.checklist[1]) e(`collector-v2: checklist has ${clN} items, need ${V2.checklist.join('-')}`);
+      for (const c of fm.checklist ?? []) if (!c?.label || !c?.text) e('collector-v2: checklist items need label + text');
+      const bx = p.box;
+      if (!bx?.label || !Array.isArray(bx?.ranges) || !bx.ranges.length) e('collector-v2: product.box (label + volume ranges) required for the catalogue-card graphic');
+      else for (const r of bx.ranges) if (!(Number.isInteger(r.from) && Number.isInteger(r.to) && r.to >= r.from)) e(`collector-v2: bad product.box range ${JSON.stringify(r)}`);
+      const priceText = `${a}\n${body}\n${(fm.faq ?? []).map((f) => f.a).join('\n')}`;
+      if (PRICE_RE.test(priceText)) e(`collector-v2: price/discount wording matched ${PRICE_RE}`);
+      const paras = body.split(/\r?\n\s*\r?\n/).filter((x) => x.trim() && !/^\s*(#|\||!\[)/.test(x));
+      for (const para of paras) if (nonSpaceLen(plainBody(para)) > 260) e(`collector-v2: paragraph too long (${nonSpaceLen(plainBody(para))} chars > 260): ${para.slice(0, 30)}...`);
     }
     // duplicates in publish log (last 30 days)
     const windowStart = now.getTime() - RULES.duplicateWindowDays * 864e5;
@@ -218,6 +279,7 @@ export function gatePage(file, dist, { sitemapLocs, entries }) {
   if (internal < RULES.minInternalLinksPage) e(`internal links in <main> ${internal} < ${RULES.minInternalLinksPage}`);
   if (!sitemapLocs.has(expected)) e('not in sitemap');
   for (const re of PLACEHOLDER) if (re.test(visible)) e(`placeholder text ${re}`);
+  if (/<del[\s>]/.test(main)) e('strikethrough rendered in <main> (single-tilde volume range?)');
 
   // content pages
   const entry = entries.get(pathName);
@@ -253,6 +315,14 @@ export function gatePage(file, dist, { sitemapLocs, entries }) {
       }
       const coverImg = (entry.fm.images ?? []).find((i) => i.role === 'cover');
       if (coverImg && !main.includes(`src="${coverImg.src}"`)) e('cover image not rendered');
+      if (isV2(entry.file, entry.fm)) {
+        for (const img of entry.fm.images ?? []) if (!main.includes(`src="${img.src}"`)) e(`collector-v2: image not rendered ${img.src}`);
+        if (!/data-gate="checklist"/.test(main)) e('collector-v2: printed checklist not rendered');
+        if (!/class="card__box"/.test(main)) e('collector-v2: catalogue-card box graphic not rendered');
+        if (!/class="toc"/.test(main)) e('collector-v2: desktop TOC not rendered');
+        if (!/class="table-wrap"/.test(main)) e('collector-v2: ledger table not rendered');
+        if (/<figcaption>[^<]*(AI|인공지능|생성 이미지)/.test(main)) e('collector-v2: production-method caption');
+      }
     }
   }
   return { page: pathName, errors, warnings };
@@ -268,6 +338,11 @@ function siteFiles(dist) {
     if (!r.includes(`Sitemap: ${site.url}/sitemap-index.xml`)) errors.push('robots.txt has no sitemap line');
     if (/Disallow:\s*\/\s*$/m.test(r)) errors.push('robots.txt blocks everything');
   }
+  // collector-v2: no monospace anywhere in shipped CSS; fonts are Pretendard (unicode-range subsets) + Gowun Batang subset
+  const cssDir = join(dist, '_astro');
+  if (existsSync(cssDir)) for (const n of readdirSync(cssDir).filter((x) => x.endsWith('.css'))) { const c = readFileSync(join(cssDir, n), 'utf8'); if (/monospace|Consolas|ui-monospace/i.test(c)) errors.push(`monospace font in ${n}`); }
+  if (!existsSync(join(dist, 'fonts/GowunBatang-Bold.subset.woff2'))) errors.push('Gowun Batang subset missing (scripts/fonts.mjs)');
+  for (const f of ['fonts/OFL-Pretendard.txt', 'fonts/OFL-GowunBatang.txt']) if (!existsSync(join(dist, f))) errors.push(`font licence ${f} missing`);
   if (existsSync(join(dist, `${site.indexNowKey}.txt`)) && readFileSync(join(dist, `${site.indexNowKey}.txt`), 'utf8').trim() !== site.indexNowKey) errors.push('IndexNow key file content mismatch');
   return errors;
 }

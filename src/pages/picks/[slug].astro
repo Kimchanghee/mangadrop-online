@@ -1,4 +1,7 @@
 ---
+// Collector-v2 pick layout. Mobile order: disclosure -> kicker/H1/byline -> hero -> short answer ->
+// inline catalogue card -> body (question H2s, photos, ledger table) -> printed checklist -> FAQ ->
+// dark end CTA -> sources. Desktop: 720px column + sticky 300px card with specs, button and TOC.
 import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
@@ -13,45 +16,70 @@ export async function getStaticPaths() {
 interface Props { post: Post }
 const { post } = Astro.props;
 const d = post.data;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 const cat = categoryBySlug(d.category)!;
 const path = postPath(d.slug);
 const cover = d.images.find((i) => i.role === 'cover') ?? d.images[0];
+// Legacy covers (1080x1350 diagrams) carry no size; collector-v2 photos declare width/height.
+const cw = cover.width ?? 1080, ch = cover.height ?? 1350;
+const portrait = ch > cw;
 const og = `/og/picks/${d.slug}.png`;
 const guides = (await allGuides()).filter((g) => g.data.category === d.category).slice(0, 3);
 const prov = providerInfo(d.product.provider);
+const disclosure = disclosureFor(post);
 const ld = [articleLd('post', post, path, og), faqLd(d.faq)].filter(Boolean) as Record<string, unknown>[];
 const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/${cat.slug}/` }, { name: d.title, href: path } ];
+const h2 = headings.filter((h) => h.depth === 2);
+const toc = h2.slice(0, 5).map((h, i) => ({ slug: h.slug, text: d.toc?.[i] ?? h.text.replace(/[?？]\s*$/, '') }));
+const kd = (iso: string) => { const [y, m, dd] = iso.slice(0, 10).split('-').map(Number); return `${y}년 ${m}월 ${dd}일`; };
+const name = d.product.name.replace(/\s*\([^)]*\)\s*$/, '');
+const opt = d.product.optionDetail.split(' · ').filter((s) => !/쿠팡상품번호|vendorItemId/.test(s)).join(' · ');
+const shortProv = prov.name.replace(' 파트너스', '');
 ---
-<Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} published={d.published} updated={d.updated}>
+<Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} showCrumbs={false} published={d.published} updated={d.updated} preloadImage={portrait ? undefined : cover.src}>
   <div class="wrap article-grid">
     <article class="article" data-gate="article">
-      <p class="disclosure" data-gate="disclosure"><strong>제휴 고지</strong>{disclosureFor(post)}</p>
-      <header>
-        <div class="log-kicker">PICK · {cat.name} · {prov.name}</div>
-        <h1 class="log-title">{d.title}</h1>
+      <p class="disclosure" data-gate="disclosure"><strong>제휴 고지</strong>{disclosure}</p>
+      <header class="lede-block">
+        <p class="kicker"><a href={`/category/${cat.slug}/`}>{cat.name}</a><span aria-hidden="true">·</span>구매 전 체크리스트</p>
+        <h1>{d.title}</h1>
+        <p class="byline">{site.name} 편집팀 · <time datetime={d.product.verifiedAt}>{kd(d.product.verifiedAt)}</time> 판매 페이지 확인 · 발행 <time datetime={d.published}>{ymd(d.published)}</time>{d.updated.slice(0, 10) !== d.published.slice(0, 10) && <> · 수정 <time datetime={d.updated}>{ymd(d.updated)}</time></>}</p>
       </header>
-      <p class="answer" data-gate="answer">{d.answer}</p>
-      <div class="meta" style="margin:0 0 18px"><span>발행 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>링크 확인 {ymd(d.product.verifiedAt)}</span></div>
-      <ProductCard product={d.product} variant="inline" />
-      <figure style="margin:0 0 18px">
-        <img src={cover.src} alt={cover.alt} width="1080" height="1350" loading="eager" decoding="async" />
+      <figure class={portrait ? 'hero hero--portrait' : 'hero'}>
+        <img src={cover.src} alt={cover.alt} width={cw} height={ch} loading="eager" decoding="async" fetchpriority="high" />
       </figure>
+      <section class="answer-box" aria-labelledby="answer-h">
+        <h2 id="answer-h" class="answer-box__label">짧은 답</h2>
+        <p class="answer" data-gate="answer">{d.answer}</p>
+      </section>
+      <ProductCard product={d.product} variant="inline" />
       <div class="prose" data-gate="body"><Content /></div>
+      {d.checklist.length > 0 && (
+        <section class="checklist" data-checklist={d.slug} aria-labelledby="cl-h" data-gate="checklist">
+          <div class="checklist__head"><h2 id="cl-h">결제 전후 체크리스트</h2><output aria-live="polite" data-count>0 / {d.checklist.length}</output></div>
+          <ol>{d.checklist.map((c, i) => (
+            <li><label><input type="checkbox" name={`${d.slug}-${i}`} /><span><b>{c.label}</b>{c.text}</span></label></li>
+          ))}</ol>
+          <p class="checklist__note">체크 상태는 이 기기 브라우저에만 저장됩니다.</p>
+        </section>
+      )}
       {d.faq.length > 0 && (
         <section class="faq" data-gate="faq" aria-labelledby="faq-h">
           <h2 id="faq-h">자주 묻는 질문</h2>
-          <dl>{d.faq.map((f) => (<><dt>{f.q}</dt><dd>{f.a}</dd></>))}</dl>
+          {d.faq.map((f, i) => (<details open={i === 0}><summary>{f.q}</summary><p>{f.a}</p></details>))}
         </section>
       )}
-      <div class="end-cta">
-        <p>옵션·사이즈·가격은 판매 페이지에서 마지막으로 확인하세요. ({prov.name} 제휴 링크)</p>
-        <a class="btn-buy" href={d.product.url} rel="sponsored nofollow noopener" target="_blank" data-product-link="end">{d.product.name} 판매 페이지 열기</a>
-      </div>
+      <section class="endcta" aria-label="상품 확인">
+        <p class="endcta__eyebrow">결제 전 마지막 확인</p>
+        <p class="endcta__name">{name}</p>
+        <p class="endcta__opt">{opt}</p>
+        <a class="btn btn--wide" href={d.product.url} rel="sponsored nofollow noopener" target="_blank" data-product-link="end">{shortProv}에서 구성 확인하기</a>
+        <p class="card__note">옵션·구성·가격은 판매 페이지에서 마지막으로 확인하세요. ({prov.name} 제휴 링크)</p>
+      </section>
       <AdSlot id="pick-end" />
-      <section class="sources" data-gate="sources">
-        <h2>SOURCES</h2>
-        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener">{s.title}</a></li>)}</ul>
+      <section class="sources" data-gate="sources" aria-labelledby="src-h">
+        <h2 id="src-h">참고한 자료</h2>
+        <ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener" target="_blank">{s.title}</a></li>)}</ul>
       </section>
       <nav class="related" aria-labelledby="rel-h">
         <h2 id="rel-h">고르기 전에 볼 체크리스트</h2>
@@ -59,8 +87,38 @@ const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/
         <p><a href={`/category/${cat.slug}/`}>{cat.name} 전체 보기</a> · <a href="/methodology/">상품 선정 방법</a></p>
       </nav>
     </article>
-    <aside class="side" aria-label="상품 카드">
-      <div class="side__sticky"><ProductCard product={d.product} variant="side" /></div>
+    <aside class="rail" aria-label="상품 카드와 차례">
+      <div class="rail__sticky">
+        <ProductCard product={d.product} variant="side" />
+        {toc.length > 0 && (
+          <nav class="toc" aria-label="이 글의 차례">
+            <p class="toc__h">이 글의 차례</p>
+            <ol>{toc.map((t) => <li><a href={`#${t.slug}`}>{t.text}</a></li>)}</ol>
+          </nav>
+        )}
+      </div>
     </aside>
   </div>
 </Base>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-checklist]').forEach((box) => {
+    const key = 'md-check:' + box.dataset.checklist;
+    const inputs = Array.from(box.querySelectorAll<HTMLInputElement>('input[type=checkbox]'));
+    const out = box.querySelector('output');
+    let saved: boolean[] = [];
+    try { saved = JSON.parse(localStorage.getItem(key) || '[]'); } catch { saved = []; }
+    inputs.forEach((inp, i) => { inp.checked = !!saved[i]; });
+    let reported = false;
+    const update = () => {
+      const n = inputs.filter((i) => i.checked).length;
+      if (out) out.textContent = `${n} / ${inputs.length}`;
+      try { localStorage.setItem(key, JSON.stringify(inputs.map((i) => i.checked))); } catch { /* storage unavailable */ }
+    };
+    inputs.forEach((inp) => inp.addEventListener('change', () => {
+      update();
+      const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+      if (!reported && typeof w.gtag === 'function') { reported = true; w.gtag('event', 'tool_used', { tool: 'checklist', list: box.dataset.checklist }); }
+    }));
+    update();
+  });
+</script>

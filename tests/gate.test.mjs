@@ -44,3 +44,30 @@ test('same slug already in publish log is rejected', () => {
   assert.equal(r.status, 1);
   assert.match(r.stdout, /slug already in publish log/);
 });
+
+// collector-v2 posting contract (ops/POSTING-RULES.md)
+import { readFileSync, readdirSync, existsSync, mkdirSync, copyFileSync } from 'node:fs';
+test('collector-v2: an old-format manuscript is rejected once it claims the new format', () => {
+  const d = mkdtempSync(join(tmpdir(), 'gate-v2-'));
+  const f = join(d, 'v2-old.md');
+  writeFileSync(f, readFileSync(ex('pass-example.md'), 'utf8').replace(/^slug: .*$/m, 'slug: v2-old-fixture\nformat: collector-v2'));
+  const r = run('--source', f, '--json', '--log', emptyLog());
+  assert.equal(r.status, 1);
+  const errs = JSON.parse(r.stdout).results[0].errors.join('\n');
+  for (const needle of ['need 6-8 distinct scene photos', 'artwork: none', 'ledger table', 'checklist has', 'product.box']) assert.ok(errs.includes(needle), `expected "${needle}" in:\n${errs}`);
+});
+test('collector-v2: every queued manuscript satisfies the contract (only the not-yet-placed evidence note may be missing)', () => {
+  const q = JSON.parse(readFileSync(join(root, 'ops/queue/ready.json'), 'utf8'));
+  for (const item of q) {
+    const r = run('--source', join(root, 'ops/queue', item.slug + '.md'), '--json', '--log', emptyLog());
+    const errs = JSON.parse(r.stdout).results[0].errors.filter((m) => !m.startsWith('evidence note not found'));
+    assert.deepEqual(errs, [], item.slug);
+    assert.ok(item.images.length >= 6, item.slug + ' ready.json images');
+    const md = readFileSync(join(root, 'ops/queue', item.slug + '.md'), 'utf8');
+    for (const rel of item.images) {
+      const base = rel.split('/').pop();
+      assert.ok(md.includes(`/images/picks/${item.slug}/${base}`), `${item.slug}: ${base} referenced by frontmatter src`);
+      assert.ok(existsSync(join(root, rel)), `${rel} exists`);
+    }
+  }
+});
