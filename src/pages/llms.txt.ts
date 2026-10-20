@@ -5,10 +5,13 @@ import { site } from '../site.config';
 export const GET: APIRoute = async () => {
   const guides = await allGuides();
   const posts = await allPosts();
+  const lastUpdated = [...guides, ...posts].map((e) => String(e.data.updated)).sort().at(-1)?.slice(0, 10) ?? '';
   const lines = [
     `# ${site.name} (${site.nameEn})`,
     '',
     `> ${site.description}`,
+    '',
+    `Last updated: ${lastUpdated}`,
     '',
     'Korean-language buying guides for manga and webtoon print volumes (editions, ISBN, box sets), light novels, figure display and collection storage, and reading accessories. Edition, ISBN and specification facts come only from publisher, retailer listing or manufacturer pages; no first-hand use, ratings or prices are claimed. Product posts contain affiliate links (Coupang Partners, Toss Shopping) and say so in their first block.',
     '',

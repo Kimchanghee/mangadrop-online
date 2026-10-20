@@ -28,11 +28,11 @@ const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/
   <div class="wrap article-grid article-grid--solo">
     <article class="article" data-gate="article">
       <header>
-        <p class="log-kicker">{code} · {cat.name} 체크리스트</p>
+        <div class="log-kicker">{code} · {cat.name} 체크리스트</div>
         <h1 class="log-title">{d.title}</h1>
-        <p class="meta"><span>작성 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>자료 기준일 {d.data_asof}</span></p>
       </header>
       <p class="answer" data-gate="answer">{d.answer}</p>
+      <div class="meta" style="margin:0 0 18px"><span>작성 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>자료 기준일 {d.data_asof}</span></div>
       <Checklist items={d.checklist} id={d.slug} />
       <div class="prose" data-gate="body"><Content /></div>
       <AdSlot id="guide-end" />

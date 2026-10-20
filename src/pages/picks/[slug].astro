@@ -28,11 +28,11 @@ const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/
     <article class="article" data-gate="article">
       <p class="disclosure" data-gate="disclosure"><strong>제휴 고지</strong>{disclosureFor(post)}</p>
       <header>
-        <p class="log-kicker">PICK · {cat.name} · {prov.name}</p>
+        <div class="log-kicker">PICK · {cat.name} · {prov.name}</div>
         <h1 class="log-title">{d.title}</h1>
-        <p class="meta"><span>발행 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>링크 확인 {ymd(d.product.verifiedAt)}</span></p>
       </header>
       <p class="answer" data-gate="answer">{d.answer}</p>
+      <div class="meta" style="margin:0 0 18px"><span>발행 <time datetime={d.published}>{ymd(d.published)}</time></span><span>수정 <time datetime={d.updated}>{ymd(d.updated)}</time></span><span>링크 확인 {ymd(d.product.verifiedAt)}</span></div>
       <ProductCard product={d.product} variant="inline" />
       <figure style="margin:0 0 18px">
         <img src={cover.src} alt={cover.alt} width="1080" height="1350" loading="eager" decoding="async" />

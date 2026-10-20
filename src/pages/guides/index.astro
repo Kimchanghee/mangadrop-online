@@ -4,7 +4,7 @@ import { allGuides, guidePath, ymd } from '../../lib/content';
 import { site, categoryBySlug } from '../../site.config';
 const guides = await allGuides();
 const title = '독서·수집 용품 구매 체크리스트 전체 목록 | 망가드롭';
-const description = '홈트레이닝, 러닝, 캠핑, 아웃도어 상품를 고를 때 확인할 사양과 흔한 실수를 정리한 체크리스트 전체 목록입니다. 각 글은 공식 자료 출처와 수정일을 함께 적습니다.';
+const description = '만화·웹툰 단행본의 판본과 전집, 책과 피규어 수집·보관, 읽는 자리 용품을 고를 때 확인할 항목을 정리한 체크리스트 전체 목록입니다. 각 글은 공식 자료 출처와 수정일을 함께 적습니다.';
 const crumbs = [{ name: '홈', href: '/' }, { name: '체크리스트', href: '/guides/' }];
 const ld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, url: site.url + '/guides/', description }];
 ---
@@ -12,7 +12,7 @@ const ld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name:
   <div class="wrap section">
     <p class="log-kicker">ALL LOGS</p>
     <h1 class="log-title">독서·수집 용품 구매 체크리스트</h1>
-    <p class="lede">각 체크리스트는 하나의 구매 질문에 답합니다. 분류 코드는 HT(홈트레이닝), RN(러닝), CP(캠핑), OD(아웃도어)입니다.</p>
+    <p class="lede">각 체크리스트는 하나의 구매 질문에 답합니다. 분류 코드는 01(판본과 전집), 02(수집과 보관), 03(읽는 자리)입니다.</p>
     <table class="logtable" style="margin-top:20px">
       <thead><tr><th scope="col">분류</th><th scope="col">질문</th><th scope="col">항목</th><th scope="col">수정일</th></tr></thead>
       <tbody>{guides.map((g) => (
