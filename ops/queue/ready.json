@@ -41,5 +41,61 @@
       "9788925283814",
       "64819755"
     ]
+  },
+  {
+    "slug": "onepiece-part1-box-set-checklist",
+    "productName": "원피스 제1부 박스세트 (대원씨아이)",
+    "option": "동쪽의 바다 + 모래의 나라 + 하늘의 섬 · 1~32권 · 박스 3개 묶음 · 쿠팡상품번호 8918081728-26058614279 · vendorItemId 93039950997",
+    "sourceURL": "https://www.coupang.com/vp/products/8918081728?itemId=26058614279&vendorItemId=93039950997",
+    "issuedURI": "https://link.coupang.com/a/hZOCMp1Mqa",
+    "linkIssuedAt": "2026-10-20T05:36:37.000Z",
+    "factsFile": "ops/queue/evidence/onepiece-part1-box-set-checklist.md",
+    "images": [
+      "ops/queue/images/onepiece-part1-box-set-checklist/op1-boxes-m.png",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op1-extras-m.png",
+      "ops/queue/images/onepiece-part1-box-set-checklist/op1-check-m.png"
+    ],
+    "diagramSpec": "ops/diagrams/onepiece-part1-box-set-checklist.json",
+    "dryRunPassedAt": "2026-10-20T05:39:51.897Z",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 32/32 gate)",
+    "publishNotes": [
+      "Gate requires product.verifiedAt within 2 days of published: re-open the Coupang listing and refresh verifiedAt/published/updated before real publish, or re-issue the link.",
+      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
+    ],
+    "serp": {
+      "originalsReadInFull": [
+        "https://m.blog.naver.com/daiwon_ci/222564190654",
+        "https://m.blog.naver.com/codnjs329/222662912229",
+        "https://slowjeong.tistory.com/entry/원피스-만화책-코믹스-세트-소장한다면-박스판-추천한다-1부-에피소드2-모래의-나라-언박싱-후기"
+      ],
+      "retailerFacts": [
+        "YES24 113738414: 동쪽의 바다+모래의 나라+하늘의 섬, 전32권, 박스3개, 2022-09-26",
+        "YES24 104227864 EP1: 전12권, 부록 아크릴 스탠드+PP 북마크, ISBN 9791136282019",
+        "YES24 EP2: 박스판/전11권, 2021-12-20",
+        "Kyobo S000001713356 EP3: 24~32권 9권, ISBN 9791136295040",
+        "Coupang listing ISBN 9791160073416, 32권 박스 3개"
+      ],
+      "omitted": [
+        "set dimensions (Coupang 128*188*80 vs YES24 128*188*443)",
+        "EP3 date (YES24 02-25 vs Kyobo 02-28)",
+        "weights",
+        "prices/ratings/review claims"
+      ],
+      "quicklinkScreening": [
+        {
+          "candidate": "원피스 제2부 EP6 BOX 6733853785",
+          "result": "no link returned"
+        },
+        {
+          "candidate": "원피스 제1부 박스세트 8918081728",
+          "result": "issued"
+        }
+      ]
+    },
+    "verifyTokens": [
+      "원피스 제1부 박스세트",
+      "9791160073416",
+      "8918081728"
+    ]
   }
 ]
