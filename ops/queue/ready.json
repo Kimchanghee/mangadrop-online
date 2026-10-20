@@ -13,8 +13,8 @@
       "ops/queue/images/onepiece-part1-box-set-checklist/op1-check-m.png"
     ],
     "diagramSpec": "ops/diagrams/onepiece-part1-box-set-checklist.json",
-    "dryRunPassedAt": "2026-10-20T05:39:51.897Z",
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 32/32 gate)",
+    "dryRunPassedAt": "2026-10-20T12:57:13.644Z",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
     "publishNotes": [
       "Gate requires product.verifiedAt within 2 days of published: re-open the Coupang listing and refresh verifiedAt/published/updated before real publish, or re-issue the link.",
       "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
@@ -72,7 +72,7 @@
       "ops/queue/images/aot-box-set-part1-checklist/aot-check-m.png"
     ],
     "diagramSpec": "ops/diagrams/aot-box-set-part1-checklist.json",
-    "dryRunPassedAt": "2026-10-20T12:09:54.139Z",
+    "dryRunPassedAt": "2026-10-20T12:56:39.855Z",
     "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
     "publishNotes": [
       "Gate requires product.verifiedAt within 5 days of published: the shop-publisher re-checks sourceURL and refreshes verifiedAt/published/updated at publish.",
@@ -126,7 +126,7 @@
       "ops/queue/images/haikyu-1-45-set-checklist/hq-check-m.png"
     ],
     "diagramSpec": "ops/diagrams/haikyu-1-45-set-checklist.json",
-    "dryRunPassedAt": "2026-10-20T12:11:03.524Z",
+    "dryRunPassedAt": "2026-10-20T12:56:57.517Z",
     "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
     "publishNotes": [
       "Gate requires product.verifiedAt within 5 days of published: the shop-publisher re-checks sourceURL and refreshes verifiedAt/published/updated at publish.",
