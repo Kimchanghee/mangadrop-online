@@ -54,5 +54,114 @@
       "9791160073416",
       "8918081728"
     ]
+  },
+  {
+    "slug": "aot-box-set-part1-checklist",
+    "productName": "진격의 거인 박스세트 PART 1 (학산문화사)",
+    "option": "1~17권 · 전17권 · 부록 PVC카드 17매(책과 랩핑) · 쿠팡상품번호 6911263923-16657386871 · vendorItemId 83841150136",
+    "sourceURL": "https://www.coupang.com/vp/products/6911263923?itemId=16657386871&vendorItemId=83841150136",
+    "issuedURI": "https://link.coupang.com/a/h0gkrkKY7o",
+    "linkIssuedAt": "2026-10-20T12:02:37.000Z",
+    "productCheckedAt": "2026-10-20T12:03:13.880Z",
+    "manuscript": "ops/queue/aot-box-set-part1-checklist.md",
+    "evidence": "ops/queue/evidence/aot-box-set-part1-checklist.md",
+    "factsFile": "ops/queue/evidence/aot-box-set-part1-checklist.md",
+    "images": [
+      "ops/queue/images/aot-box-set-part1-checklist/aot-boxes-m.png",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-confuse-m.png",
+      "ops/queue/images/aot-box-set-part1-checklist/aot-check-m.png"
+    ],
+    "diagramSpec": "ops/diagrams/aot-box-set-part1-checklist.json",
+    "dryRunPassedAt": "2026-10-20T12:09:54.139Z",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
+    "publishNotes": [
+      "Gate requires product.verifiedAt within 5 days of published: the shop-publisher re-checks sourceURL and refreshes verifiedAt/published/updated at publish.",
+      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
+    ],
+    "serp": {
+      "googleQuery": "진격의 거인 박스세트 part1",
+      "naverQuery": "진격의 거인 박스세트 (blog)",
+      "originalsReadInFull": [
+        "https://m.blog.naver.com/gomoohouse/222911386889",
+        "https://m.blog.naver.com/gusdoskfk/224417252499",
+        "https://m.blog.naver.com/hyunitopia/224362577898"
+      ],
+      "retailerFacts": [
+        "Coupang 필수 표기: 진격의 거인 박스세트 PART.1, 도서 17권, 128*188mm, 3,400쪽, 2022.10.18; 책소개 part.1 1~17권+PVC카드 17매, part.2 18~34권+PVC카드 17매",
+        "YES24 114848887: 전34권, 박스세트 2종 묶음, 부록 PVC카드 34매(책과랩핑); PART.1/PART.2 각 전17권 PVC카드 17매",
+        "Aladin 303284033 Part 2: 18~34, 전17권, PVC카드 17매, ISBN 9791169471350"
+      ],
+      "omitted": [
+        "YES24 2-box set date 2022-10-17 vs PART.1 2022-10-18 (not in body)",
+        "YES24 set 6,800g / 128*188*80mm",
+        "prices/ratings/review claims"
+      ],
+      "quicklinkScreening": [
+        {
+          "candidate": "진격의 거인 박스세트 PART 1 6911263923",
+          "result": "issued"
+        }
+      ]
+    },
+    "verifyTokens": [
+      "진격의 거인 박스세트 PART 1",
+      "6911263923",
+      "PVC카드 17매"
+    ]
+  },
+  {
+    "slug": "haikyu-1-45-set-checklist",
+    "productName": "하이큐!! 1~45권 세트 전 45권 (대원씨아이)",
+    "option": "1~45권 · 전 45권(완결) · 재정가 세트 · 쿠팡상품번호 6058152764-11128704098 · vendorItemId 90790001294",
+    "sourceURL": "https://www.coupang.com/vp/products/6058152764?itemId=11128704098&vendorItemId=90790001294",
+    "issuedURI": "https://link.coupang.com/a/h0gmngXYC4",
+    "linkIssuedAt": "2026-10-20T12:03:04.000Z",
+    "productCheckedAt": "2026-10-20T12:03:50.432Z",
+    "manuscript": "ops/queue/haikyu-1-45-set-checklist.md",
+    "evidence": "ops/queue/evidence/haikyu-1-45-set-checklist.md",
+    "factsFile": "ops/queue/evidence/haikyu-1-45-set-checklist.md",
+    "images": [
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-volumes-m.png",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-confuse-m.png",
+      "ops/queue/images/haikyu-1-45-set-checklist/hq-check-m.png"
+    ],
+    "diagramSpec": "ops/diagrams/haikyu-1-45-set-checklist.json",
+    "dryRunPassedAt": "2026-10-20T12:11:03.524Z",
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, 34/34 gate)",
+    "publishNotes": [
+      "Gate requires product.verifiedAt within 5 days of published: the shop-publisher re-checks sourceURL and refreshes verifiedAt/published/updated at publish.",
+      "To publish: copy ops/queue/<slug>.md -> src/content/posts/, evidence -> src/content/posts/_evidence/, images -> public/images/picks/<slug>/, commit, then scripts/publish.ps1 -Slug <slug> -AllowDeploy."
+    ],
+    "serp": {
+      "googleQuery": "하이큐 1-45 전권 세트",
+      "naverQuery": "하이큐 전권 세트 (blog)",
+      "originalsReadInFull": [
+        "https://m.blog.naver.com/bittesehr/223939866421",
+        "https://m.blog.naver.com/98745gh/224208799299",
+        "https://m.blog.naver.com/selcsc91039_sm/224257272828"
+      ],
+      "retailerFacts": [
+        "Coupang 필수 표기: 하이큐!! 1-45권 재정가 세트, 후루다테 하루이치/대원씨아이, 전 45권; listing ISBN 9791133448180",
+        "Daewon official shop dwcishop 4610: [대원씨아이] 하이큐 1-45권 재정가 세트",
+        "Kyobo S000213850923: 하이큐!! 정가인하 세트(1~45), 전 45권, 대원씨아이, 총권수 45권, ISBN 9791172458881"
+      ],
+      "omitted": [
+        "set ISBN (Coupang 9791133448180 vs Kyobo 9791172458881)",
+        "publication date (Coupang 2023.05.06 vs Kyobo 2024-07-19 vs YES24 2020-12-28)",
+        "listing size 230*300*40mm",
+        "prices/ratings/review claims"
+      ],
+      "quicklinkScreening": [
+        {
+          "candidate": "하이큐!! 1~45권 세트 전 45권 6058152764",
+          "result": "issued"
+        }
+      ]
+    },
+    "verifyTokens": [
+      "하이큐!! 1~45권 세트 전 45권",
+      "9791133448180",
+      "6058152764"
+    ]
   }
 ]

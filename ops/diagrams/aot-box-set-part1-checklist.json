@@ -1,0 +1,41 @@
+[
+  {
+    "name": "aot-boxes-m",
+    "kicker": "MANGADROP · 박스 세트",
+    "title": "진격의 거인, 박스 2개에 나뉜 34권",
+    "kind": "cards",
+    "items": [
+      { "big": "17", "unit": "권", "label": "PART.1 박스", "text": "1~17권 · PVC카드 17매", "hl": true },
+      { "big": "17", "unit": "권", "label": "PART.2 박스", "text": "18~34권(완결) · PVC카드 17매" },
+      { "big": "34", "unit": "매", "label": "두 박스 합계 카드", "text": "각 권 표지 이미지를 담은 PVC카드" }
+    ],
+    "foot": "출처: 쿠팡 상품 필수 표기 정보(출판사 책소개), YES24·알라딘 세트 구성 (10월 20일 확인)"
+  },
+  {
+    "name": "aot-confuse-m",
+    "kicker": "MANGADROP · 검색 결과 구분",
+    "title": "이름이 비슷한 진격의 거인 세트",
+    "kind": "list",
+    "items": [
+      { "label": "박스세트 PART.1", "text": "1~17권 + PVC카드 17매, 박스 1개" },
+      { "label": "박스세트 PART.2", "text": "18~34권 + PVC카드 17매, 박스 1개" },
+      { "label": "1~34권 일반 세트", "text": "박스 없이 단행본 묶음. 구성은 판매자마다 다름" },
+      { "label": "외전·스핀오프", "text": "Before the fall, 후회 없는 선택은 박스에 없음" }
+    ],
+    "foot": "상품명에 'PART 1', '전17권', 'PVC카드 17매'가 함께 있는지 확인"
+  },
+  {
+    "name": "aot-check-m",
+    "kicker": "MANGADROP · 받은 뒤 확인",
+    "title": "PART.1 박스를 받으면 먼저 볼 것",
+    "kind": "list",
+    "items": [
+      { "label": "권 범위", "text": "1~17권 번호가 빠짐없이 이어지는지" },
+      { "label": "PVC카드", "text": "17매가 책과 함께 들어 있는지" },
+      { "label": "박스 외관", "text": "모서리 눌림, 겉 비닐 상태" },
+      { "label": "문제 발견 시", "text": "포장을 다 벗기기 전에 사진 남기기" },
+      { "label": "다음 박스", "text": "18권부터는 PART.2 박스" }
+    ],
+    "foot": "가격·재고는 수시로 바뀌므로 결제 직전에 판매 페이지에서 다시 확인"
+  }
+]
