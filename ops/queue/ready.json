@@ -35,6 +35,11 @@
         "Aladin weight 15,120g (equals page count; likely data artifact)",
         "set page counts (YES24 12,380 vs Aladin 15,120)"
       ]
-    }
+    },
+    "verifyTokens": [
+      "1-72권",
+      "9788925283814",
+      "64819755"
+    ]
   }
 ]
