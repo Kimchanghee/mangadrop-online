@@ -67,7 +67,7 @@ a:hover { color: var(--ink); }
 .log-title { font-size: clamp(26px, 4vw, 38px); line-height: 1.25; letter-spacing: -0.02em; margin: 0 0 10px; }
 .log-kicker { font: 600 12px/1.4 var(--mono); letter-spacing: 0.08em; color: var(--tape); text-transform: uppercase; margin: 0 0 8px; }
 .lede { font-size: 18px; color: var(--ink-2); max-width: 62ch; margin: 0; }
-.section { padding: 28px 0; }
+.section { padding-block: 28px; }
 .section__head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 0; }
 .section__head h2 { margin: 0; font-size: 20px; }
 .section__head p { margin: 0; font: 500 13px/1.4 var(--mono); color: var(--muted); }
@@ -118,7 +118,7 @@ a:hover { color: var(--ink); }
 .checklist__note { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
 
 /* Article (readable commerce format: 19px body, 24px bold H2, left aligned, short paragraphs) */
-.article-grid { display: grid; grid-template-columns: minmax(0, var(--measure)) 300px; gap: 48px; padding: 20px 0 40px; justify-content: space-between; }
+.article-grid { display: grid; grid-template-columns: minmax(0, var(--measure)) 300px; gap: 48px; padding-block: 20px 40px; justify-content: space-between; }
 .article-grid--solo { grid-template-columns: minmax(0, var(--measure)) 260px; }
 .article { min-width: 0; }
 .article header { border-bottom: 2px solid var(--ink); padding-bottom: 14px; margin-bottom: 18px; }
@@ -196,7 +196,7 @@ a:hover { color: var(--ink); }
 .sheet-foot__links a { display: inline-flex; align-items: center; min-height: 36px; color: var(--ink-2); }
 @media (max-width: 700px) { .sheet-foot__grid { grid-template-columns: 1fr; } .sheet-head__stamp { display: none; } }
 
-.notfound { padding: 48px 0; max-width: 640px; }
+.notfound { padding-block: 48px; max-width: 640px; }
 .notfound code { font-family: var(--mono); background: var(--paper-2); padding: 2px 6px; }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
