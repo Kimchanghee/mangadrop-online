@@ -10,3 +10,13 @@
 - Own affiliate link not clicked/resolved.
 - Search: Google "하이큐 1-45 전권 세트" (Coupang, Aladin, YES24, Kyobo, dwcishop, other malls) and Naver blog "하이큐 전권 세트". Originals read in full: m.blog.naver.com/bittesehr/223939866421 (reading record), m.blog.naver.com/98745gh/224208799299 (read via library; had collected volumes one by one), m.blog.naver.com/selcsc91039_sm/224257272828 (affiliate promo; mis-states "네 권의 세트"; no composition detail). Gap: none distinguishes 45권 vs 가이드북 46권 vs partial sets or gives receive checks.
 - Screens: ops/queue/evidence/haikyu-set-generator.png, haikyu-set-native.png
+
+## Re-check 2026-10-21 (routine 3CJqbDbHnE7Owmp9, logged-in Aside browser)
+
+- checkedAt: 2026-10-21T13:16:10+09:00
+- ordinary listing: https://www.coupang.com/vp/products/6058152764?itemId=11128704098&vendorItemId=90790001294
+- page title: 하이큐!! 1~45권 세트 전 45권 - 스포츠만화 | 쿠팡
+- verifyTokens all present: 하이큐!! 1~45권 세트 전 45권 / 9791133448180 / 6058152764
+- not sold out (no 품절/판매종료 text); no access denial
+- screenshot: ops/queue/evidence/haikyu-1-45-set-checklist-recheck-2026-10-21.png ; text: ops/queue/evidence/haikyu-1-45-set-checklist-recheck-2026-10-21.txt
+- own Partners link not opened.

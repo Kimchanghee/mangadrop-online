@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/h0gmngXYC4"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-20T21:03:50+09:00"
+  verifiedAt: "2026-10-21T13:16:10+09:00"
   evidence: "src/content/posts/_evidence/haikyu-1-45-set-checklist.md"
   specs:
     - { label: "출판사", value: "대원씨아이" }

@@ -1,75 +1,12 @@
 [
   {
-    "slug": "onepiece-part1-box-set-checklist",
-    "productName": "원피스 제1부 박스세트 (대원씨아이)",
-    "option": "동쪽의 바다 + 모래의 나라 + 하늘의 섬 · 1~32권 · 박스 3개 묶음 · 쿠팡상품번호 8918081728-26058614279 · vendorItemId 93039950997",
-    "sourceURL": "https://www.coupang.com/vp/products/8918081728?itemId=26058614279&vendorItemId=93039950997",
-    "issuedURI": "https://link.coupang.com/a/hZOCMp1Mqa",
-    "linkIssuedAt": "2026-10-20T05:36:37.000Z",
-    "factsFile": "ops/queue/evidence/onepiece-part1-box-set-checklist.md",
-    "images": [
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-delivery-carton.webp",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-extras-acrylic.webp",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-hero-sideboard.webp",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-row-count.webp",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-three-widths.webp",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-white-shelf-gap.webp",
-      "ops/queue/images/onepiece-part1-box-set-checklist/op-window-seat.webp"
-    ],
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, collector-v2 gate)",
-    "publishNotes": [
-      "shop-publisher re-checks sourceURL, refreshes verifiedAt/published/updated, copies images by basename to the src paths named in frontmatter (lib.mjs imageTargets), then runs scripts/publish.ps1.",
-      "Format contract: ops/POSTING-RULES.md (collector-v2)."
-    ],
-    "serp": {
-      "originalsReadInFull": [
-        "https://m.blog.naver.com/daiwon_ci/222564190654",
-        "https://m.blog.naver.com/codnjs329/222662912229",
-        "https://slowjeong.tistory.com/entry/원피스-만화책-코믹스-세트-소장한다면-박스판-추천한다-1부-에피소드2-모래의-나라-언박싱-후기"
-      ],
-      "retailerFacts": [
-        "YES24 113738414: 동쪽의 바다+모래의 나라+하늘의 섬, 전32권, 박스3개, 2022-09-26",
-        "YES24 104227864 EP1: 전12권, 부록 아크릴 스탠드+PP 북마크, ISBN 9791136282019",
-        "YES24 EP2: 박스판/전11권, 2021-12-20",
-        "Kyobo S000001713356 EP3: 24~32권 9권, ISBN 9791136295040",
-        "Coupang listing ISBN 9791160073416, 32권 박스 3개"
-      ],
-      "omitted": [
-        "set dimensions (Coupang 128*188*80 vs YES24 128*188*443)",
-        "EP3 date (YES24 02-25 vs Kyobo 02-28)",
-        "weights",
-        "prices/ratings/review claims"
-      ],
-      "quicklinkScreening": [
-        {
-          "candidate": "원피스 제2부 EP6 BOX 6733853785",
-          "result": "no link returned"
-        },
-        {
-          "candidate": "원피스 제1부 박스세트 8918081728",
-          "result": "issued"
-        }
-      ]
-    },
-    "verifyTokens": [
-      "원피스 제1부 박스세트",
-      "9791160073416",
-      "8918081728"
-    ],
-    "manuscript": "ops/queue/onepiece-part1-box-set-checklist.md",
-    "format": "collector-v2",
-    "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass",
-    "imageJobs": "channel-ops/ops/state/mangadrop-redesign-20261021",
-    "dryRunPassedAt": "2026-10-20T15:49:03.957Z"
-  },
-  {
     "slug": "haikyu-1-45-set-checklist",
     "productName": "하이큐!! 1~45권 세트 전 45권 (대원씨아이)",
     "option": "1~45권 · 전 45권(완결) · 재정가 세트 · 쿠팡상품번호 6058152764-11128704098 · vendorItemId 90790001294",
     "sourceURL": "https://www.coupang.com/vp/products/6058152764?itemId=11128704098&vendorItemId=90790001294",
     "issuedURI": "https://link.coupang.com/a/h0gmngXYC4",
     "linkIssuedAt": "2026-10-20T12:03:04.000Z",
-    "productCheckedAt": "2026-10-20T12:03:50.432Z",
+    "productCheckedAt": "2026-10-21T04:16:10.000Z",
     "manuscript": "ops/queue/haikyu-1-45-set-checklist.md",
     "evidence": "ops/queue/evidence/haikyu-1-45-set-checklist.md",
     "factsFile": "ops/queue/evidence/haikyu-1-45-set-checklist.md",
@@ -121,6 +58,11 @@
     "format": "collector-v2",
     "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass",
     "imageJobs": "channel-ops/ops/state/mangadrop-redesign-20261021",
-    "dryRunPassedAt": "2026-10-20T15:49:40.412Z"
+    "dryRunPassedAt": "2026-10-20T15:49:40.412Z",
+    "lastRecheck": {
+      "at": "2026-10-21T13:16:10+09:00",
+      "result": "ok",
+      "evidence": "ops/queue/evidence/haikyu-1-45-set-checklist-recheck-2026-10-21.png/.txt"
+    }
   }
 ]
