@@ -63,66 +63,6 @@
     "dryRunPassedAt": "2026-10-20T15:49:03.957Z"
   },
   {
-    "slug": "aot-box-set-part1-checklist",
-    "productName": "진격의 거인 박스세트 PART 1 (학산문화사)",
-    "option": "1~17권 · 전17권 · 부록 PVC카드 17매(책과 랩핑) · 쿠팡상품번호 6911263923-16657386871 · vendorItemId 83841150136",
-    "sourceURL": "https://www.coupang.com/vp/products/6911263923?itemId=16657386871&vendorItemId=83841150136",
-    "issuedURI": "https://link.coupang.com/a/h0gkrkKY7o",
-    "linkIssuedAt": "2026-10-20T12:02:37.000Z",
-    "productCheckedAt": "2026-10-20T12:03:13.880Z",
-    "manuscript": "ops/queue/aot-box-set-part1-checklist.md",
-    "evidence": "ops/queue/evidence/aot-box-set-part1-checklist.md",
-    "factsFile": "ops/queue/evidence/aot-box-set-part1-checklist.md",
-    "images": [
-      "ops/queue/images/aot-box-set-part1-checklist/aot-box-corner-check.webp",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-care-storage.webp",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-hero-shelf.webp",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-reading-nook.webp",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-shelf-measure.webp",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-two-boxes.webp",
-      "ops/queue/images/aot-box-set-part1-checklist/aot-unboxing.webp"
-    ],
-    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, collector-v2 gate)",
-    "publishNotes": [
-      "shop-publisher re-checks sourceURL, refreshes verifiedAt/published/updated, copies images by basename to the src paths named in frontmatter (lib.mjs imageTargets), then runs scripts/publish.ps1.",
-      "Format contract: ops/POSTING-RULES.md (collector-v2)."
-    ],
-    "serp": {
-      "googleQuery": "진격의 거인 박스세트 part1",
-      "naverQuery": "진격의 거인 박스세트 (blog)",
-      "originalsReadInFull": [
-        "https://m.blog.naver.com/gomoohouse/222911386889",
-        "https://m.blog.naver.com/gusdoskfk/224417252499",
-        "https://m.blog.naver.com/hyunitopia/224362577898"
-      ],
-      "retailerFacts": [
-        "Coupang 필수 표기: 진격의 거인 박스세트 PART.1, 도서 17권, 128*188mm, 3,400쪽, 2022.10.18; 책소개 part.1 1~17권+PVC카드 17매, part.2 18~34권+PVC카드 17매",
-        "YES24 114848887: 전34권, 박스세트 2종 묶음, 부록 PVC카드 34매(책과랩핑); PART.1/PART.2 각 전17권 PVC카드 17매",
-        "Aladin 303284033 Part 2: 18~34, 전17권, PVC카드 17매, ISBN 9791169471350"
-      ],
-      "omitted": [
-        "YES24 2-box set date 2022-10-17 vs PART.1 2022-10-18 (not in body)",
-        "YES24 set 6,800g / 128*188*80mm",
-        "prices/ratings/review claims"
-      ],
-      "quicklinkScreening": [
-        {
-          "candidate": "진격의 거인 박스세트 PART 1 6911263923",
-          "result": "issued"
-        }
-      ]
-    },
-    "verifyTokens": [
-      "진격의 거인 박스세트 PART 1",
-      "6911263923",
-      "PVC카드 17매"
-    ],
-    "format": "collector-v2",
-    "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass",
-    "imageJobs": "channel-ops/ops/state/mangadrop-concept-aot-20261020",
-    "dryRunPassedAt": "2026-10-20T15:35:19.777Z"
-  },
-  {
     "slug": "haikyu-1-45-set-checklist",
     "productName": "하이큐!! 1~45권 세트 전 45권 (대원씨아이)",
     "option": "1~45권 · 전 45권(완결) · 재정가 세트 · 쿠팡상품번호 6058152764-11128704098 · vendorItemId 90790001294",
