@@ -6,7 +6,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/9649751365?itemId=28841291906&vendorItemId=94558543714",
     "issuedURI": "https://link.coupang.com/a/h1pXDKqcq4",
     "linkIssuedAt": "2026-10-21T04:45:05.000Z",
-    "productCheckedAt": "2026-10-21T04:45:44.000Z",
+    "productCheckedAt": "2026-10-22T04:05:24.000Z",
     "manuscript": "ops/queue/sololeveling-1-15-box-set-checklist.md",
     "evidence": "ops/queue/evidence/sololeveling-1-15-box-set-checklist.md",
     "factsFile": "ops/queue/evidence/sololeveling-1-15-box-set-checklist.md",
@@ -78,6 +78,11 @@
     "format": "collector-v2",
     "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge, YES24 set photo attached as shape reference only); no manga cover art, characters, logos or legible titles; QA 2026-10-21 pass 7/8 (sl-five-in-row excluded: box proportion mismatch)",
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261021-sololeveling-1-15-box-set-checklist",
-    "dryRunPassedAt": "2026-10-21T04:56:21.000Z"
+    "dryRunPassedAt": "2026-10-21T04:56:21.000Z",
+    "lastRecheck": {
+      "at": "2026-10-22T13:05:24+09:00",
+      "result": "pass",
+      "evidence": "ops/queue/evidence/sololeveling-1-15-box-set-checklist-recheck-2026-10-22.png/.txt"
+    }
   }
 ]

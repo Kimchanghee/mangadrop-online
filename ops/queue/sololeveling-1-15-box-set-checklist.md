@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/h1pXDKqcq4"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-21T13:45:44+09:00"
+  verifiedAt: "2026-10-22T13:05:24+09:00"
   evidence: "src/content/posts/_evidence/sololeveling-1-15-box-set-checklist.md"
   specs:
     - { label: "출판사", value: "디앤씨웹툰비즈" }
