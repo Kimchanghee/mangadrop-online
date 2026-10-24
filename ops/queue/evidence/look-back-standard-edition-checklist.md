@@ -27,3 +27,12 @@
 
 ## Image QA completed
 All 6 generated PNGs 1536×1024; same reference attached to each; both native bridge batch receipts code 0; contact sheet and all outputs checked for artwork/text leakage, plausible paper scale/hands, and scene relevance. All six passed.
+
+## Final isolated validation after runtime repair
+- Same SHOP 20261024-1300 slot; existing affiliate URL and six photos preserved.
+- Request shop1300-lookback-evidence-contract-1792820406794 finished 2026-10-24T05:40:29.510Z, code 0.
+- gate 42/42 checks passed, local preview OK, protected trees unchanged, stage removed.
+- Corrected product.evidence to src/content/posts/_evidence/look-back-standard-edition-checklist.md, matching publisher staging contract; queued source evidence remains here.
+- Ready order: original 3 entries unchanged, this item appended fourth.
+- Dry-run receipt: ops/queue/evidence/look-back-standard-edition-checklist-dryrun-receipt.json
+- No public post, deployment or IndexNow submission.

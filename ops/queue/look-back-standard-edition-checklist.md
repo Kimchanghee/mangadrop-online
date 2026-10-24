@@ -16,7 +16,7 @@ product:
   url: "https://link.coupang.com/a/h6ogzdTHUW"
   landingHost: "www.coupang.com"
   verifiedAt: "2026-10-24T13:39:56+09:00"
-  evidence: "ops/queue/evidence/look-back-standard-edition-checklist.md"
+  evidence: "src/content/posts/_evidence/look-back-standard-edition-checklist.md"
   specs:
     - { label: "구성", value: "일반 단행본 1권" }
     - { label: "판형", value: "128×188mm (YES24·알라딘)" }
