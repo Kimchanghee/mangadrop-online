@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/h6cP5iHOlE"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-24T10:56:57+09:00"
+  verifiedAt: "2026-10-24T13:03:17+09:00"
   evidence: "src/content/posts/_evidence/fma-complete-1-18-set-checklist.md"
   specs:
     - { label: "출판사", value: "학산문화사" }

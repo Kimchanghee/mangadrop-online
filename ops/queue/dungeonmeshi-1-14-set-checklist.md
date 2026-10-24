@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/h23w74eBs4"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-24T10:48:37+09:00"
+  verifiedAt: "2026-10-24T13:03:10+09:00"
   evidence: "src/content/posts/_evidence/dungeonmeshi-1-14-set-checklist.md"
   specs:
     - { label: "출판사", value: "소미미디어" }

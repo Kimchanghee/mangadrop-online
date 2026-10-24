@@ -13,3 +13,11 @@
 - Own Partners link: Coupang Partners 간편 링크 만들기 (channel 기본값) with the exact itemId/vendorItemId URL at 2026-10-24T02:05:45Z returned https://link.coupang.com/a/h6dhVD8dtk (product.url); no restriction notice. Own affiliate link not clicked/resolved.
 - Search: Google "도쿄 리벤저스 1-31 전권 세트" (Coupang seller listings 7490783754/9624179487 not opened, Gmarket, YES24 144890426, fashionplus, SSG, Naver Series ebook, Lotteon) and Naver blog tab "도쿄 리벤저스 만화책 전권 세트 박스세트" (jameskim9576 seller post, jhs6220096 box-set purchase, haksan_comic official, breaking85). Originals read in full: m.blog.naver.com/haksan_comic/224054980664 (publisher box-set 1-3 announcement), m.blog.naver.com/jhs6220096/224304040649 (bought 박스세트 1~3권 세트 = 31권 in three boxes; YES24 box 1 = 전10권 + 포토카드 10매), m.blog.naver.com/jameskim9576/224052339255 (seller promo for 박스판 전권 세트). Gap: none compares 낱권 1~31 세트 vs 박스세트 1~3 vs partial sets vs 37권 spin-off bundle, or explains that 박스세트 "1~3권" means box numbers, nor covers receive checks and the ~57cm shelf run.
 - Captures: ops/queue/evidence/tokyorevengers-1-31-set-checklist-native.png/.txt (listing), ops/queue/evidence/tokyorevengers-1-31-set-checklist-generator.txt (Partners quick-link page text).
+
+
+## 2026-10-24 13:00 KST routine recheck
+- Observed: 2026-10-24T13:03:24.668+09:00
+- Exact source URL: https://www.coupang.com/vp/products/7487509500?itemId=19572731086&vendorItemId=86671676029
+- All verifyTokens matched; selected option purchase controls present. No affiliate link opened.
+- Text: ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261024-1300.txt
+- Screenshot: ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261024-1300.webp

@@ -6,7 +6,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/8493664962?itemId=24580013304&vendorItemId=91591798813",
     "issuedURI": "https://link.coupang.com/a/h23w74eBs4",
     "linkIssuedAt": "2026-10-22T04:26:20.000Z",
-    "productCheckedAt": "2026-10-24T01:48:37.000Z",
+    "productCheckedAt": "2026-10-24T04:03:10.995Z",
     "manuscript": "ops/queue/dungeonmeshi-1-14-set-checklist.md",
     "evidence": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist.md",
     "factsFile": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist.md",
@@ -61,11 +61,10 @@
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261022-dungeonmeshi-1-14-set-checklist",
     "dryRunPassedAt": "2026-10-22T04:45:38.851Z",
     "lastRecheck": {
-      "checkedAt": "2026-10-24T10:48:37+09:00",
-      "result": "pass",
-      "tokensInProductBody": true,
-      "soldOut": false,
-      "evidence": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-2026-10-24.png/.txt"
+      "at": "2026-10-24T13:03:10.995+09:00",
+      "result": "ok",
+      "evidence": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-20261024-1300.txt",
+      "screenshot": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-20261024-1300.webp"
     }
   },
   {
@@ -75,7 +74,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/4544291?itemId=21070606&vendorItemId=3545931191",
     "issuedURI": "https://link.coupang.com/a/h6cP5iHOlE",
     "linkIssuedAt": "2026-10-24T01:59:29.000Z",
-    "productCheckedAt": "2026-10-24T01:56:57.000Z",
+    "productCheckedAt": "2026-10-24T04:03:17.847Z",
     "manuscript": "ops/queue/fma-complete-1-18-set-checklist.md",
     "evidence": "ops/queue/evidence/fma-complete-1-18-set-checklist.md",
     "factsFile": "ops/queue/evidence/fma-complete-1-18-set-checklist.md",
@@ -133,7 +132,13 @@
     "format": "collector-v2",
     "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge, YES24 11927089 set image attached as shape reference only); no manga cover art, characters, logos or legible titles; QA 2026-10-24 pass 7/8 (excluded fma-carton-flat-rows: two flat stacks ~8-10 volumes, not 18)",
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261024-fma-complete-1-18-set-checklist",
-    "dryRunPassedAt": "2026-10-24T02:17:13.282Z"
+    "dryRunPassedAt": "2026-10-24T02:17:13.282Z",
+    "lastRecheck": {
+      "at": "2026-10-24T13:03:17.847+09:00",
+      "result": "ok",
+      "evidence": "ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.txt",
+      "screenshot": "ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.webp"
+    }
   },
   {
     "slug": "tokyorevengers-1-31-set-checklist",
@@ -142,7 +147,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/7487509500?itemId=19572731086&vendorItemId=86671676029",
     "issuedURI": "https://link.coupang.com/a/h6dhVD8dtk",
     "linkIssuedAt": "2026-10-24T02:05:45.000Z",
-    "productCheckedAt": "2026-10-24T02:07:00.000Z",
+    "productCheckedAt": "2026-10-24T04:03:24.668Z",
     "manuscript": "ops/queue/tokyorevengers-1-31-set-checklist.md",
     "evidence": "ops/queue/evidence/tokyorevengers-1-31-set-checklist.md",
     "factsFile": "ops/queue/evidence/tokyorevengers-1-31-set-checklist.md",
@@ -195,6 +200,12 @@
     "format": "collector-v2",
     "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge, YES24 144890426 set image attached as shape reference only); no manga cover art, characters, logos or legible titles; QA 2026-10-24 pass 7/12 (excluded: tr-long-row-tape ~50+ spines, tr-three-plain-slipcases 18 volumes, tr-carton-spines-up ~17, tr-floor-sort-piles square proportion, tr-blank-cards-sleeves 9 volumes + 5 cards)",
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261024-tokyorevengers-1-31-set-checklist",
-    "dryRunPassedAt": "2026-10-24T02:22:22.822Z"
+    "dryRunPassedAt": "2026-10-24T02:22:22.822Z",
+    "lastRecheck": {
+      "at": "2026-10-24T13:03:24.668+09:00",
+      "result": "ok",
+      "evidence": "ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261024-1300.txt",
+      "screenshot": "ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261024-1300.webp"
+    }
   }
 ]

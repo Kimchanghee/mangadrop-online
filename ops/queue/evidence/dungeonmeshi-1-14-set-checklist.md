@@ -23,3 +23,11 @@
 - seller 예스이십사주식회사; 출판사 소미미디어; 배송사 업체직송; 장바구니 담기·바로구매 shown; SOLD_OUT regex (lib.mjs) no match anywhere on the page; no access denial
 - screenshot: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-2026-10-24.png ; text: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-2026-10-24.txt
 - own Partners link not opened.
+
+
+## 2026-10-24 13:00 KST routine recheck
+- Observed: 2026-10-24T13:03:10.995+09:00
+- Exact source URL: https://www.coupang.com/vp/products/8493664962?itemId=24580013304&vendorItemId=91591798813
+- All verifyTokens matched; selected option purchase controls present. No affiliate link opened.
+- Text: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-20261024-1300.txt
+- Screenshot: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-20261024-1300.webp

@@ -12,3 +12,11 @@
 - Own Partners link: Coupang Partners 간편 링크 만들기 (channel 기본값). First run with https://www.coupang.com/vp/products/4544291 at 2026-10-24T01:54:25Z returned https://link.coupang.com/a/h6ctKcaDe0 (product-level, not used); exact run with ?itemId=21070606&vendorItemId=3545931191 at 2026-10-24T01:59:29Z returned https://link.coupang.com/a/h6cP5iHOlE (product.url). No restriction notice. Own affiliate links not clicked/resolved.
 - Search: Google "강철의 연금술사 완전판 1-18 세트" (Coupang seller listings 9507887538/9701873528 not opened, Aladin 33661273, Kyobo S000000490478, YES24 11927089, Mr.Blue ebook, 11st, Naver blog ps3player) and Naver blog tab "강철의 연금술사 완전판 전권 세트" (haksan_comic official, ps3player, heobe_ing, yuryko, bittesehr, seller-affiliate posts). Originals read in full: m.blog.naver.com/haksan_comic/223682116023 (publisher box-set announcement), m.blog.naver.com/ps3player/224243808951 (완전판 18권 vs 일반판 27권; 박스 하나당 9권; 크로니클 separate), m.blog.naver.com/heobe_ing/223573536741 (정발판 27 vs 완전판 18, 표지 black/white difference; film cover). Gap: none compares the 낱권 1~18 세트 vs 박스세트 1+2 vs 일반판 27권 by product-name markers, nor covers multi-seller checks, corner checks for large format and A5 shelf clearance.
 - Captures: ops/queue/evidence/fma-complete-1-18-set-checklist-native.png/.txt (listing), ops/queue/evidence/fma-complete-1-18-set-checklist-generator.txt (Partners quick-link page text, both runs).
+
+
+## 2026-10-24 13:00 KST routine recheck
+- Observed: 2026-10-24T13:03:17.847+09:00
+- Exact source URL: https://www.coupang.com/vp/products/4544291?itemId=21070606&vendorItemId=3545931191
+- All verifyTokens matched; selected option purchase controls present. No affiliate link opened.
+- Text: ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.txt
+- Screenshot: ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.webp
