@@ -13,3 +13,13 @@
 - Own Partners link: Coupang Partners product-search card "링크 생성" (channel 기본값) at about 2026-10-22T04:26:20Z for productId 8493664962 / itemId 24580013304 / vendorItemId 91591798813; no restriction notice. product.url: https://link.coupang.com/a/h23w74eBs4 . Own affiliate link not clicked/resolved.
 - Search: Google "던전밥 1-14 전권 세트" (Coupang seller listings 8039822895/8325727308/9481082783, Aladin 338186174, 11st, YES24 139941186, Gmarket, Lotteon 박스판) and Naver blog "던전밥 만화책 전권 세트 박스판". Originals read in full: m.blog.naver.com/jameskim9576/223572587576 (seller post: 단행본 소미미디어, 14권 완결; 월드 가이드 완전판 A5, 만화 100p, 일러스트 100점+), m.blog.naver.com/juneeunjune/224389805505 (exhibition MD list; bought 박스판 there; box roomy because of PP-card extras), m.blog.naver.com/koisomemomiji/224356812734 (bought 박스판 세트 Vol 2). Gap: none compares 낱권 14권 세트 vs 박스판 Vol.1/Vol.2 vs 가이드 포함 묶음, or covers the YES24 composed-set return condition and receive/shelf checks.
 - Captures: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-native.txt (listing), ops/queue/evidence/dungeonmeshi-1-14-set-checklist-generator.txt (Partners link page text). Viewport screenshots timed out in the browser (CDP capture timeout) and were not saved.
+
+## Re-check 2026-10-24 (mangadrop routine brief 2026-10-24, logged-in Aside browser, acquire.mjs pacing)
+
+- checkedAt: 2026-10-24T10:48:37+09:00
+- ordinary listing: https://www.coupang.com/vp/products/8493664962?itemId=24580013304&vendorItemId=91591798813
+- page title: 던전밥 1~14권 세트 - 판타지 | 쿠팡
+- verifyTokens all present in the product body area (.prod-atf): product title line (던전밥 1~14권 세트), 저자 line (쿠이 료코 글그림/김민재 역), 쿠팡상품번호 8493664962 - 24580013304
+- seller 예스이십사주식회사; 출판사 소미미디어; 배송사 업체직송; 장바구니 담기·바로구매 shown; SOLD_OUT regex (lib.mjs) no match anywhere on the page; no access denial
+- screenshot: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-2026-10-24.png ; text: ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-2026-10-24.txt
+- own Partners link not opened.

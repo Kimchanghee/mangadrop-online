@@ -6,7 +6,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/8493664962?itemId=24580013304&vendorItemId=91591798813",
     "issuedURI": "https://link.coupang.com/a/h23w74eBs4",
     "linkIssuedAt": "2026-10-22T04:26:20.000Z",
-    "productCheckedAt": "2026-10-22T04:35:45.000Z",
+    "productCheckedAt": "2026-10-24T01:48:37.000Z",
     "manuscript": "ops/queue/dungeonmeshi-1-14-set-checklist.md",
     "evidence": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist.md",
     "factsFile": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist.md",
@@ -59,6 +59,13 @@
     "format": "collector-v2",
     "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge, YES24 set image attached as shape reference only); no manga cover art, characters, logos or legible titles; QA 2026-10-22 pass 7/12 (excluded for volume-count mismatch: dm-hero-kitchen-shelf 16, dm-two-sevens-desk 6+6, dm-mailer-open 12, dm-spine-closeup-partial ~24, dm-slide-back-volume ~20)",
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261022-dungeonmeshi-1-14-set-checklist",
-    "dryRunPassedAt": "2026-10-22T04:45:38.851Z"
+    "dryRunPassedAt": "2026-10-22T04:45:38.851Z",
+    "lastRecheck": {
+      "checkedAt": "2026-10-24T10:48:37+09:00",
+      "result": "pass",
+      "tokensInProductBody": true,
+      "soldOut": false,
+      "evidence": "ops/queue/evidence/dungeonmeshi-1-14-set-checklist-recheck-2026-10-24.png/.txt"
+    }
   }
 ]
