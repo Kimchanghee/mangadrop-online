@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-24T04:50:04.372Z",
+  "photos": [
+    {
+      "file": "ops/queue/images/look-back-standard-edition-checklist/lb-cover-desk.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 121146,
+      "sha256": "9efb529347d4f82a4c7b8be5e1703860044aff2fc5cab3e4681bdd8c8ba3fec1"
+    },
+    {
+      "file": "ops/queue/images/look-back-standard-edition-checklist/lb-scale-notebook.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 168322,
+      "sha256": "4a394d9fe7d3fd05d34f4598b242d602fa56aadad688c2b2e28fbc90b67adb1f"
+    },
+    {
+      "file": "ops/queue/images/look-back-standard-edition-checklist/lb-pack-open.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 94332,
+      "sha256": "5c48e6bc2736b1712c1a299a9b94b49f6be3b426a0e2e79f9a1cd5177bf4ce93"
+    },
+    {
+      "file": "ops/queue/images/look-back-standard-edition-checklist/lb-shelf-ruler.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 68948,
+      "sha256": "a91a4a9cc54ce058a7de92720459fabe05fecb5a7ee32e8b778c95229f779f75"
+    },
+    {
+      "file": "ops/queue/images/look-back-standard-edition-checklist/lb-page-check.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 84066,
+      "sha256": "44909cf546c9b7ac6468e2da3f3bb90f187821f6834d05f86b454020226316b4"
+    },
+    {
+      "file": "ops/queue/images/look-back-standard-edition-checklist/lb-dust-care.webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 154234,
+      "sha256": "0bf90e2203951c473c2c5e445dcb8ac18b855dd365c4ad33a816310504baa515"
+    }
+  ]
+}

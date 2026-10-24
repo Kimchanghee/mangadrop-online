@@ -1,0 +1,83 @@
+{
+  "slug": "look-back-standard-edition-checklist",
+  "manuscript": "ops/queue/look-back-standard-edition-checklist.md",
+  "reference": {
+    "path": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/mangadrop.online-concept-assets/refs/look-back-standard-edition-checklist/publisher-cover-reference.jpg",
+    "url": "https://image.yes24.com/goods/108192000/XL",
+    "rights": "publisher cover used privately for proportions only"
+  },
+  "generationReceipts": [
+    {
+      "id": "shop1300-resume-lookback-images-1-1792817252391",
+      "code": 0,
+      "log": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/shop1300-resume-lookback-images-1-1792817252391.log"
+    },
+    {
+      "id": "shop1300-resume-lookback-images-2-1792817252396",
+      "code": 0,
+      "log": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/shop1300-resume-lookback-images-2-1792817252396.log"
+    }
+  ],
+  "qa": {
+    "at": "2026-10-24T04:49:57.467Z",
+    "method": "all six full images displayed plus contact sheet visual review",
+    "passed": true,
+    "artwork": "none",
+    "legibleTitles": false,
+    "logos": false,
+    "characters": false,
+    "hands": "natural",
+    "singlePaperback": "preserved",
+    "distinctSceneRoles": true
+  },
+  "jobs": [
+    {
+      "name": "lb-cover-desk.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261024-look-back-standard-resume1300/lb-cover-desk.png",
+      "width": 1536,
+      "qa": "pass",
+      "role": "cover",
+      "alt": "햇살이 드는 좁은 책상 위에 크림색 무지 표지의 작은 단행본 한 권과 연필이 놓인 모습"
+    },
+    {
+      "name": "lb-scale-notebook.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261024-look-back-standard-resume1300/lb-scale-notebook.png",
+      "width": 1536,
+      "qa": "pass",
+      "role": "comparison",
+      "alt": "작은 무지 단행본과 그보다 큰 무지 노트를 아래 끝에 맞춰 나란히 놓은 책상"
+    },
+    {
+      "name": "lb-pack-open.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261024-look-back-standard-resume1300/lb-pack-open.png",
+      "width": 1536,
+      "qa": "pass",
+      "role": "detail",
+      "alt": "배송용 종이 봉투를 열어 무지 표지 단행본 한 권의 모서리를 살피는 두 손"
+    },
+    {
+      "name": "lb-shelf-ruler.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261024-look-back-standard-resume1300/lb-shelf-ruler.png",
+      "width": 1536,
+      "qa": "pass",
+      "role": "context",
+      "alt": "책장 빈 칸에 작은 단행본 한 권을 세우고 윗부분의 여유 공간을 자로 살피는 손"
+    },
+    {
+      "name": "lb-page-check.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261024-look-back-standard-resume1300/lb-page-check.png",
+      "width": 1536,
+      "qa": "pass",
+      "role": "use",
+      "alt": "무지 단행본을 살짝 펼쳐 제본과 종이 끝을 확인하는 손"
+    },
+    {
+      "name": "lb-dust-care.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261024-look-back-standard-resume1300/lb-dust-care.png",
+      "width": 1536,
+      "qa": "pass",
+      "role": "use",
+      "alt": "닫힌 무지 단행본의 윗면을 부드러운 작은 붓으로 털고 옆에 마른 천을 둔 모습"
+    }
+  ]
+}

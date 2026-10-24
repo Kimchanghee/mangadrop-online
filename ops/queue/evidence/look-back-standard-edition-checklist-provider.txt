@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-24T04:39:29.397Z",
+  "sourceURL": "https://www.coupang.com/vp/products/6400739375?itemId=13683919580&vendorItemId=82028709616",
+  "issuedURI": "https://link.coupang.com/a/h6ogzdTHUW",
+  "result": "generated in authenticated Partners quick-link UI",
+  "affiliateLinkOpened": false
+}
+# note: interactive (clickable / focusable) elements only.
+- title: "쿠팡 파트너스 공식 사이트 - Coupang Partners" [url=https://partners.coupang.com/]
+- banner:
+  - link "Coupang Partners" [ref=e1]
+  - menu:
+    - menuitem [ref=e2]:
+      - link "홈" [ref=e3]
+    - menuitem [ref=e4]:
+      - link "내 정보" [ref=e5]
+    - menuitem "링크 생성" [ref=e6]
+    - menuitem "추가 기능" [ref=e8]
+    - menuitem "리포트" [ref=e10]
+    - menuitem "약관 및 정책" [ref=e12]
+    - menuitem "도움말" [ref=e14]
+    - menuitem [ref=e16]:
+      - link "공지사항" [ref=e17]
+  - generic "쿠팡 인플루언서" [ref=e18]
+  - generic "0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9" [ref=e19]
+  - generic "마이 페이지" [ref=e20]
+- link "홈" [ref=e21]
+- text: "간편 링크 만들기"
+- heading [level=1]:
+  - text: "간편 링크 만들기  채널 아이디:"
+  - combobox "기본값" [ref=e22]
+- text: "쿠팡에서 제품 상세 페이지, 검색결과, 기획전 URL을 복사해 쉽게 파트너스 링크로 만들어보세요 쿠팡에서 원하는 페이지 찾아보기"
+- link [ref=e23]
+- heading "쿠팡 URL" [level=2]
+- text: "추천 링크"
+- button "Coupang Home" [ref=e24]
+- button "Golden Box" [ref=e25]
+- button "Rocket Fresh" [ref=e26]
+- button "Rocket WOW" [ref=e27]
+- button "Rocket Delivery" [ref=e28]
+- button "Rocket Jikgu" [ref=e29]
+- button "Women's Fashion" [ref=e30]
+- button "Men's Fashion" [ref=e31]
+- button "Baby Fashion" [ref=e32]
+- button "Coupang Travel" [ref=e33]
+- textbox "https://www.coupang.com/vp/products/6400739375?itemId=13683919580&vendorItemId=82028709616" [ref=e34]
+- button "링크 생성​" [ref=e35] [focused]
+- link [ref=e36]
+- heading "파트너스 URL" [level=2]
+- text: "https://link.coupang.com/a/h6ogzdTHUW"
+- image [ref=e37]
+- image [ref=e38]
+- button "URL 복사" [ref=e39]
+- text: "*활동 시 주의 사항 \n1. 게시글 작성 시, 아래 문구를 반드시 기재해 주세요.\n\"이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\"\n쿠팡 파트너스의 활동은 공정거래위원회의 심사지침에 따라 추천, 보증인인 파트너스 회원과 당사의 경제적 이해관계에 …[+245 chars]"
+- contentinfo:
+  - text: "coupang partners 쿠팡(주) | 대표이사: 로저스 해롤드 린(Rogers Harold Lynn)(05050) 서울특별시 광진구 아차산로 412, 2층 (자양동)사업자 등록번호: 120-88-00767 통신판매업신고: 2026-서울광진-1253 /"
+  - link "사업자정보 확인" [ref=e40]
+  - link "개인정보 처리방침" [ref=e41]
+  - text: "Copyright © Coupang Corp. 2018-2020 All Rights Reserved.문의하기"
+  - link "partners@coupang.com" [ref=e42]
+  - link "Kakao" [ref=e43]
+  - link "Facebook" [ref=e44]
+  - link "YouTube" [ref=e45]
+  - link "Naver" [ref=e46]
+  - link "Instagram" [ref=e47]
+- iframe:
+  - button "Open selection tools" [ref=f1e1]
