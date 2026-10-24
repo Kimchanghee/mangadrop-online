@@ -134,5 +134,67 @@
     "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge, YES24 11927089 set image attached as shape reference only); no manga cover art, characters, logos or legible titles; QA 2026-10-24 pass 7/8 (excluded fma-carton-flat-rows: two flat stacks ~8-10 volumes, not 18)",
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261024-fma-complete-1-18-set-checklist",
     "dryRunPassedAt": "2026-10-24T02:17:13.282Z"
+  },
+  {
+    "slug": "tokyorevengers-1-31-set-checklist",
+    "productName": "도쿄 리벤저스 1~31권 세트 (학산문화사)",
+    "option": "1~31권 완결 · 상품명 학산문화사 도쿄 리벤저스 1~31권 세트 완결 -전31권- · 판매자 (주)대림사 · 쿠팡상품번호 7487509500-19572731086 · vendorItemId 86671676029",
+    "sourceURL": "https://www.coupang.com/vp/products/7487509500?itemId=19572731086&vendorItemId=86671676029",
+    "issuedURI": "https://link.coupang.com/a/h6dhVD8dtk",
+    "linkIssuedAt": "2026-10-24T02:05:45.000Z",
+    "productCheckedAt": "2026-10-24T02:07:00.000Z",
+    "manuscript": "ops/queue/tokyorevengers-1-31-set-checklist.md",
+    "evidence": "ops/queue/evidence/tokyorevengers-1-31-set-checklist.md",
+    "factsFile": "ops/queue/evidence/tokyorevengers-1-31-set-checklist.md",
+    "images": [
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-bed-reading-earbuds.webp",
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-bookend-end-closeup.webp",
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-cover-helmet-table.webp",
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-floating-shelf-skateboard.webp",
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-gap-insert-closeup.webp",
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-shrinkwrap-scissors.webp",
+      "ops/queue/images/tokyorevengers-1-31-set-checklist/tr-top-edge-stain-check.webp"
+    ],
+    "dryRunTool": "ops/queue/dryrun-queue-item.ps1 (publish.ps1 -DryRun, collector-v2 gate)",
+    "publishNotes": [
+      "shop-publisher re-checks sourceURL, refreshes verifiedAt/published/updated, copies images by basename to the src paths named in frontmatter (lib.mjs imageTargets), then runs scripts/publish.ps1.",
+      "Format contract: ops/POSTING-RULES.md (collector-v2)."
+    ],
+    "serp": {
+      "googleQuery": "도쿄 리벤저스 1-31 전권 세트",
+      "naverQuery": "도쿄 리벤저스 만화책 전권 세트 박스세트 (blog)",
+      "originalsReadInFull": [
+        "https://m.blog.naver.com/haksan_comic/224054980664",
+        "https://m.blog.naver.com/jhs6220096/224304040649",
+        "https://m.blog.naver.com/jameskim9576/224052339255"
+      ],
+      "retailerFacts": [
+        "Coupang listing: 학산문화사 도쿄 리벤저스 1~31권 세트 완결 -전31권-, 판매자 (주)대림사, 출판사 학산문화사, ISBN: 1; 필수 표기 도서명 도쿄 리벤저스 1~31권 세트, 와쿠이 켄/학산문화사, 128*188mm, 쪽수 200, 발행일 2019-06-20",
+        "YES24 144890426: 1~31권 세트 [31권, 완결], 2023-07-25, 6,008쪽, 4,474g, 128*188*566mm; 1권 2019-06-20 ... 31권 2023-07-25 완결; series: 박스세트 1~3권 세트, 박스세트 1/2/3, 21~31, 11~20, 1~10, 1~9 세트",
+        "학산문화사 blog 2025-10-27: 박스세트 1-3 발행; YES24 박스세트 1 = 전10권 + 포토카드 10매 (quoted in jhs6220096)",
+        "Coupang search names: 1~31 + 바지 케이스케로부터의 편지 1~6 전37권, + 캐릭터북 전40권"
+      ],
+      "omitted": [
+        "prices/discounts/ratings/review counts",
+        "page count (200 vs 6,008 vs 6,024)",
+        "weight (4,474g vs 6,096g)",
+        "contents of 박스세트 2/3"
+      ],
+      "quicklinkScreening": [
+        {
+          "candidate": "학산문화사 도쿄 리벤저스 1~31권 세트 7487509500 itemId 19572731086 vendorItemId 86671676029",
+          "result": "issued"
+        }
+      ]
+    },
+    "verifyTokens": [
+      "학산문화사 도쿄 리벤저스 1~31권 세트 완결 -전31권-",
+      "도쿄 리벤저스 1~31권 세트",
+      "7487509500 - 19572731086"
+    ],
+    "format": "collector-v2",
+    "imagePolicy": "scene photos only (gpt-image via Codex subscription bridge, YES24 144890426 set image attached as shape reference only); no manga cover art, characters, logos or legible titles; QA 2026-10-24 pass 7/12 (excluded: tr-long-row-tape ~50+ spines, tr-three-plain-slipcases 18 volumes, tr-carton-spines-up ~17, tr-floor-sort-piles square proportion, tr-blank-cards-sleeves 9 volumes + 5 cards)",
+    "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261024-tokyorevengers-1-31-set-checklist",
+    "dryRunPassedAt": "2026-10-24T02:22:22.822Z"
   }
 ]
