@@ -23,7 +23,7 @@ $stageMarker = Join-Path $root '.dryrun-only.json'
 $staged = Test-Path $stageMarker
 if ($staged -and -not $DryRun) { Fail 'test stage is never deployable' }
 if ($staged) {
-  $tempRoot = (& node -p "require('fs').realpathSync(require('os').tmpdir())").TrimEnd('\') + '\'
+  $tempRoot = (& node -p "require('fs').realpathSync(require('os').tmpdir())").TrimEnd('\','/') + [IO.Path]::DirectorySeparatorChar; if (-not $IsWindows) { $root = (& node -p "require('fs').realpathSync(process.argv[1])" $root).Trim() }
   if (-not $root.StartsWith($tempRoot, [StringComparison]::OrdinalIgnoreCase) -or (Split-Path $root -Leaf) -notlike 'mangadrop-NONDEPLOYABLE-*') { Fail 'invalid dryrun staging location' }
   $stageInfo = Get-Content $stageMarker -Raw | ConvertFrom-Json
   if ($stageInfo.nonDeployable -ne $true) { Fail 'invalid dryrun staging marker' }
@@ -102,9 +102,9 @@ $buildSha = if ($staged) { $stageInfo.buildSha } else { (git rev-parse --short H
 $preview = $null
 if ($DryRun) {
   $port = if ($cfg.previewPort) { $cfg.previewPort } else { 4411 }
-  if (Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue) { Fail "preview port $port is already in use; stop that server or change ops/publish.config.json previewPort" }
+  if ($(if ($IsWindows) { Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue } else { (& lsof -nP -iTCP:$port -sTCP:LISTEN 2>$null) })) { Fail "preview port $port is already in use; stop that server or change ops/publish.config.json previewPort" }
   $nodeExe = (& node -p "process.execPath").Trim()
-  $preview = Start-Process -FilePath $nodeExe -ArgumentList @('node_modules/astro/astro.js', 'preview', '--port', "$port", '--host', '127.0.0.1') -WorkingDirectory $root -PassThru -WindowStyle Hidden
+  $hideArgs = if ($IsWindows) { @{ WindowStyle = 'Hidden' } } else { @{} }; $preview = Start-Process -FilePath $nodeExe -ArgumentList @('node_modules/astro/astro.js', 'preview', '--port', "$port", '--host', '127.0.0.1') -WorkingDirectory $root -PassThru @hideArgs
   $origin = "http://127.0.0.1:$port"
   Start-Sleep -Seconds 4
 } else {
@@ -145,7 +145,7 @@ try {
     } catch { $why = $_.Exception.Message }
     if (-not $ok) { Start-Sleep -Seconds 5 }
   }
-} finally { if ($preview) { Stop-Process -Id $preview.Id -Force -ErrorAction SilentlyContinue; Get-CimInstance Win32_Process -Filter "ParentProcessId=$($preview.Id)" -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue } } }
+} finally { if ($preview) { Stop-Process -Id $preview.Id -Force -ErrorAction SilentlyContinue; $(if ($IsWindows) { Get-CimInstance Win32_Process -Filter "ParentProcessId=$($preview.Id)" -ErrorAction SilentlyContinue } else { (& pgrep -P $preview.Id 2>$null) | ForEach-Object { [pscustomobject]@{ ProcessId = [int]$_ } } }) | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue } } }
 if (-not $ok) { Fail "verify $checkUrl : $why" }
 
 # 5. IndexNow (skipped in DryRun)
