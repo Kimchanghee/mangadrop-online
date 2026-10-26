@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/h6dhVD8dtk"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-24T13:03:24+09:00"
+  verifiedAt: "2026-10-25T04:05:23Z"
   evidence: "src/content/posts/_evidence/tokyorevengers-1-31-set-checklist.md"
   specs:
     - { label: "출판사", value: "학산문화사" }

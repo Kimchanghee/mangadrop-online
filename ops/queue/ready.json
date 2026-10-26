@@ -6,7 +6,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/4544291?itemId=21070606&vendorItemId=3545931191",
     "issuedURI": "https://link.coupang.com/a/h6cP5iHOlE",
     "linkIssuedAt": "2026-10-24T01:59:29.000Z",
-    "productCheckedAt": "2026-10-24T04:03:17.847Z",
+    "productCheckedAt": "2026-10-25T04:05:14.576Z",
     "manuscript": "ops/queue/fma-complete-1-18-set-checklist.md",
     "evidence": "ops/queue/evidence/fma-complete-1-18-set-checklist.md",
     "factsFile": "ops/queue/evidence/fma-complete-1-18-set-checklist.md",
@@ -66,10 +66,10 @@
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261024-fma-complete-1-18-set-checklist",
     "dryRunPassedAt": "2026-10-24T02:17:13.282Z",
     "lastRecheck": {
-      "at": "2026-10-24T13:03:17.847+09:00",
+      "at": "2026-10-25T04:05:14.576Z",
       "result": "ok",
-      "evidence": "ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.txt",
-      "screenshot": "ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.webp"
+      "evidence": "ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261025-1300.txt",
+      "screenshot": "ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261025-1300.webp"
     }
   },
   {
@@ -79,7 +79,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/7487509500?itemId=19572731086&vendorItemId=86671676029",
     "issuedURI": "https://link.coupang.com/a/h6dhVD8dtk",
     "linkIssuedAt": "2026-10-24T02:05:45.000Z",
-    "productCheckedAt": "2026-10-24T04:03:24.668Z",
+    "productCheckedAt": "2026-10-25T04:05:23.575Z",
     "manuscript": "ops/queue/tokyorevengers-1-31-set-checklist.md",
     "evidence": "ops/queue/evidence/tokyorevengers-1-31-set-checklist.md",
     "factsFile": "ops/queue/evidence/tokyorevengers-1-31-set-checklist.md",
@@ -134,10 +134,10 @@
     "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261024-tokyorevengers-1-31-set-checklist",
     "dryRunPassedAt": "2026-10-24T02:22:22.822Z",
     "lastRecheck": {
-      "at": "2026-10-24T13:03:24.668+09:00",
+      "at": "2026-10-25T04:05:23.575Z",
       "result": "ok",
-      "evidence": "ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261024-1300.txt",
-      "screenshot": "ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261024-1300.webp"
+      "evidence": "ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261025-1300.txt",
+      "screenshot": "ops/queue/evidence/tokyorevengers-1-31-set-checklist-recheck-20261025-1300.webp"
     }
   },
   {
@@ -147,7 +147,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/6400739375?itemId=13683919580&vendorItemId=82028709616",
     "issuedURI": "https://link.coupang.com/a/h6ogzdTHUW",
     "linkIssuedAt": "2026-10-24T04:39:29.397Z",
-    "productCheckedAt": "2026-10-24T04:39:56.522Z",
+    "productCheckedAt": "2026-10-25T04:05:36.285Z",
     "manuscript": "ops/queue/look-back-standard-edition-checklist.md",
     "evidence": "ops/queue/evidence/look-back-standard-edition-checklist.md",
     "factsFile": "ops/queue/evidence/look-back-standard-edition-checklist.md",
@@ -180,10 +180,10 @@
     },
     "dryRunTool": "normal fixed-action launchd bridge shop dryRun mangadrop.online (isolated copy; no public deployment)",
     "lastRecheck": {
-      "at": "2026-10-24T13:39:56+09:00",
+      "at": "2026-10-25T04:05:36.285Z",
       "result": "ok",
-      "evidence": "ops/queue/evidence/look-back-standard-edition-checklist-native.txt",
-      "screenshot": "ops/queue/evidence/look-back-standard-edition-checklist-native.webp"
+      "evidence": "ops/queue/evidence/look-back-standard-edition-checklist-recheck-20261025-1300.txt",
+      "screenshot": "ops/queue/evidence/look-back-standard-edition-checklist-recheck-20261025-1300.webp"
     },
     "dryRunPassedAt": "2026-10-24T05:40:29.510Z",
     "dryRunResult": "isolated source/build/local-preview validation: gate 42/42 passed; protected trees unchanged; stage removed; no public publication",
