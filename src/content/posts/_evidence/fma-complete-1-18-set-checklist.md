@@ -1,0 +1,22 @@
+# Link evidence: fma-complete-1-18-set-checklist
+
+- Exact product (ordinary Coupang page, browser-inspected 2026-10-24T10:56:57+09:00): https://www.coupang.com/vp/products/4544291?itemId=21070606&vendorItemId=3545931191 (opened as /vp/products/4544291; page JSON itemInfo itemId 21070606, offer vendorItemId 3545931191, soldOut false)
+- Page title: 강철의 연금술사 완전판 (1~18권) 세트 - 판타지 | 쿠팡
+- Listing fields observed (product body area .prod-atf): 상품명 강철의 연금술사 완전판 (1~18권) 세트 / 판매자 페이퍼북스 / 다른 판매자 보기(10) / 배송사 CJ 대한통운 / 저자 아라카와 히로무 / 출판사 학산문화사 / 그린이 아라카와 히로무 / 원제 鋼の鍊金術師 完全版 / 도서형태 반양장 / 시리즈명 [만화] 강철의 연금술사 완전판 / 세트여부 세트 상품 / 쿠팡상품번호 4544291 - 21070606. 장바구니 담기·바로구매 shown; SOLD_OUT regex (shop-publisher lib.mjs) no match anywhere on the page.
+- 필수 표기 정보: 도서명·저자/출판사·크기·쪽수·제품 구성·발행일 all "상품상세참조" (no values stated in text).
+- verifyTokens chosen from the product title line, 시리즈명 line and 쿠팡상품번호 line only (not from recommendation blocks): "강철의 연금술사 완전판 (1~18권) 세트", "[만화] 강철의 연금술사 완전판", "4544291".
+- Retailer facts: YES24 11927089 "강철의 연금술사 완전판 1~18권 세트 [전18권, 묶음상품, 완결]", 아라카와 히로무 글그림, 학산문화사, 원서 鋼の鍊金術師 完全版, 4,880쪽, 148*210*80mm, 구매 시 참고 "이 상품은 YES24에서 구성한 상품입니다(낱개 반품 불가)" (YES24's own composed product, not attributed to the Coupang seller). YES24 series lists separately: 완전판 박스세트 1~2권 세트, 박스세트 2, 박스세트 1, 완전판 1~18 세트(27836453, 품절), 낱권 1~18, 강철의 연금술사 크로니클. Kyobo S000214844981 "강철의 연금술사 완전판 박스 세트 1" 전 9권, 부록 1~9권 PVC 카드, 학산문화사, 2024-11-26, ISBN 9791141149413, 148*210*160 mm; describes 박스세트1 (1~9권+PVC 카드 9매) and 박스세트2 (10~18권+PVC 카드 9매); same page lists 일반판 박스세트 1(1~9권), 3(19~27권).
+- Publisher: 학산문화사 official blog (m.blog.naver.com/haksan_comic/223682116023, 2024-12-04): 일반판 박스 세트 = 블랙 아웃박스 + 전권 표지 이미지 PVC 카드; 완전판 박스 세트 = 화이트 아웃박스 + 전권 표지 이미지 PVC 카드.
+- Used in body: 완전판 18권 완결, 학산문화사, 아라카와 히로무, 148×210mm (YES24 and Kyobo agree on face size; = A5), 반양장 (listing), 시리즈명/판매자 (listing), 박스세트 1/2 ranges and white box + PVC card (publisher + Kyobo), 일반판 1~27 and 블랙 박스 (publisher; 27 volumes also YES24/Kyobo series), Kyobo box-set-1 size 148×210×160mm (attributed) for shelf-width estimate.
+- Omitted: prices/discounts, ratings, review counts, publication dates (YES24 set 2012-06-25 vs blog 2013-11-29), set thickness (YES24 80mm implausible for 18 volumes), page count (YES24 only), weights, episodes-per-volume and clear-jacket details (blog-only), 크로니클 format (blog-only).
+- Own Partners link: Coupang Partners 간편 링크 만들기 (channel 기본값). First run with https://www.coupang.com/vp/products/4544291 at 2026-10-24T01:54:25Z returned https://link.coupang.com/a/h6ctKcaDe0 (product-level, not used); exact run with ?itemId=21070606&vendorItemId=3545931191 at 2026-10-24T01:59:29Z returned https://link.coupang.com/a/h6cP5iHOlE (product.url). No restriction notice. Own affiliate links not clicked/resolved.
+- Search: Google "강철의 연금술사 완전판 1-18 세트" (Coupang seller listings 9507887538/9701873528 not opened, Aladin 33661273, Kyobo S000000490478, YES24 11927089, Mr.Blue ebook, 11st, Naver blog ps3player) and Naver blog tab "강철의 연금술사 완전판 전권 세트" (haksan_comic official, ps3player, heobe_ing, yuryko, bittesehr, seller-affiliate posts). Originals read in full: m.blog.naver.com/haksan_comic/223682116023 (publisher box-set announcement), m.blog.naver.com/ps3player/224243808951 (완전판 18권 vs 일반판 27권; 박스 하나당 9권; 크로니클 separate), m.blog.naver.com/heobe_ing/223573536741 (정발판 27 vs 완전판 18, 표지 black/white difference; film cover). Gap: none compares the 낱권 1~18 세트 vs 박스세트 1+2 vs 일반판 27권 by product-name markers, nor covers multi-seller checks, corner checks for large format and A5 shelf clearance.
+- Captures: ops/queue/evidence/fma-complete-1-18-set-checklist-native.png/.txt (listing), ops/queue/evidence/fma-complete-1-18-set-checklist-generator.txt (Partners quick-link page text, both runs).
+
+
+## 2026-10-24 13:00 KST routine recheck
+- Observed: 2026-10-24T13:03:17.847+09:00
+- Exact source URL: https://www.coupang.com/vp/products/4544291?itemId=21070606&vendorItemId=3545931191
+- All verifyTokens matched; selected option purchase controls present. No affiliate link opened.
+- Text: ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.txt
+- Screenshot: ops/queue/evidence/fma-complete-1-18-set-checklist-recheck-20261024-1300.webp
