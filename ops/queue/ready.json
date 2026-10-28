@@ -6,7 +6,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/6400739375?itemId=13683919580&vendorItemId=82028709616",
     "issuedURI": "https://link.coupang.com/a/h6ogzdTHUW",
     "linkIssuedAt": "2026-10-24T04:39:29.397Z",
-    "productCheckedAt": "2026-10-25T04:05:36.285Z",
+    "productCheckedAt": "2026-10-28T04:01:55.570Z",
     "manuscript": "ops/queue/look-back-standard-edition-checklist.md",
     "evidence": "ops/queue/evidence/look-back-standard-edition-checklist.md",
     "factsFile": "ops/queue/evidence/look-back-standard-edition-checklist.md",
@@ -39,10 +39,10 @@
     },
     "dryRunTool": "normal fixed-action launchd bridge shop dryRun mangadrop.online (isolated copy; no public deployment)",
     "lastRecheck": {
-      "at": "2026-10-25T04:05:36.285Z",
+      "at": "2026-10-28T04:01:55.570Z",
       "result": "ok",
-      "evidence": "ops/queue/evidence/look-back-standard-edition-checklist-recheck-20261025-1300.txt",
-      "screenshot": "ops/queue/evidence/look-back-standard-edition-checklist-recheck-20261025-1300.webp"
+      "evidence": "ops/queue/evidence/look-back-standard-edition-checklist-recheck-20261028-1300.txt",
+      "screenshot": "ops/queue/evidence/look-back-standard-edition-checklist-recheck-20261028-1300.webp"
     },
     "dryRunPassedAt": "2026-10-24T05:40:29.510Z",
     "dryRunResult": "isolated source/build/local-preview validation: gate 42/42 passed; protected trees unchanged; stage removed; no public publication",
