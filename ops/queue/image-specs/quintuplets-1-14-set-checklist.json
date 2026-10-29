@@ -1,0 +1,116 @@
+{
+  "slug": "quintuplets-1-14-set-checklist",
+  "manuscript": "ops/queue/quintuplets-1-14-set-checklist.md",
+  "reference": {
+    "path": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/mangadrop.online-concept-assets/refs/quintuplets-1-14-set-checklist/publisher-cover-reference.jpg",
+    "url": "https://image.yes24.com/goods/74259290/XL",
+    "rights": "publisher cover used privately for book proportions only"
+  },
+  "generationReceipts": [
+    {
+      "id": "20261029-1300-md-qq-gen-1",
+      "code": 0,
+      "succeeded": "4/4"
+    },
+    {
+      "id": "20261029-1300-md-qq-gen-2",
+      "code": 0,
+      "succeeded": "3/3"
+    }
+  ],
+  "preflight": [
+    {
+      "id": "20261029-1300-md-qq-a-preflight-1",
+      "code": 0
+    },
+    {
+      "id": "20261029-1300-md-qq-a-preflight-2",
+      "code": 0
+    }
+  ],
+  "qa": {
+    "at": "2026-10-29T04:40:00Z",
+    "method": "all seven outputs viewed at contact-sheet scale",
+    "passed": true,
+    "artwork": "none",
+    "legibleTitles": false,
+    "logos": false,
+    "characters": false,
+    "hands": "natural",
+    "distinctSceneRoles": true,
+    "notes": "two-stacks image shows two stacks of about six books each, alt does not claim a count; box image is a plain unprinted kraft box, used only as temporary storage context, not as a box-set claim"
+  },
+  "conversion": "sharp webp quality 80, 1536x1024",
+  "jobs": [
+    {
+      "name": "qq-cover-window-seat.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-cover-window-seat.png",
+      "pngSha256": "c9a03acc6507e29f6a4e337ca5760efda3c9ea9598ca152e9b6a3e7dad78e632",
+      "webpSha256": "9da136e62bf94a97df4b7408567ca70f175ed25e461511f2fd168510b35c632e",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "cover"
+    },
+    {
+      "name": "qq-two-stacks-seven.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-two-stacks-seven.png",
+      "pngSha256": "c898d9ec5364fdb135d5f635ebc27121adc50cadd2e32b6995efb8e8ffda77ce",
+      "webpSha256": "8d2bf8e0dbe62b62c3724b85cc852f13e4ef2b9b445e0f3a8939b544b9ce7fc7",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "comparison"
+    },
+    {
+      "name": "qq-shrink-bundle.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-shrink-bundle.png",
+      "pngSha256": "214d1e2d7dfa6699c01bce8604329aed5c1f9e50ebc174ed26de573aeaedb064",
+      "webpSha256": "8db182f164982689d72da93eb6bf2664b864b02ee3171e99268e1465504f4319",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "use"
+    },
+    {
+      "name": "qq-page-edge-check.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-page-edge-check.png",
+      "pngSha256": "3c78d4c2c97a653ba4e4459026af38899bcce104050655c41647a0e9efb2b834",
+      "webpSha256": "6557d40fdde00a10f7d2c0b674ea67913a3f07d7dce113feed5282f2087b1597",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "detail"
+    },
+    {
+      "name": "qq-shelf-ruler.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-shelf-ruler.png",
+      "pngSha256": "3d73b92a6e556b57633b180d5572cecc139d7272fa2c46f58b30ece8a43e5dcd",
+      "webpSha256": "83d0675c93877649bdbbe0e52b416446f6be80dd538ec79a58ea9bff1ffd0560",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "context"
+    },
+    {
+      "name": "qq-cube-shelf.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-cube-shelf.png",
+      "pngSha256": "49ea0cdff1db554bbc4d24f0218db6cb3389232a2156041bef95ea5a9bf9d2ca",
+      "webpSha256": "95a68d8e7c835d3ff90b1ef435294555bb5ce9b044b1f74ef1cdf1cde7f98ef7",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "context"
+    },
+    {
+      "name": "qq-box-vs-loose.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-quintuplets/qq-box-vs-loose.png",
+      "pngSha256": "2984aac1bf4d543e2a8afcdd54bf22fb11fc371687904a690f3e20f23cd6bba3",
+      "webpSha256": "96733ee0c6ba51029e84be8821caaddc8de024d6cc56c8d08dff309ba7eeca40",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "context"
+    }
+  ]
+}

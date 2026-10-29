@@ -54,5 +54,57 @@
     "dryRunResult": "bridge shop dryRun mangadrop.online (isolated stage): gate 50/50 passed, local preview OK, protected trees unchanged, stage removed; no public publication",
     "dryRunReceipt": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-dryrun-receipt.json",
     "dryRunTool": "normal fixed-action launchd bridge shop dryRun mangadrop.online"
+  },
+  {
+    "slug": "quintuplets-1-14-set-checklist",
+    "productName": "5등분의 신부 1~14권 세트 (학산문화사)",
+    "option": "1~14권 완결 세트 · ISBN 9791134806934 · 판매자 쿠팡(주) · 쿠팡상품번호 5490576530-8498762087 · vendorItemId 75786280147",
+    "sourceURL": "https://www.coupang.com/vp/products/5490576530?itemId=8498762087&vendorItemId=75786280147",
+    "issuedURI": "https://link.coupang.com/a/ieEXCHBHJk",
+    "linkIssuedAt": "2026-10-29T04:13:00Z",
+    "productCheckedAt": "2026-10-29T04:27:48Z",
+    "manuscript": "ops/queue/quintuplets-1-14-set-checklist.md",
+    "evidence": "ops/queue/evidence/quintuplets-1-14-set-checklist.md",
+    "factsFile": "ops/queue/evidence/quintuplets-1-14-set-checklist.md",
+    "images": [
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-cover-window-seat.webp",
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-two-stacks-seven.webp",
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-shrink-bundle.webp",
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-page-edge-check.webp",
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-shelf-ruler.webp",
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-cube-shelf.webp",
+      "ops/queue/images/quintuplets-1-14-set-checklist/qq-box-vs-loose.webp"
+    ],
+    "verifyTokens": [
+      "5등분의 신부 1~14",
+      "9791134806934",
+      "5490576530 - 8498762087"
+    ],
+    "format": "collector-v2",
+    "imageSpec": "ops/queue/image-specs/quintuplets-1-14-set-checklist.json",
+    "imageJobs": "channel-ops/ops/state/mangadrop-queue-20261029-quintuplets",
+    "imagePolicy": "7 distinct GENEXIS Codex subscription scene photos; publisher cover attached for proportions only; blank covers/spines; no art, characters, logos or legible titles; all seven QA passed",
+    "serp": {
+      "googleQuery": "5등분의 신부 1-14권 세트 박스세트 학산문화사",
+      "naverQuery": "5등분의 신부 전권 세트 / 박스세트 / 만화책 전권",
+      "originalsReadInFull": [
+        "https://blog.naver.com/tigerok7/223004557599",
+        "https://blog.naver.com/pixelreader/223845339925",
+        "https://blog.naver.com/dosa0023/222963478645"
+      ]
+    },
+    "limitations": [
+      "per-volume ISBNs differ by printing (교보 1권 2022-08 reprint ISBN)",
+      "store sizes differ slightly (130 vs 132mm) → approximations only",
+      "box set omitted (inconsistent third-party data)",
+      "Coupang required-info date/pages are single-volume values"
+    ],
+    "lastRecheck": {
+      "at": "2026-10-29T04:27:48Z",
+      "result": "ok",
+      "evidence": "ops/queue/evidence/quintuplets-1-14-set-checklist-native-20261029.txt",
+      "screenshot": "ops/queue/evidence/quintuplets-1-14-set-checklist-native-20261029.webp",
+      "tokensMatched": 3
+    }
   }
 ]
