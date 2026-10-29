@@ -49,7 +49,11 @@
       "evidence": "ops/queue/evidence/quintuplets-1-14-set-checklist-native-20261029.txt",
       "screenshot": "ops/queue/evidence/quintuplets-1-14-set-checklist-native-20261029.webp",
       "tokensMatched": 3
-    }
+    },
+    "dryRunPassedAt": "2026-10-29T04:32:57.808Z",
+    "dryRunResult": "bridge shop dryRun mangadrop.online (isolated stage, item staged first): gate 50/50 passed, local preview OK, protected trees unchanged, stage removed; no public publication",
+    "dryRunReceipt": "ops/queue/evidence/quintuplets-1-14-set-checklist-dryrun-receipt.json",
+    "dryRunTool": "normal fixed-action launchd bridge shop dryRun mangadrop.online"
   },
   {
     "slug": "monster-perfect-edition-1-9-set-checklist",
