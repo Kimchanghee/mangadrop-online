@@ -1,0 +1,116 @@
+{
+  "slug": "monster-perfect-edition-1-9-set-checklist",
+  "manuscript": "ops/queue/monster-perfect-edition-1-9-set-checklist.md",
+  "reference": {
+    "path": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/mangadrop.online-concept-assets/refs/monster-perfect-edition-1-9-set-checklist/publisher-cover-reference.jpg",
+    "url": "https://image.yes24.com/goods/112376291/XL",
+    "rights": "publisher cover used privately for book proportions only"
+  },
+  "generationReceipts": [
+    {
+      "id": "20261029-1300-md-monster-gen-1",
+      "code": 0,
+      "succeeded": "4/4"
+    },
+    {
+      "id": "20261029-1300-md-monster-gen-2",
+      "code": 0,
+      "succeeded": "3/3"
+    }
+  ],
+  "preflight": [
+    {
+      "id": "20261029-1300-md-monster-preflight-1",
+      "code": 0
+    },
+    {
+      "id": "20261029-1300-md-monster-preflight-2",
+      "code": 0
+    }
+  ],
+  "qa": {
+    "at": "2026-10-29T04:40:00Z",
+    "method": "all seven outputs viewed at contact-sheet scale",
+    "passed": true,
+    "artwork": "none",
+    "legibleTitles": false,
+    "logos": false,
+    "characters": false,
+    "hands": "natural",
+    "distinctSceneRoles": true,
+    "notes": "size-compare shows height difference only modestly; shelf-measure tape markings small/unreadable; count-spines and bookend scenes show nine blank spines"
+  },
+  "conversion": "sharp webp quality 80, 1536x1024",
+  "jobs": [
+    {
+      "name": "mo-cover-lamp-table.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-cover-lamp-table.png",
+      "pngSha256": "50b9175ba47f38342eda37e489966910b7e8a5fe8e0ac7219c233dd1d1f65771",
+      "webpSha256": "cf3021edaba500cc961353aa848e673028a1696e3170349a09974a86789dbf75",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "cover"
+    },
+    {
+      "name": "mo-size-compare.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-size-compare.png",
+      "pngSha256": "7b57b4c1308474028a04e640a28177f05112bb615633ffd22e5db8494e3514da",
+      "webpSha256": "70a0c42a4ef0e5c9981da8ac0e8220483d946af254adf059b0a3cc48e7fc5600",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "comparison"
+    },
+    {
+      "name": "mo-box-unpack.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-box-unpack.png",
+      "pngSha256": "850d72bd7acb25db9d76b3e3100ab701062d37f39772c80f58feb0af462fb8c6",
+      "webpSha256": "5b421533eb5403761cbd878e9b7c6ae04830ef49171d31f0a22cf3f7e4ad8654",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "use"
+    },
+    {
+      "name": "mo-count-spines.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-count-spines.png",
+      "pngSha256": "0f38c14104847b2389d9f122c23cb833223627baa74c55295a2a91444a52b2fc",
+      "webpSha256": "3c424918059ca2147165a27eb4456c49943095591b64b829e15c0c0cec142ee7",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "use"
+    },
+    {
+      "name": "mo-corner-check.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-corner-check.png",
+      "pngSha256": "252bd68f456eeb8594f216049b29445fa4dbc813ef6414a0784b481128aed2b6",
+      "webpSha256": "ddefb200bf6ee738375da50e95a63ab65b46c2e0ac59d563d227db074a7f8c32",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "detail"
+    },
+    {
+      "name": "mo-shelf-measure.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-shelf-measure.png",
+      "pngSha256": "6a7759f058a1b4ae89978f083e23b56aac11b42ca7e81eac9a34130077b1af9b",
+      "webpSha256": "1cf68efb45d673ad5b3cac27ad2add5ec5fc993a63709f2fc510aaaf59b96dcb",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "context"
+    },
+    {
+      "name": "mo-shelf-bookend.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/mangadrop-queue-20261029-monster-perfect/mo-shelf-bookend.png",
+      "pngSha256": "7b3049916276b661aee8c05a38b6388e585c47d09a67fad1911ec9d59dfbf73b",
+      "webpSha256": "8f954709ec612c50f6eb09a4b95fbdb9f70c003e631e47277172253dd37d8acb",
+      "width": 1536,
+      "height": 1024,
+      "qa": "pass",
+      "role": "context"
+    }
+  ]
+}
