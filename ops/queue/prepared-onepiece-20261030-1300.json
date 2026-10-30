@@ -1,6 +1,6 @@
 {
-  "status": "held_exact_item_full_dryrun",
-  "reason": "Source gate1/1 and isolated exact build gate52/52 passed; normal bridge dryrun selected older Monster, so exact One Piece full dryrun+preview not yet evidenced. Prepared entry kept outside ready to prevent unvalidated publication.",
+  "status": "prepared_ready",
+  "reason": "Exact item full bridge dryrun and local preview completed by parent",
   "entry": {
     "slug": "onepiece-part1-box-set-checklist",
     "productName": "원피스 제1부 박스세트 (대원씨아이)",
@@ -75,8 +75,14 @@
       "screenshot": "ops/queue/evidence/onepiece-part1-box-set-checklist-recheck-20261030-1300.webp"
     },
     "evidence": "ops/queue/evidence/onepiece-part1-box-set-checklist.md",
-    "requalifiedAt": "2026-10-30T04:07:29.534Z"
+    "requalifiedAt": "2026-10-30T04:07:29.534Z",
+    "dryRunPassedAt": "2026-10-30T04:13:48.551Z",
+    "dryRunReceipt": "_mac/bridge/results/20261030-1300-parent-onepiece-exact-fixed-v2.json",
+    "dryRunResult": "exact One Piece source/build 52/52 + local native preview passed; protected trees unchanged, isolated stage removed; no publication"
   },
   "localGate": "_mac/shop-runs/20261030-1300/mangadrop-onepiece-local-build-gate-v2.json",
-  "normalBridge": "_mac/bridge/results/20261030-1300-manga-clean-dryrun-v2.json"
+  "normalBridge": "_mac/bridge/results/20261030-1300-manga-clean-dryrun-v2.json",
+  "previousHeldReason": "Source gate1/1 and isolated exact build gate52/52 passed; normal bridge dryrun selected older Monster, so exact One Piece full dryrun+preview not yet evidenced. Prepared entry kept outside ready to prevent unvalidated publication.",
+  "exactFullDryRun": "_mac/bridge/results/20261030-1300-parent-onepiece-exact-fixed-v2.json",
+  "completedAt": "2026-10-30T04:13:48.551Z"
 }
