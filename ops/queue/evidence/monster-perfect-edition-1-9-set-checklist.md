@@ -26,3 +26,11 @@
 
 ## Images
 - Seven distinct GENEXIS Codex subscription scene photos (bridge 20261029-1300-md-monster-gen-1 4/4, -gen-2 3/3, preflight code 0 both), publisher cover https://image.yes24.com/goods/112376291/XL attached as proportion-only reference. All blank covers/spines; no artwork, characters, logos or legible titles; QA in ops/queue/image-specs/monster-perfect-edition-1-9-set-checklist.json.
+
+
+## 2026-10-30 native recheck
+- 2026-10-30T04:02:30.860Z
+- 3/3 verifyTokens matched; publisher 서울미디어코믹스 and seller 주식회사 이유 unchanged; 1 remaining, buy/cart enabled.
+- Source: https://www.coupang.com/vp/products/9298114146?itemId=27542429662&vendorItemId=94506843736
+- Text: ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-native-20261030.txt
+- Screenshot: ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-native-20261030.webp

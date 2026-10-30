@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/ieEWpnF2vA"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-29T04:25:15Z"
+  verifiedAt: "2026-10-30T04:02:30.860Z"
   evidence: "src/content/posts/_evidence/monster-perfect-edition-1-9-set-checklist.md"
   specs:
     - { label: "출판사", value: "서울미디어코믹스(서울문화사)" }

@@ -6,7 +6,7 @@
     "sourceURL": "https://www.coupang.com/vp/products/9298114146?itemId=27542429662&vendorItemId=94506843736",
     "issuedURI": "https://link.coupang.com/a/ieEWpnF2vA",
     "linkIssuedAt": "2026-10-29T04:12:00Z",
-    "productCheckedAt": "2026-10-29T04:25:15Z",
+    "productCheckedAt": "2026-10-30T04:02:30.860Z",
     "manuscript": "ops/queue/monster-perfect-edition-1-9-set-checklist.md",
     "evidence": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist.md",
     "factsFile": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist.md",
@@ -44,11 +44,12 @@
       "marketplace seller 주식회사 이유, low stock shown at check"
     ],
     "lastRecheck": {
-      "at": "2026-10-29T04:25:15Z",
+      "at": "2026-10-30T04:02:30.860Z",
       "result": "ok",
-      "evidence": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-native-20261029.txt",
-      "screenshot": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-native-20261029.webp",
-      "tokensMatched": 3
+      "evidence": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-native-20261030.txt",
+      "screenshot": "ops/queue/evidence/monster-perfect-edition-1-9-set-checklist-native-20261030.webp",
+      "tokensMatched": 3,
+      "stock": "native low stock 1; buy/cart enabled"
     },
     "dryRunPassedAt": "2026-10-29T04:26:47.179Z",
     "dryRunResult": "bridge shop dryRun mangadrop.online (isolated stage): gate 50/50 passed, local preview OK, protected trees unchanged, stage removed; no public publication",
