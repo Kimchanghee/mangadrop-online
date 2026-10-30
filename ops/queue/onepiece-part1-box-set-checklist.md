@@ -16,7 +16,7 @@ product:
   url: "https://link.coupang.com/a/hZOCMp1Mqa"
   landingHost: "www.coupang.com"
   verifiedAt: "2026-10-30T04:07:29.534Z"
-  evidence: "ops/queue/evidence/onepiece-part1-box-set-checklist.md"
+  evidence: "src/content/posts/_evidence/onepiece-part1-box-set-checklist.md"
   specs:
     - { label: "출판사", value: "대원씨아이" }
     - { label: "구성", value: "1~32권, 박스 3개 묶음" }
