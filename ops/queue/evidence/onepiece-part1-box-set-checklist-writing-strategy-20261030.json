@@ -1,0 +1,69 @@
+{
+  "strategyVersion": "channel-discovery-20261025-v1",
+  "sourceIds": [
+    "G01",
+    "G02",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09"
+  ],
+  "at": "2026-10-30T04:11:09.766Z",
+  "channel": "mangadrop.online",
+  "reader": "원피스 박스별 권수와 배송 구성 확인을 원하는 수집 독자",
+  "question": "박스3개에서 1~32권이 어떻게 이어지며 무엇을 주문 전에 확인할까?",
+  "nextAction": "상품 구성32권·박스3개와 특전 포함 여부를 구분해 확인",
+  "titlePromise": "박스별 권 범위와 동봉 확인 항목",
+  "directAnswer": "1~12·13~23·24~32권의 세 박스이며 현재 옵션 구성은32권·박스3개, 특전은 판매자 확인 대상",
+  "editorialValue": "낱개EP1과 전체1부 묶음 혼동 방지, 미확인 ISBN 제거, 박스별 실물 확인 체크리스트",
+  "sourceReadings": [
+    {
+      "url": "https://m.blog.naver.com/daiwon_ci/222564190654",
+      "finding": "공식 EP1 1~12권·당시 박스판 부록; 현재 판매자 특전 보장은 아님"
+    },
+    {
+      "url": "https://m.blog.naver.com/codnjs329/222662912229",
+      "finding": "EP3 24~32권 9권; 개인 감상·품질 일반화 제외"
+    },
+    {
+      "url": "https://slowjeong.tistory.com/entry/원피스-만화책-코믹스-세트-소장한다면-박스판-추천한다-1부-에피소드2-모래의-나라-언박싱-후기",
+      "finding": "EP2 박스13~23권; 개인 마감 경험은 보편 성능 주장에 쓰지 않음"
+    }
+  ],
+  "googleAndNaverEvidence": "ops/queue/evidence/onepiece-part1-box-set-checklist-recheck-20261030-1300-{google.json,naver.txt}",
+  "facts": {
+    "sourceURL": "https://www.coupang.com/vp/products/8918081728?itemId=26058614279&vendorItemId=93039950997",
+    "verifiedAt": "2026-10-30T04:07:29.534Z",
+    "tokensMatched": "3/3",
+    "stock": 3,
+    "buyEnabled": true,
+    "isbn": "unavailable; removed obsolete value",
+    "photos": 7,
+    "newGenerations": 0
+  },
+  "unverifiedExclusions": [
+    "ISBN",
+    "박스 치수",
+    "무게",
+    "발행일 상충값",
+    "현재 판매자 특전 포함 확약",
+    "가격·후기·평점"
+  ],
+  "imageRoles": [
+    "배송 포장 점검",
+    "부록 구성 확인 장면",
+    "대표3박스",
+    "권수 확인 장면",
+    "박스 폭 비교 장면",
+    "서가 간격 확인",
+    "읽기 자리"
+  ],
+  "qa": "7 existing WebP no legible words/logos/characters/cover art; illustrative not measurement proof",
+  "relatedInternalLinks": [
+    "/guides/manga-edition-isbn-volumes/"
+  ],
+  "publication": false,
+  "reviewPlan": "exact-item full dryrun required; general bridge selects Monster, do not falsely attribute to One Piece"
+}
