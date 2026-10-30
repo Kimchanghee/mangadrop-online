@@ -5,8 +5,8 @@ format: collector-v2
 question: "원피스 제1부 박스세트를 사기 전에 무엇을 확인해야 하나"
 answer: "원피스 제1부 박스세트는 동쪽의 바다·모래의 나라·하늘의 섬 박스 3개에 1~32권을 나눠 담은 묶음입니다. 박스별 권 범위와 특전 동봉 여부를 판매 페이지에서 먼저 맞춰 보고, 33권부터는 제2부 박스로 이어진다는 점을 염두에 두세요."
 description: "원피스 제1부 박스세트를 사기 전에 박스 3개의 권 범위, 박스판 특전, 판매 페이지에서 볼 항목, 받은 뒤 확인할 것, 다음 박스로 이어지는 순서까지 정리했습니다."
-published: "2026-10-20T14:36:37+09:00"
-updated: "2026-10-20T14:36:37+09:00"
+published: "2026-10-30T04:07:29.534Z"
+updated: "2026-10-30T04:07:29.534Z"
 category: editions
 primaryKeyword: "원피스 박스세트"
 product:
@@ -15,13 +15,12 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/hZOCMp1Mqa"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-20T14:36:37+09:00"
-  evidence: "src/content/posts/_evidence/onepiece-part1-box-set-checklist.md"
+  verifiedAt: "2026-10-30T04:07:29.534Z"
+  evidence: "ops/queue/evidence/onepiece-part1-box-set-checklist.md"
   specs:
     - { label: "출판사", value: "대원씨아이" }
     - { label: "구성", value: "1~32권, 박스 3개 묶음" }
     - { label: "발행언어", value: "한국어" }
-    - { label: "상품 정보 ISBN", value: "9791160073416" }
   box:
     label: "제1부 박스 3개"
     ranges:

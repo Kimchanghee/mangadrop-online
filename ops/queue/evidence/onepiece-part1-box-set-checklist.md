@@ -8,3 +8,14 @@
 - product.url: https://link.coupang.com/a/hZOCMp1Mqa
 - Own affiliate link not clicked/resolved. No price, rating or review count used.
 - Screens: ops/queue/evidence/onepiece-part1-box-generator.png, onepiece-part1-box-native.png
+
+## 2026-10-30 requalification
+- checkedAt: 2026-10-30T04:07:29.534Z
+- Same exact unpublished source vendor URL reopened: title 원피스 제1부 박스세트; product ID 8918081728 - 26058614279; 필수 표기 정보 책 32권(박스 3개 묶음상품). All 3 current verify tokens matched in main product, not recommendations.
+- Native stock 3; 장바구니 담기 and 바로구매 enabled. No purchase clicked.
+- ISBN now 바코드 없음(쿠팡 바코드 생성 요청): obsolete 9791160073416 removed from manuscript and tokens. Dimensions/date/weight remain omitted.
+- Existing own issued URI retained without reissuance or navigation: https://link.coupang.com/a/hZOCMp1Mqa. Normal Partners home and quicklink form accessible in own new tab; no challenge.
+- Existing 7 unique GENEXIS scene WebPs visually re-QA: no cover artwork, text, characters or logos. No new generation. Illustrative blank boxes and care scenes are not product measurement proof.
+- Google + Naver SERPs read; publisher EP1 plus independent EP2/EP3 original bodies reread fully. Historical special gifts not guaranteed for this current listing.
+- Publish log and src/content/posts checked: this product/slug has never been published.
+- Evidence: onepiece-part1-box-set-checklist-recheck-20261030-1300.txt/.webp, -google.json, -naver.txt.
