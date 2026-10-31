@@ -15,7 +15,7 @@ product:
   provider: coupang
   url: "https://link.coupang.com/a/hZOCMp1Mqa"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-10-30T04:07:29.534Z"
+  verifiedAt: "2026-10-31T04:07:03.806Z"
   evidence: "src/content/posts/_evidence/onepiece-part1-box-set-checklist.md"
   specs:
     - { label: "출판사", value: "대원씨아이" }
