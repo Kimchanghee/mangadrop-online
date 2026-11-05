@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "slug": "promisedneverland-1-20-manga-set-checklist",
+    "productName": "학산문화사 약속의 네버랜드 1~20 [전20권]",
+    "option": "학산문화사 약속의 네버랜드 1~20 [전20권] · 시라이 카이우 · 데미즈 포스카 · 304263080 - 957510504 · [ 제품구성 - 전 20권 ] 약속의 네버랜드 01 ~ 20",
+    "sourceURL": "https://www.coupang.com/vp/products/304263080",
+    "issuedURI": "https://link.coupang.com/a/iqhk8MOjIa",
+    "verifyTokens": [
+      "학산문화사 약속의 네버랜드 1~20 [전20권]",
+      "시라이 카이우",
+      "데미즈 포스카",
+      "304263080 - 957510504",
+      "[ 제품구성 - 전 20권 ] 약속의 네버랜드 01 ~ 20"
+    ],
+    "manuscript": "ops/queue/promisedneverland-1-20-manga-set-checklist.md",
+    "factsFile": "ops/queue/evidence/promisedneverland-1-20-manga-set-checklist.md",
+    "images": [
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-1-reading-space.webp",
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-2-unpack.webp",
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-3-sequence.webp",
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-4-compare.webp",
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-5-measure-width.webp",
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-6-shelf-clearance.webp",
+      "ops/queue/images/promisedneverland-1-20-manga-set-checklist/pn-7-condition.webp"
+    ],
+    "format": "collector-v2",
+    "verifiedAt": "2026-11-05T04:05:47.238Z",
+    "queuedAt": "2026-11-05T04:31:56.931Z",
+    "imageQA": "seven scenes inspected; no artwork/characters/logos/readable titles; actual scene ALT matched",
+    "dryRunTool": "bridge shop dryRun mangadrop.online; one item per run",
+    "dryRunPassedAt": "2026-11-05T04:32:53.529Z"
+  },
+  {
+    "slug": "akira-1-6-set-checklist",
+    "productName": "아키라 AKIRA 1~6권 세트",
+    "option": "세미콜론 · 오토모가쓰히로 · 김완역 · YES24구성6권묶음 · 예스이십사주식회사 · item19021262891",
+    "sourceURL": "https://www.coupang.com/vp/products/7372481304?itemId=19021262891",
+    "issuedURI": "https://link.coupang.com/a/h70QwGM04q",
+    "verifyTokens": [
+      "아키라 AKIRA 1~6권 세트",
+      "7372481304 - 19021262891",
+      "세미콜론",
+      "예스이십사주식회사",
+      "6권 묶음도서",
+      "이 상품은 YES24에서 구성한 상품입니다"
+    ],
+    "manuscript": "ops/queue/akira-1-6-set-checklist.md",
+    "factsFile": "ops/queue/evidence/akira-1-6-set-checklist.md",
+    "images": [
+      "ops/queue/images/akira-1-6-set-checklist/ak-hero-stack-page-edges.webp",
+      "ops/queue/images/akira-1-6-set-checklist/ak-shelf-clearance.webp",
+      "ops/queue/images/akira-1-6-set-checklist/ak-delivery-inspection.webp",
+      "ops/queue/images/akira-1-6-set-checklist/ak-volume-order-check.webp",
+      "ops/queue/images/akira-1-6-set-checklist/ak-shelf-depth.webp",
+      "ops/queue/images/akira-1-6-set-checklist/ak-paper-edge-check.webp",
+      "ops/queue/images/akira-1-6-set-checklist/ak-dry-storage.webp"
+    ],
+    "format": "collector-v2",
+    "verifiedAt": "2026-11-05T04:22:21.794Z",
+    "queuedAt": "2026-11-05T04:31:56.931Z",
+    "imageQA": "seven scenes inspected; no artwork/characters/logos/readable titles; actual scene ALT matched",
+    "dryRunTool": "bridge shop dryRun mangadrop.online; one item per run",
+    "dryRunPassedAt": "2026-11-05T04:33:53.644Z"
+  }
+]

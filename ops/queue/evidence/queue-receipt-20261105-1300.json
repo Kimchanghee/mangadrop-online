@@ -1,0 +1,73 @@
+{
+  "at": "2026-11-05T04:35:00.453Z",
+  "scope": "queue only; no publication or deployment",
+  "site": "mangadrop.online",
+  "readyCount": 2,
+  "readyOrder": [
+    "promisedneverland-1-20-manga-set-checklist",
+    "akira-1-6-set-checklist"
+  ],
+  "items": [
+    {
+      "slug": "promisedneverland-1-20-manga-set-checklist",
+      "photos": 7,
+      "sourceGate": true,
+      "fullSiteBuildGate": "56/56",
+      "dryRunPassedAt": "2026-11-05T04:32:53.529Z",
+      "request": "20261105-1300-manga-pn-dryrun-rkd1",
+      "bridgeCode": 0,
+      "localVerification": {
+        "http200": true,
+        "title": true,
+        "disclosure": true,
+        "exactAffiliateHref": true,
+        "evidence": "publish.ps1 local verification completed with PUBLISH OK (dry run)"
+      },
+      "listingAutoCheck": "inconclusive-403; original current-day native verifiedAt preserved",
+      "protectedTreesUnchanged": true,
+      "manuscriptSHA256": "a3028a29b98a8b0f94c10ccf4b10b5a231c6051972130da9f43a9f08078b897c"
+    },
+    {
+      "slug": "akira-1-6-set-checklist",
+      "photos": 7,
+      "sourceGate": true,
+      "fullSiteBuildGate": "56/56",
+      "dryRunPassedAt": "2026-11-05T04:33:53.644Z",
+      "request": "20261105-1300-manga-ak-dryrun-rkd2",
+      "bridgeCode": 0,
+      "localVerification": {
+        "http200": true,
+        "title": true,
+        "disclosure": true,
+        "exactAffiliateHref": true,
+        "evidence": "publish.ps1 local verification completed with PUBLISH OK (dry run)"
+      },
+      "listingAutoCheck": "inconclusive-403; original current-day native verifiedAt preserved",
+      "protectedTreesUnchanged": true,
+      "manuscriptSHA256": "9bd5a1b8ddc92294d1bb6af1924fed5d321a01b4e7c775450e3ebc0834d06d57"
+    }
+  ],
+  "imageQA": {
+    "neverland": "parent actual QA + child contact verification",
+    "akira": "child actual seven-image contact QA and full-size storage image, exact-six scenes counted"
+  },
+  "excluded": [
+    {
+      "productId": "6568503401",
+      "work": "귀멸의칼날",
+      "status": "excluded-affiliate-restricted",
+      "evidence": "parent exact partners UI restriction; prepared/demonslayer-partners history",
+      "retry": false,
+      "alternateSku": false
+    },
+    {
+      "productId": "9396382168",
+      "work": "PLUTO플루토",
+      "status": "excluded-affiliate-restricted",
+      "evidence": "parent pluto-partners.txt: 법적으로 또는판매자요청 링크생성제한",
+      "retry": false,
+      "alternateSku": false
+    }
+  ],
+  "commitPush": "recorded after commit in workspace-local final receipt"
+}
