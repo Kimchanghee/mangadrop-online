@@ -1,0 +1,32 @@
+{
+  "status": "prepared-not-ready",
+  "slug": "acrylic-manga-book-display-stand-checklist",
+  "productName": "프린트고흐 아크릴 책 전시대",
+  "option": "사이즈 1개 · 색상 아크릴 전시대 · 재질 아크릴 · 프린트고흐",
+  "sourceURL": "https://www.coupang.com/vp/products/9732913171?itemId=29125873080&vendorItemId=96050044532",
+  "issuedURI": "https://link.coupang.com/a/irV1EeVPgG",
+  "linkIssuedAt": "2026-11-06T04:12:06.168Z",
+  "verifiedAt": "2026-11-06T04:12:06.168Z",
+  "verifyTokens": [
+    "9732913171 - 29125873080",
+    "프린트고흐",
+    "아크릴 전시대",
+    "재질: 아크릴",
+    "사이즈 1개"
+  ],
+  "stock": "logged-in native cart/buy enabled",
+  "images": [],
+  "nativeEvidence": "ops/queue/evidence/displaystand-prep-20261106-native.txt",
+  "partnersEvidence": "ops/queue/evidence/displaystand-prep-20261106-partners.txt",
+  "googleEvidence": "ops/queue/evidence/displaystand-prep-20261106-google.json",
+  "publishAllowed": false,
+  "pending": [
+    "실제 네이버검색",
+    "관련 원문 3개 및 제조자/공급자 사실",
+    "공식 상품 참조파일 확보",
+    "GENEXIS bridge 사진6~8 WebP 생성·QA(동시1, 매job df>=512MiB)",
+    "collector-v2 원고·gate·격리dryrun",
+    "ready/backlog 추가·commit·bridgepush"
+  ],
+  "guardrails": "do not open affiliate URI; do not regenerate existing photos; no src/public/direct publication; exact supplier dimensions not verified"
+}
