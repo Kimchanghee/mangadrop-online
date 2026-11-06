@@ -1,0 +1,210 @@
+# note: interactive (clickable / focusable) elements only.
+- title: "프린트고흐 아크릴 책 전시대 제조 : 네이버 검색" [url=https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%ED%94%84%EB%A6%B0%ED%8A%B8%EA%B3%A0%ED%9D%9…]
+- heading [level=1]:
+  - link "NAVER" [ref=e1]
+- search:
+  - combobox "검색어를 입력해 주세요." [ref=e2] [placeholder="검색어를 입력해 주세요."]:
+    - text: "프린트고흐 아크릴 책 전시대 제조"
+    - dialog "자동완성 레이어"
+  - button "한글 입력기" [ref=e3]
+  - button "검색" [ref=e4]
+- text: "사용자 링크"
+- link "내 프로필 이미지" [ref=e5]: "내 프로필 이미지  씨에이치더..내정보 보기"
+- link "네이버톡 새 창 알림" [ref=e6]
+- link "알림 새 창 알림 4" [ref=e7]
+- link "메일 99+" [ref=e8]
+- link "서비스 더보기" [ref=e9]
+- generic [ref=e10]:
+  - tab "AI" [ref=e11]: "AI new"
+  - tab "블로그" [ref=e12]
+  - tab "카페" [ref=e13]
+  - tab "클립" [ref=e14]
+  - tab "이미지" [ref=e15]
+  - tab "지식iN" [ref=e16]
+  - tab "동영상" [ref=e17]
+  - tab "쇼핑" [ref=e18]: "쇼핑 새 창 열림"
+  - tab "뉴스" [ref=e19]
+  - tab "어학사전" [ref=e20]: "어학사전 새 창 열림"
+  - button "더보기" [ref=e21]
+  - button "공유" [ref=e22]
+- main:
+  - heading "프린트고흐 아크릴 책 전시대 제조 검색 결과" [level=1]
+  - region:
+    - heading [level=2]: "프린트고흐아크릴책전시대제조  관련 광고"
+    - button "이 광고가 표시된 이유" [ref=e23]
+    - link "등록 안내" [ref=e24]
+    - link "링크이미지" [ref=e25]
+    - link "favicon" [ref=e26]
+    - img "광고"
+    - link "쿠팡" [ref=e27]
+    - link "coupang.com" [ref=e28]
+    - link "레고반 고흐 아크릴 쿠팡 로켓배송 안전하게 도착해요 30일 무료반품으로 확인" [ref=e29]
+    - link "투명 레고반, 먼지 없이 컬렉션을 보호! 와우회원 무제한 무료배송. 우리 집 인테리어의 완성, 쿠팡에서 마음에 쏙 드는 진열장을 찾아보세요." [ref=e30]: "투명 레고반 고흐 아크릴, 먼지 없이 컬렉션을 보호! 와우회원 무제한 무료배송. 우리 집 인테리어의 완성, 쿠팡에서 마음에 쏙 드는 진열장을 찾아보세요."
+    - link "와우회원혜택" [ref=e31]
+    - link "첫구매할인" [ref=e32]
+    - link "로켓배송" [ref=e33]
+    - link "로켓프레시" [ref=e34]
+    - link "더보기" [ref=e35]
+  - text: "itpage.kr"
+  - link "에이치케이아크릴.itpage.kr›bbs 새 창 열림" [ref=e36]
+  - button "옵션 메뉴 열기" [ref=e37]
+  - link "<mark>아크릴</mark> 도서 <mark>전시대</mark> - 재단·조립 &gt; 진열대/등신대 | 충무로<mark>아크릴</mark>제작 을지로<mark>아크릴</mark" [ref=e38]
+  - link "아크릴 도서 전시대 - 재단·조립 > 진열대/등신대 | 충무로 아크릴 제작 을지로 아크릴 제작 새 창 열림" [ref=e39]
+  - link "위 사진에 보이시는 것처럼 포맥스 구조물과 ㄷ자형 투명 아크릴 커버를 결합해 책을 안전하게 전시 할 수 있도록 제작하였습니다!새 창 열림" [ref=e40]
+  - link "새 창 열림" [ref=e41]
+  - link "샵아크릴" [ref=e42]: "샵아크릴 새 창 열림"
+  - link "www.sharpacr.co.kr›goods 새 창 열림" [ref=e43]
+  - button "옵션 메뉴 열기" [ref=e44]
+  - link "투명<mark>아크릴</mark> 거치대 (대형) - 판 접착식 - 사전, 대형<mark>책 전시</mark>용 (투명 <mark>아크릴</mark> 사용) 거치대/도서거치...." [ref=e45]
+  - link "투명 아크릴 거치대 (대형) - 판 접착식 - 사전, 대형 책 전시 용 (투명 아크릴 사용) 거치대/도서거치....새 창 열림" [ref=e46]
+  - link "[공지사항] 네이버 간편 로그인 관련[공지사항] 네이버 간편 로그인 관련 에...[공지사항] 사업자명 변경 및 쇼핑몰 U...새 창 열림" [ref=e47]
+  - text: "쿠팡"
+  - link "www.coupang.com›거실가구›거실수납장›계단형수납장 새 창 열림" [ref=e48]
+  - button "옵션 메뉴 열기" [ref=e49]
+  - link "투명 계단식 <mark>아크릴</mark> 진열대 피규어 굿즈 보관 <mark>전시대</mark> <mark>아크릴</mark> 계단 - 계단형수납장의 이미지 새 창 열림" [ref=e50]
+  - link "투명 계단식 아크릴 진열대 피규어 굿즈 보관 전시대 아크릴 계단 - 계단형수납장 새 창 열림" [ref=e51]
+  - link "스트라이프 투명 피규어 케이스 레고 진열장 가방 보관함 아크릴 장식장 36x27x23cm, 1개, 줄무늬.할인30,900 새 창 열림" [ref=e52]
+  - region:
+    - heading "네이버 가격비교" [level=2]
+    - button "이 정보가 표시된 이유" [ref=e53]
+    - text: "다른 사이트를 보시려면"
+    - link "클릭" [ref=e54]
+    - text: "하세요 찾으시는 상품과 유사한 상품을 노출합니다."
+    - checkbox "N배송빠르게 받기 N배송빠르게 받기" [ref=e55]
+    - text: "N배송 빠르게 받기"
+    - checkbox "빠른배송 빠른배송" [ref=e56]
+    - text: "빠른배송"
+    - button "내 배송지" [ref=e57]: "내 배송지 새 창으로 열기"
+    - link "클린 <mark>아크릴 책 전시대</mark> 1개" [ref=e58]
+    - link "클린 아크릴 책 전시대 1개" [ref=e59]
+    - text: "최저 1,900 원 배송비 3,000원 판매처  1"
+    - link "호크니 아트북 <mark>아크릴</mark> 전시 수납 선반 1개" [ref=e60]
+    - link "해외 호크니 아트북 아크릴 전시 수납 선반 1개" [ref=e61]
+    - text: "최저 97,700 원 배송비 무료 판매처  8"
+    - link "<mark>아크릴</mark> 엽서 <mark>책전시대</mark> 1개" [ref=e62]
+    - link "아크릴 엽서 책전시대 1개" [ref=e63]
+    - text: "최저 43,200 원 배송비 무료 판매처  5"
+    - link "프리미엄 <mark>아크릴 책전시대</mark> 엽서 투명 진열 서점 북 팜플렛 스탠드 3칸 책꽂이" [ref=e64]
+    - link "해외 프리미엄 아크릴 책전시대 엽서 투명 진열 서점 북 팜플렛 스탠드 3칸 책꽂이" [ref=e65]
+    - text: "21,400 원 배송비 무료 오늘출발 16:00까지 주문 시"
+    - link "열번째 선반" [ref=e66]
+    - text: "네이버페이플러스"
+    - link "거치대 <mark>책전시대</mark> 스탠드 <mark>아크릴</mark> 엽서 선반 전단지 팜플렛 홍보물" [ref=e67]
+    - link "거치대 책전시대 스탠드 아크릴 엽서 선반 전단지 팜플렛 홍보물" [ref=e68]
+    - text: "할인 전 판매가 34,980 원 15%할인 29,730 원 28,730 원"
+    - button "최대할인가" [ref=e69]
+    - text: "배송비 무료 오늘출발 10:00까지 주문 시"
+    - link "구름서랍스토어" [ref=e70]
+    - text: "네이버페이플러스"
+    - link "<mark>아크릴 책전시대</mark> 디스플레이 진열대 1개" [ref=e71]
+    - link "해외 아크릴 책전시대 디스플레이 진열대 1개" [ref=e72]
+    - text: "최저 12,200 원 배송비 무료 5.0(7)찜  2 판매처  75"
+    - link "<mark>전시대</mark> <mark>책전시대</mark> 엽서 거치대 투명 팜플렛 전단지 <mark>아크릴</mark>" [ref=e73]
+    - link "전시대 책전시대 엽서 거치대 투명 팜플렛 전단지 아크릴" [ref=e74]
+    - text: "최저 46,360 원 배송비 무료 판매처  7"
+    - link "잡지진열대 <mark>아크릴 책전시대</mark> 도서" [ref=e75]
+    - link "잡지진열대 아크릴 책전시대 도서" [ref=e76]
+    - text: "할인 전 판매가 4,500 원 20%할인 3,560 원 배송비 3,000원 5.0(1)찜  1"
+    - link "보러와요" [ref=e77]
+    - text: "네이버페이플러스 네이버는 상품 판매의 당사자가 아닙니다."
+    - link "법적고지 및 안내" [ref=e78]
+    - link "네이버 가격비교 더보기" [ref=e79]
+    - link "AI 로 더 알아보기 궁금한 점을 대화로 확인해보세요." [ref=e80]
+    - link "AI탭 바로가기" [ref=e81]
+  - link "새 창 열림" [ref=e82]
+  - link "피디피코리아 새 창 열림" [ref=e83]
+  - link "2025.05.07.새 창 열림" [ref=e84]
+  - button "옵션 메뉴 열기" [ref=e85]
+  - link "맞춤 아크릴 전시대, 정말 2일 만에 가능해요? 네!! 그 이유를 밝힙니다! (아크릴 진열대제작 후기)새 창 열림" [ref=e86]
+  - link "완전히 새로운 형태의 아크릴 전시대 를 '무(無)'에서부터 디자인하고 설계하려면 생각보다 많은 시간이 소요돼요. 디자인 컨펌, 설계 도면 제작, 샘플 제작 및 테스트 등 여러 단계" [ref=e87]
+  - generic [ref=e88] [scrollable]:
+    - link "새 창 열림" [ref=e89]
+    - link "새 창 열림" [ref=e90]
+    - link "새 창 열림" [ref=e91]
+    - link "새 창 열림" [ref=e92]
+    - link "새 창 열림" [ref=e93]
+    - link "새 창 열림" [ref=e94]
+    - link "새 창 열림" [ref=e95]
+    - link "새 창 열림" [ref=e96]
+    - link "새 창 열림" [ref=e97]
+    - link "새 창 열림" [ref=e98]
+  - text: "cnclib.com"
+  - link "cnclib.com›5t-아크릴-와이드-책전시용-도서-거치대-3가지크기 새 창 열림" [ref=e99]
+  - button "옵션 메뉴 열기" [ref=e100]
+  - link "넓은 <mark>아크릴</mark> 도서거치대,책거치대의 이미지 새 창 열림" [ref=e101]
+  - link "넓은 아크릴 도서거치대,책거치대 새 창 열림" [ref=e102]
+  - link "두께의 차이에서 오는 안정감을 확인하세요 ; 상품코드 : P00000KV, 판매가 : 13,500원, 제조 사 : 자체제작, 원산지 : 국내, 배송방법 : 택배, 배송비 : 3,0" [ref=e103]
+  - link "4.6(67)새 창 열림" [ref=e104]
+  - link "새 창 열림" [ref=e105]
+  - link "SSG" [ref=e106]: "SSG 새 창 열림"
+  - link "www.ssg.com›item 새 창 열림" [ref=e107]
+  - button "옵션 메뉴 열기" [ref=e108]
+  - link "책전시대 KF58VZ47 투명 아크릴 진열 전시 거치대 소형 엽서 새 창 열림" [ref=e109]
+  - link "품명 및 모델명 품명:책전시대 투명 아크릴 진열 전시 거치대 소형 / 모델명:P_1000002764 법에 의한 인증, 허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항 법에" [ref=e110]
+  - link "새 창 열림" [ref=e111]
+  - link "커스텀 굿즈& UV프린팅 새 창 열림" [ref=e112]
+  - link "2025.11.18.새 창 열림" [ref=e113]
+  - button "옵션 메뉴 열기" [ref=e114]
+  - link "아크릴 인쇄, 화이트(백판) 없이 만들면 어떻게 될까? 실제 제작 사례로 완벽비교 새 창 열림" [ref=e115]
+  - link "✔ 일러스트레이터·작가 분들 → 컬러 사이사이 선 표현·번짐 없는 감성 인쇄 원하는 분 → 아크릴 특유의 투명한 빛 연출을 좋아하는 분 ✔ 기업 / 행사 전시 용 패널 제작 담당자" [ref=e116]
+  - generic [ref=e117] [scrollable]:
+    - link "새 창 열림" [ref=e118]
+    - link "새 창 열림" [ref=e119]
+    - link "새 창 열림" [ref=e120]
+    - link "새 창 열림" [ref=e121]
+    - link "새 창 열림" [ref=e122]
+    - link "새 창 열림" [ref=e123]
+    - link "새 창 열림" [ref=e124]
+  - link "새 창 열림" [ref=e125]
+  - link "레드프린팅" [ref=e126]: "레드프린팅 새 창 열림"
+  - link "www.redprinting.co.kr›product 새 창 열림" [ref=e127]
+  - button "옵션 메뉴 열기" [ref=e128]
+  - link "악세서리 <mark>전시대</mark>6_사각세트형 · 레드프린팅의 이미지 새 창 열림" [ref=e129]
+  - link "악세서리 전시대 6_사각세트형 · 레드프린팅 새 창 열림" [ref=e130]
+  - link "일시적으로 주문이 불가합니다 아크릴 가게 홍보용 POP 제품 전시대 악세서리 전시대 6_사각세트형 해당 제품은 주문이 불가합니다. 메인 페이지로 이동합니다. 확인 제품설명 제품후기" [ref=e131]
+  - link "새 창 열림" [ref=e132]
+  - link "오늘의집" [ref=e133]: "오늘의집 새 창 열림"
+  - link "store.ohou.se›goods 새 창 열림" [ref=e134]
+  - button "옵션 메뉴 열기" [ref=e135]
+  - link "그림·사진 &gt; 1+1 마르크 샤갈 <mark>전시</mark>포스터 20종 - 10.마르크 샤갈 <mark>전시</mark>포스터010의 이미지 새 창 열림" [ref=e136]
+  - link "그림·사진 > 1+1 마르크 샤갈 전시 포스터 20종 - 10.마르크 샤갈 전시 포스터010 새 창 열림" [ref=e137]
+  - link "포스터메이커스는 감각적인 고품질 아트 포스터를 고객분들께 서비스하는 업체 입니다. 자체제작&프린팅 시스템을 갖추고 안목이 뛰어난 디자이너들이 팀을 이루고 있습니다. 다양한 디자인," [ref=e138]
+  - link "새 창 열림" [ref=e139]
+  - link "사인픽" [ref=e140]: "사인픽 새 창 열림"
+  - link "www.signpic.co.kr›goods 새 창 열림" [ref=e141]
+  - button "옵션 메뉴 열기" [ref=e142]
+  - link "<mark>아크릴 책</mark> 진열대 도서 거치대 디스플레이 다용도 <mark>전시대</mark> 받침대 스탠드의 이미지 새 창 열림" [ref=e143]
+  - link "아크릴 책 진열대 도서 거치대 디스플레이 다용도 전시대 받침대 스탠드 새 창 열림" [ref=e144]
+  - link "아크릴 책 진열대 ; 판매가 : 2,800원, 쿠폰적용가 : 2,772원 ( -28원 ), 구매제한 : 옵션당 최소 1개, 구매혜택 : 적립 마일리지 : 5원 (상품 : 5원), " [ref=e145]
+  - link "새 창 열림" [ref=e146]
+  - link "아크릴몰" [ref=e147]: "아크릴몰 새 창 열림"
+  - link "www.acrylmall.com›goods 새 창 열림" [ref=e148]
+  - button "옵션 메뉴 열기" [ref=e149]
+  - link "<mark>아크릴</mark> 투명 책꽂이 책상 테이블 책보관 북 진열대 <mark>전시대</mark>의 이미지 새 창 열림" [ref=e150]
+  - link "아크릴 투명 책꽂이 책상 테이블 책보관 북 진열대 전시대 새 창 열림" [ref=e151]
+  - link "아크릴 판 ; 아크릴 · 포맥스/베크라이트 · PC(폴리카보네이트)/PET(페트) · 거울/한지/금은/펄/코팅판 · 대형판(원판)/롤판 새 창 열림" [ref=e152]
+  - text: "acforce.kr"
+  - link "acforce.kr›product 새 창 열림" [ref=e153]
+  - button "옵션 메뉴 열기" [ref=e154]
+  - link "<mark>아크릴</mark> 거치대 <mark>책</mark> 받침대 진열대 디스플레이 <mark>전시대</mark> - <mark>아크릴</mark>은 아크포스의 이미지 새 창" [ref=e155]
+  - link "아크릴 거치대 책 받침대 진열대 디스플레이 전시대 - 아크릴 은 아크포스 새 창 열림" [ref=e156]
+  - link "판매가 : 2,000원, 상품간략설명 : 필요한 곳 어디에나 세련되고 안정된 정돈을 선사하는 아크릴 거치대 새 창 열림" [ref=e157]
+  - link "새 창 열림" [ref=e158]
+  - link "샤브레이의 힐링 영화/드라마/책 추천 새 창 열림" [ref=e159]
+  - link "2026.06.03.새 창 열림" [ref=e160]
+  - button "옵션 메뉴 열기" [ref=e161]
+  - link "책 진열대 아크릴 도서 잡지 전시대 홍보물 전시 도서관 서점 스탠드 꽂이 북 전단지 진열, 깔끔함....새 창 열림" [ref=e162]
+  - link "책 진열대 아크릴 도서 잡지 전시대 홍보물 전시 도서관 서점 스탠드 꽂이 북 전단지 진열, 깔끔함으로 공간을 채우는 방법 공간의 정돈, 그 아늑한 필요성 혹시 집안에 쌓여가는 책들" [ref=e163]
+  - link "새 창 열림" [ref=e164]
+  - link "새 창 열림" [ref=e165]
+  - link "오너클랜" [ref=e166]: "오너클랜 새 창 열림"
+  - link "www.ownerclan.com›V2 새 창 열림" [ref=e167]
+  - button "옵션 메뉴 열기" [ref=e168]
+  - link "<mark>아크릴</mark> 진열 거치대 소 <mark>아크릴</mark>진열대 <mark>책전시대</mark> 엽서진의 이미지 새 창 열림" [ref=e169]
+  - link "아크릴 진열 거치대 소 아크릴 진열대 책전시대 엽서진 새 창 열림" [ref=e170]
+  - link "투명 아크릴 진열 전시 거치대 소형 아크릴진열대 책 · 2,740원 투명 전시 거치대 소형 엽서진열대 책전시대 아크릴전시대 팜플렛거치대 북진열대 2,750원 투명 아크릴 거치대 소" [ref=e171]
+  - link "새 창 열림" [ref=e172]
+  - link "플라이굿" [ref=e173]: "플라이굿 새 창 열림"
+  - link "flygood.co.kr›item 새 창 열림" [ref=e174]
+  - button "옵션 메뉴 열기" [ref=e175]
+... [snapshot truncated at 16 KiB; narrow it with { interactive: true }, selector or ref]

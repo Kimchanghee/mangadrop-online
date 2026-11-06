@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-06T04:15:11.753Z",
+  "status": "blocked-official-manufacturer-reference",
+  "sourceURL": "https://www.coupang.com/vp/products/9732913171?itemId=29125873080&vendorItemId=96050044532",
+  "saleEligibility": "native stock and exact affiliate issuance passed",
+  "requiredByCurrentRequest": "official reference with seller=manufacturer/direct-operated source confirmation",
+  "observed": {
+    "origin": "중국",
+    "manufacturerImporter": "프린트고흐 협력업체 / 프린트고흐",
+    "importMethod": "병행수입",
+    "seller": "프린트고흐",
+    "sellerStore": "우연잡화"
+  },
+  "conclusion": "Seller/importer verified; actual partner manufacturer identity and manufacturer-operated source not established. Seller storefront is not evidence that seller manufactures the product. Do not relabel seller photography as official manufacturer photography.",
+  "researchEvidence": [
+    "ops/queue/evidence/displaystand-manufacturer-check-20261106-tables.json",
+    "ops/queue/evidence/displaystand-manufacturer-check-20261106-native.txt",
+    "ops/queue/evidence/displaystand-manufacturer-20261106-google.json",
+    "ops/queue/evidence/displaystand-manufacturer-20261106-google-exact.json",
+    "ops/queue/evidence/displaystand-manufacturer-20261106-naver.txt",
+    "ops/queue/evidence/displaystand-manufacturer-20261106-seller-shop.txt"
+  ],
+  "generatedImages": 0,
+  "readyAdded": false,
+  "manuscriptProduced": false,
+  "dryrunNotAttempted": "source eligibility failed before generation; no finished manuscript or six photos",
+  "externalDependency": "named partner manufacturer and verifiable official reference source",
+  "paymentOrAuthChanges": false
+}

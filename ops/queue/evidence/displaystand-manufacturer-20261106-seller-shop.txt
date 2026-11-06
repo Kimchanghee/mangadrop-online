@@ -1,0 +1,389 @@
+- title: "쿠팡이 추천하는 우연잡화 관련 혜택과 특가" [url=https://shop.coupang.com/wuyeon?source=brandstore_sdp_atf&ocid=24816415&checkBatchDelivery=true&pid=9732913171&viid=96050044532&…]
+- region:
+  - listitem "판매자 가입" [ref=e169]:
+    - link "판매자 가입" [ref=e1]
+  - listitem "고객센터" [ref=e170]:
+    - link "고객센터" [ref=e2]
+  - listitem "로그아웃" [ref=e171]:
+    - link "로그아웃" [ref=e3]
+  - listitem "님" [ref=e172]:
+    - link "님" [ref=e4]: "김*희  님"
+  - listitem "즐겨찾기" [ref=e173]:
+    - link "즐겨찾기" [ref=e5]
+  - listitem "입점신청" [ref=e174]:
+    - link "입점신청" [ref=e6]
+  - generic "카테고리" [ref=e7]
+  - link "Coupang" [ref=e8]:
+    - image "Coupang"
+  - form:
+    - link "전체" [ref=e9]
+    - textbox "찾고 싶은 상품을 검색해보세요!" [ref=e10] [placeholder="찾고 싶은 상품을 검색해보세요!"]
+    - link [ref=e11]
+    - button "검색" [ref=e12]
+  - list:
+    - listitem:
+      - link "마이쿠팡" [ref=e13]
+    - listitem:
+      - link "0 장바구니" [ref=e14]
+  - link [ref=e15]
+  - list:
+    - listitem "쿠팡플레이" [ref=e175]:
+      - link "쿠팡플레이" [ref=e16]:
+        - image "쿠팡플레이"
+        - text: "쿠팡플레이"
+    - listitem "로켓배송" [ref=e176]:
+      - link "로켓배송" [ref=e17]:
+        - image "로켓배송"
+        - text: "로켓배송"
+    - listitem "로켓프레시" [ref=e177]:
+      - link "로켓프레시" [ref=e18]:
+        - image "로켓프레시"
+        - text: "로켓프레시"
+    - listitem "와멤데" [ref=e178]:
+      - link "와멤데" [ref=e19]:
+        - image "와멤데"
+        - text: "와멤데"
+    - listitem "다시 구매" [ref=e179]:
+      - link "다시 구매" [ref=e20]:
+        - image "다시 구매"
+        - text: "다시 구매"
+    - listitem "쿠팡비즈" [ref=e180]:
+      - link "쿠팡비즈" [ref=e21]:
+        - image "쿠팡비즈"
+        - text: "쿠팡비즈"
+    - listitem "로켓직구" [ref=e181]:
+      - link "로켓직구" [ref=e22]:
+        - image "로켓직구"
+        - text: "로켓직구"
+    - listitem "골드박스" [ref=e182]:
+      - link "골드박스" [ref=e23]:
+        - image "골드박스"
+        - text: "골드박스"
+    - listitem "이달의신상" [ref=e183]:
+      - link "이달의신상" [ref=e24]:
+        - image "이달의신상"
+        - text: "이달의신상"
+    - listitem "입점신청" [ref=e184]:
+      - link "입점신청" [ref=e25]:
+        - image "입점신청"
+        - text: "입점신청"
+    - listitem "판매자특가" [ref=e185]:
+      - link "판매자특가" [ref=e26]:
+        - image "판매자특가"
+        - text: "판매자특가"
+    - listitem "와우회원할인" [ref=e186]:
+      - link "와우회원할인" [ref=e27]:
+        - image "와우회원할인"
+        - text: "와우회원할인"
+    - listitem "반품마켓" [ref=e187]:
+      - link "반품마켓" [ref=e28]:
+        - image "반품마켓"
+        - text: "반품마켓"
+    - listitem "착한상점" [ref=e188]:
+      - link "착한상점" [ref=e29]:
+        - image "착한상점"
+        - text: "착한상점"
+    - listitem "기획전" [ref=e189]:
+      - link "기획전" [ref=e30]:
+        - image "기획전"
+        - text: "기획전"
+    - listitem "쿠팡트래블" [ref=e190]:
+      - link "쿠팡트래블" [ref=e31]:
+        - image "쿠팡트래블"
+        - text: "쿠팡트래블"
+  - link [ref=e32]
+  - region:
+    - region:
+      - link "쿠팡 홈" [ref=e33]
+      - link "우연잡화" [ref=e34]
+    - region:
+      - link "우연잡화" [ref=e35]
+      - text: "사랑에 빠진 모든이를 위하여\n            \n              만족도:\n              \n              100%"
+      - generic "(14 건 이하의 평가)" [ref=e36]
+      - button "판매자샵 찜하기" [ref=e38]
+      - region:
+        - list:
+          - listitem:
+            - link "홈" [ref=e39]
+          - listitem:
+            - link "전체 상품" [ref=e40]
+    - region:
+      - form:
+        - textbox "샵 내에서 상품을 검색하세요." [ref=e41] [focused] [placeholder="샵 내에서 상품을 검색하세요."]
+    - region:
+      - text: "주간 인기상품"
+      - list:
+        - listitem:
+          - link [ref=e43]:
+            - image "product"
+            - text: "무료배송\n        만화책 앨범 진열 전시 책장 만화책장 아크릴 거치대 책표지 선반 책 cd 가챠 서점 전시, 아크릴 전시대    9,200원"
+        - listitem:
+          - link [ref=e44]:
+            - image "product"
+            - text: "캔뱃지 커버 낱개 투명 원형 하트 홀로그램 굿즈 보호 보관 이타백 만들기 재료, 1개    360원 (1 개 당  360 원)         (11)"
+        - listitem:
+          - link [ref=e45]:
+            - image "product"
+            - text: "DIY 레이스 리본 꾸미기 세트 네임보드 탑로더 꾸미기 로제트 만들기 탑꾸용품, 1세트, 흰색리본+콩레이스(부자재없음)   4,200원 (1 개 당  4,200 원)         (24)"
+        - listitem:
+          - link [ref=e46]:
+            - image "product"
+            - text: "DIY 레이스 리본 꾸미기 세트 네임보드 탑로더 꾸미기 로제트 만들기 탑꾸용품, 하늘set    8,900원          (32)"
+        - listitem:
+          - link [ref=e47]:
+            - image "product"
+            - text: "pvc 투명 인형 파우치 10cm 폼폼 포함 키링 포함 솜깅 누이 외출 투명가방    3,760원          (1)"
+        - listitem:
+          - link [ref=e48]:
+            - image "product"
+            - text: "무료배송\n        인덱스포함 a6 엽서 보관 파일 바인더 특전 지류 보관 스티커 포토앨범 사진첩 인생네컷, 20매, 반투명    7,400원          (3)"
+        - listitem:
+          - link [ref=e49]:
+            - image "product"
+            - text: "삼각 아크릴 거치대 굿즈 캔뱃지 전시 미니 받침대 삼각 진열대, 10개, 소형    2,990원 (1 개 당  299 원)         (3)"
+        - listitem:
+          - link [ref=e50]:
+            - image "product"
+            - text: "삼각 아크릴 거치대 굿즈 캔뱃지 전시 미니 받침대 삼각 진열대, 10개, 중형    4,410원 (1 개 당  441 원)         (4)"
+        - listitem:
+          - link [ref=e51]:
+            - image "product"
+            - text: "pvc 투명 인형 파우치 10cm 폼폼 포함 키링 포함 솜깅 누이 외출 투명가방    4,480원          (2)"
+        - listitem:
+          - link [ref=e52]:
+            - image "product"
+            - text: "무료배송\n        얼굴 페이스 보석 큐빅 스티커 메이크업 페스티벌 필수템 스티커 흠뻑쇼 워터밤 할로윈 분장, 1개, 눈물 네줄    4,800원 (1 개 당  4,800 원)"
+        - listitem:
+          - link [ref=e53]:
+            - image "product"
+            - text: "pvc 투명 인형 파우치 10cm 폼폼 포함 키링 포함 솜깅 누이 외출 투명가방    4,480원"
+        - listitem:
+          - link [ref=e54]:
+            - image "product"
+            - text: "pvc 투명 인형 파우치 10cm 폼폼 포함 키링 포함 솜깅 누이 외출 투명가방    4,460원"
+        - listitem:
+          - link [ref=e55]:
+            - image "product"
+            - text: "pvc 투명 인형 파우치 10cm 폼폼 포함 키링 포함 솜깅 누이 외출 투명가방    4,460원"
+        - listitem:
+          - link [ref=e56]:
+            - image "product"
+            - text: "무료배송\n        키홀더 스테이션 가방고리 가방끈 에코백 버클 키링고리 열쇠고리 이타백 가방 굿즈 장식, 1개, 구름    7,020원 (1 개 당  7,020 원)         (6)"
+        - listitem:
+          - link [ref=e57]:
+            - image "product"
+            - text: "키링걸이 탁상용 키링보관 키링행거 굿즈 진열 거치대 2단 인형 옷걸이, 1개    3,800원 (1 개 당  3,800 원)         (5)"
+        - listitem:
+          - link [ref=e58]:
+            - image "product"
+            - text: "캔뱃지 커버 키링형 5개 세트 군번줄 포함 고리타입    3,900원 (1 개 당  780 원)         (1)"
+        - listitem:
+          - link [ref=e59]:
+            - image "product"
+            - text: "무료배송\n        a3 파일 30매 60매 바인더 브로마이드 영화 포스터 클리어 파일 케이스, 1개, 클리어 30매    11,200원 (1 개 당  11,200 원)         (11)"
+        - listitem:
+          - link [ref=e60]:
+            - image "product"
+            - text: "캔뱃지 커버 키링형 5개 세트 군번줄 포함 고리타입    3,700원 (1 개 당  740 원)         (1)"
+    - image "promotion icon"
+    - text: "반짝세일  할인상품"
+    - list:
+      - listitem:
+        - link "무료배송 캔뱃지 커버 투명 원형 하트 홀로그램 굿즈 보호 보관 이타백 만들기 재료, 10개 13,200원 7,220원 45% 할인 (11)" [ref=e61]
+      - listitem:
+        - link "무료배송 키홀더 스테이션 가방고리 가방끈 에코백 버클 키링고리 열쇠고리 이타백 가방 굿즈 장식, 1개, 구름 8,100원 7,020원 13% 할인 (6)" [ref=e62]
+    - region:
+      - text: "신상품"
+      - list:
+        - listitem:
+          - link [ref=e63]:
+            - image "product"
+            - text: "무료배송\n        인덱스포함 a6 엽서 보관 파일 바인더 특전 지류 보관 스티커 포토앨범 사진첩 인생네컷, 60매, 반투명    9,200원          (3)"
+        - listitem:
+          - link [ref=e64]:
+            - image "product"
+            - text: "무료배송\n        키홀더 스테이션 가방고리 가방끈 에코백 버클 키링고리 열쇠고리 이타백 가방 굿즈 장식, 1개, 구름    7,020원 (1 개 당  7,020 원)         (6)"
+        - listitem:
+          - link [ref=e65]:
+            - image "product"
+            - text: "무료배송\n        얼굴 페이스 보석 큐빅 스티커 메이크업 페스티벌 필수템 스티커 흠뻑쇼 워터밤 할로윈 분장, 1개, 목걸이    4,800원 (1 개 당  4,800 원)"
+    - region:
+      - list:
+        - listitem [ref=e67]
+        - listitem [ref=e68]
+        - listitem [ref=e69]
+        - listitem [ref=e70]
+        - listitem [ref=e71]
+        - listitem [ref=e72]
+        - listitem [ref=e73]
+      - list:
+        - listitem:
+          - link [ref=e74]:
+            - image "도료/공구/기타"
+            - text: "도료/공구/기타"
+        - listitem:
+          - link [ref=e75]:
+            - image "수납가구"
+            - text: "수납가구"
+        - listitem:
+          - link [ref=e76]:
+            - image "프라모델/미니카"
+            - text: "프라모델/미니카"
+        - listitem:
+          - link [ref=e77]:
+            - image "피규어"
+            - text: "피규어"
+        - listitem:
+          - link [ref=e78]:
+            - image "드레스룸"
+            - text: "드레스룸"
+        - listitem:
+          - link [ref=e79]:
+            - image "리빙박스/정리용품"
+            - text: "리빙박스/정리용품"
+        - listitem:
+          - link [ref=e80]:
+            - image "거실가구"
+            - text: "거실가구"
+        - listitem:
+          - link [ref=e81]:
+            - image "인테리어소품"
+            - text: "인테리어소품"
+        - listitem:
+          - link [ref=e82]:
+            - image "선반/수납장"
+            - text: "선반/수납장"
+        - listitem:
+          - link [ref=e83]:
+            - image "거울"
+            - text: "거울"
+        - listitem:
+          - link [ref=e84]:
+            - image "미술/점토"
+            - text: "미술/점토"
+        - listitem:
+          - link [ref=e85]:
+            - image "STEAM/학습완구"
+            - text: "STEAM/학습완구"
+        - listitem:
+          - link [ref=e86]:
+            - image "케이스/장식장"
+            - text: "케이스/장식장"
+        - listitem:
+          - link [ref=e87]:
+            - image "교사용 준비물"
+            - text: "교사용 준비물"
+        - listitem:
+          - link [ref=e88]:
+            - image "예술(A)"
+            - text: "예술(A)"
+        - listitem:
+          - link [ref=e89]:
+            - image "만들기재료"
+            - text: "만들기재료"
+        - listitem:
+          - link [ref=e90]:
+            - image "미술시간"
+            - text: "미술시간"
+        - listitem:
+          - link [ref=e91]:
+            - image "용기/거울/기타소품"
+            - text: "용기/거울/기타소품"
+        - listitem:
+          - link [ref=e92]:
+            - image "클립보드/결재판"
+            - text: "클립보드/결재판"
+        - listitem:
+          - link [ref=e93]:
+            - image "가방/잡화"
+            - text: "가방/잡화"
+        - listitem:
+          - link [ref=e94]:
+            - image "리빙박스"
+            - text: "리빙박스"
+        - listitem:
+          - link [ref=e95]:
+            - image "학생/사무용가구"
+            - text: "학생/사무용가구"
+        - listitem:
+          - link [ref=e96]:
+            - image "기타생활용품"
+            - text: "기타생활용품"
+        - listitem:
+          - link [ref=e97]:
+            - image "스티커"
+            - text: "스티커"
+        - listitem:
+          - link [ref=e98]:
+            - image "파일/바인더"
+            - text: "파일/바인더"
+        - listitem:
+          - link [ref=e99]:
+            - image "네일팁/페디팁/스티커"
+            - text: "네일팁/페디팁/스티커"
+        - listitem:
+          - link [ref=e100]:
+            - image "홈데코 소품"
+            - text: "홈데코 소품"
+        - listitem:
+          - link [ref=e101]:
+            - image "사무용가구/수납"
+            - text: "사무용가구/수납"
+        - listitem:
+          - link [ref=e102]:
+            - image "다이어리소품"
+            - text: "다이어리소품"
+        - listitem:
+          - link [ref=e103]:
+            - image "선반/진열대"
+            - text: "선반/진열대"
+        - listitem:
+          - link [ref=e104]:
+            - image "일반포토앨범"
+            - text: "일반포토앨범"
+        - listitem:
+          - link [ref=e105]:
+            - image "선반/정리대"
+            - text: "선반/정리대"
+        - listitem:
+          - link [ref=e106]:
+            - image "즉석/필름/기타카메라"
+            - text: "즉석/필름/기타카메라"
+        - listitem:
+          - link [ref=e107]:
+            - image "폴라로이드앨범"
+            - text: "폴라로이드앨범"
+        - listitem:
+          - link [ref=e108]:
+            - image "보드/칠판/광고"
+            - text: "보드/칠판/광고"
+        - listitem:
+          - link [ref=e109]:
+            - image "자석/학습보드"
+            - text: "자석/학습보드"
+        - listitem:
+          - link [ref=e110]:
+            - image "데스크정리소품"
+            - text: "데스크정리소품"
+        - listitem:
+          - link [ref=e111]:
+            - image "화이트보드/게시판"
+            - text: "화이트보드/게시판"
+    - region:
+      - text: "전체 (30) \n        묶음배송 가능한 상품\n        \n        할인 상품"
+      - button "필터" [ref=e112]
+      - list:
+        - listitem "쿠팡 랭킹순" [ref=e113]
+        - listitem "낮은 가격순" [ref=e114]
+        - listitem "높은 가격순" [ref=e115]
+        - listitem "판매량순" [ref=e116]
+        - listitem "최신순" [ref=e117]
+      - list:
+        - listitem:
+          - link [ref=e118]:
+            - image "product"
+            - text: "무료배송\n        만화책 앨범 진열 전시 책장 만화책장 아크릴 거치대 책표지 선반 책 cd 가챠 서점 전시, 아크릴 전시대      \n        9%\n       10,200원  9,200원       \n    내일(토) \n  \n    도착 예정\n          최대 92원 적립"
+        - listitem:
+          - link [ref=e119]:
+            - image "product"
+... [snapshot truncated at 16 KiB; narrow it with { interactive: true }, selector or ref]
