@@ -27,3 +27,11 @@
 - photo ops/queue/images/akira-1-6-set-checklist/ak-shelf-depth.webp: 1536x1024, 187752 bytes, SHA256 9bc180169438659b5b56471235690cf4721009e1c4478ef36dc9c6c0d33d3765; 책장에 세워진 무지 책 여섯 권 옆으로 흰 자를 놓고 선반 깊이를 확인한다
 - photo ops/queue/images/akira-1-6-set-checklist/ak-paper-edge-check.webp: 1536x1024, 200968 bytes, SHA256 c4a9fe72dd188ba73cade56eab0e4536cd2ae0ca1fbfe374a60ff81c3f7e769c; 두 손이 무지 책 한 권을 받친 채 페이지 단면과 가장자리를 살펴본다
 - photo ops/queue/images/akira-1-6-set-checklist/ak-dry-storage.webp: 1536x1024, 245710 bytes, SHA256 e4e5d6bef80dbedcda23b29737abdb0a51c70f3a4c3a87a131a89ecb30cd968e; 무지 책 여섯 권이 놓인 원목 서가 앞에서 흰 장갑을 낀 사람이 빈 점검표를 확인한다
+
+## 2026-11-06 재확인
+
+- native verifiedAt: 2026-11-06T04:05:43.868Z
+- 로그인 쿠팡 일반 상품 UI에서 기존 verifyTokens 6/6, 예스이십사주식회사·6권 묶음과 장바구니/바로구매 활성 확인. 품절 표시 없음.
+- 오늘 증거: ops/queue/evidence/akira-recheck-20261106-1300.txt 및 .webp
+- 기존 정확 제휴 URI 유지, 클릭·조회·재발급하지 않음.
+- bridge 단일 AKIRA full dry-run 58/58 통과, local 검증만 수행, src/public 보호 트리 불변·임시 stage 제거.

@@ -25,10 +25,19 @@
       "ops/queue/images/akira-1-6-set-checklist/ak-dry-storage.webp"
     ],
     "format": "collector-v2",
-    "verifiedAt": "2026-11-05T04:22:21.794Z",
+    "verifiedAt": "2026-11-06T04:05:43.868Z",
     "queuedAt": "2026-11-05T04:31:56.931Z",
     "imageQA": "seven scenes inspected; no artwork/characters/logos/readable titles; actual scene ALT matched",
     "dryRunTool": "bridge shop dryRun mangadrop.online; one item per run",
-    "dryRunPassedAt": "2026-11-05T04:33:53.644Z"
+    "dryRunPassedAt": "2026-11-06T04:07:34.387Z",
+    "lastRecheck": {
+      "at": "2026-11-06T04:05:43.868Z",
+      "result": "ok",
+      "tokensMatched": 6,
+      "stock": "native cart and buy enabled; exact seller and six-volume bundle matched",
+      "evidence": "ops/queue/evidence/akira-recheck-20261106-1300.txt",
+      "screenshot": "ops/queue/evidence/akira-recheck-20261106-1300.webp"
+    },
+    "dryRunReceipt": "_mac/bridge/results/20261106-1300-manga-ak-recheck-dryrun.json"
   }
 ]

@@ -19,7 +19,7 @@ product:
         to: 6
   url: "https://link.coupang.com/a/h70QwGM04q"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-11-05T04:22:21.794Z"
+  verifiedAt: "2026-11-06T04:05:43.868Z"
   evidence: "src/content/posts/_evidence/akira-1-6-set-checklist.md"
   specs:
     - label: "출판사"

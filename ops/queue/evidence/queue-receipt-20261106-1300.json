@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-06T04:08:19.998Z",
+  "domain": "mangadrop.online",
+  "rechecked": {
+    "slug": "akira-1-6-set-checklist",
+    "tokensMatched": 6,
+    "photos": 7,
+    "verifiedAt": "2026-11-06T04:05:43.868Z",
+    "dryRunPassedAt": "2026-11-06T04:07:34.387Z",
+    "gate": "58/58"
+  },
+  "added": 0,
+  "queueLeft": 1,
+  "existingPreparationAudit": {
+    "onepiece": "already published 2026-11-01, git 092e0bc; excluded from requeue",
+    "otherManuscripts": "14 public post slugs including Neverland confirmed against src/content/posts; no duplicated ready entries"
+  },
+  "excluded": [
+    {
+      "productId": "6568503401",
+      "name": "귀멸의칼날",
+      "reason": "prior affiliate restriction; no retry"
+    },
+    {
+      "productId": "9396382168",
+      "name": "PLUTO",
+      "reason": "prior affiliate restriction; no retry"
+    },
+    {
+      "productId": "7727611393",
+      "name": "체인소 맨 1~11권 1부 완결세트",
+      "reason": "actual Partners UI legal or seller-request link generation restriction",
+      "attempts": 1,
+      "evidence": "ops/queue/evidence/chainsawman-prep-20261106-partners.txt",
+      "retry": false,
+      "alternateSku": false
+    }
+  ],
+  "newImages": 0,
+  "regeneratedImages": 0,
+  "publication": false,
+  "deployment": false
+}
