@@ -67,3 +67,5 @@
 | 질문 | 근거 | 유형 | 상태 | URL |
 |---|---|---|---|---|
 | 스파이 패밀리 5주년 박스, 1~13권과 카드 확인 | 정확 옵션·구매버튼 2026-11-15 확인, 제휴 URI 발급, 사진6 원본 시각검수·SHA, 전체 격리검사 60/60 | 상품 노트(제휴) | 대기(queued) | 미발행 (spyfamily-5th-box-1-13-edition-check) |
+
+| deathnote-colour-1-12-edition-shelf-check | pick | queued | 2026-11-15 exact option verified; 6 photos; pending rehearsal |

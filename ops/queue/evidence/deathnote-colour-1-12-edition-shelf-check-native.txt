@@ -1,0 +1,264 @@
+- title: "데스노트 컬러판 1~12권 세트 완결 - 공포/추리 | 쿠팡" [url=https://www.coupang.com/vp/products/1587662965?itemId=2713570199&vendorItemId=93641536288&pickType=COU_PICK&q=%EB%8D%B0%EC%8A%A4…]
+- listitem "판매자 가입" [ref=e166]:
+  - link "판매자 가입" [ref=e167]
+- listitem "고객센터" [ref=e168]:
+  - link "고객센터" [ref=e169]
+- listitem "로그아웃" [ref=e170]:
+  - link "로그아웃" [ref=e171]
+- listitem "님" [ref=e172]:
+  - link "님" [ref=e173]: "김*희  님"
+- listitem "즐겨찾기" [ref=e174]:
+  - link "즐겨찾기" [ref=e175]
+- listitem "입점신청" [ref=e176]:
+  - link "입점신청" [ref=e177]
+- generic "카테고리" [ref=e178]
+- link "Coupang" [ref=e179]:
+  - image "Coupang"
+- form:
+  - link "전체" [ref=e180]
+  - textbox "찾고 싶은 상품을 검색해보세요!" [ref=e181] [placeholder="찾고 싶은 상품을 검색해보세요!"]
+  - link [ref=e182]
+  - button "검색" [ref=e183]
+- list:
+  - listitem:
+    - link "마이쿠팡" [ref=e184]
+  - listitem:
+    - link "0 장바구니" [ref=e185]
+- link [ref=e186]
+- list:
+  - listitem "쿠팡플레이" [ref=e187]:
+    - link "쿠팡플레이" [ref=e188]:
+      - image "쿠팡플레이"
+      - text: "쿠팡플레이"
+  - listitem "로켓배송" [ref=e189]:
+    - link "로켓배송" [ref=e190]:
+      - image "로켓배송"
+      - text: "로켓배송"
+  - listitem "로켓프레시" [ref=e191]:
+    - link "로켓프레시" [ref=e192]:
+      - image "로켓프레시"
+      - text: "로켓프레시"
+  - listitem "다시 구매" [ref=e193]:
+    - link "다시 구매" [ref=e194]:
+      - image "다시 구매"
+      - text: "다시 구매"
+  - listitem "쿠팡비즈" [ref=e195]:
+    - link "쿠팡비즈" [ref=e196]:
+      - image "쿠팡비즈"
+      - text: "쿠팡비즈"
+  - listitem "로켓직구" [ref=e197]:
+    - link "로켓직구" [ref=e198]:
+      - image "로켓직구"
+      - text: "로켓직구"
+  - listitem "골드박스" [ref=e199]:
+    - link "골드박스" [ref=e200]:
+      - image "골드박스"
+      - text: "골드박스"
+  - listitem "이달의신상" [ref=e201]:
+    - link "이달의신상" [ref=e202]:
+      - image "이달의신상"
+      - text: "이달의신상"
+  - listitem "입점신청" [ref=e203]:
+    - link "입점신청" [ref=e204]:
+      - image "입점신청"
+      - text: "입점신청"
+  - listitem "판매자특가" [ref=e205]:
+    - link "판매자특가" [ref=e206]:
+      - image "판매자특가"
+      - text: "판매자특가"
+  - listitem "와우회원할인" [ref=e207]:
+    - link "와우회원할인" [ref=e208]:
+      - image "와우회원할인"
+      - text: "와우회원할인"
+  - listitem "반품마켓" [ref=e209]:
+    - link "반품마켓" [ref=e210]:
+      - image "반품마켓"
+      - text: "반품마켓"
+  - listitem "착한상점" [ref=e211]:
+    - link "착한상점" [ref=e212]:
+      - image "착한상점"
+      - text: "착한상점"
+  - listitem "기획전" [ref=e213]:
+    - link "기획전" [ref=e214]:
+      - image "기획전"
+      - text: "기획전"
+  - listitem "쿠팡트래블" [ref=e215]:
+    - link "쿠팡트래블" [ref=e216]:
+      - image "쿠팡트래블"
+      - text: "쿠팡트래블"
+- link [ref=e217]
+- list:
+  - listitem "쿠팡 홈" [ref=e218]:
+    - link "쿠팡 홈" [ref=e219]
+  - listitem "도서/음반/DVD" [ref=e220]:
+    - link "도서/음반/DVD" [ref=e221]
+  - listitem "만화/라이트노벨" [ref=e222]:
+    - link "만화/라이트노벨" [ref=e223]
+  - listitem "장르만화" [ref=e224]:
+    - link "장르만화" [ref=e225]
+  - listitem "공포/추리" [ref=e226]:
+    - link "공포/추리" [ref=e227]
+- main:
+  - list:
+    - listitem [ref=e1]
+  - image "Product image"
+  - image "쿠팡 추천" [ref=e2]
+  - heading [level=1]: "데스노트 컬러판 1~12권 세트 완결"
+  - link "77 개 상품평" [ref=e3]
+  - button [ref=e4]
+  - button [ref=e5]
+  - text: "10%115,200원"
+  - text: "103,680원 무료배송 모레(화) 11/17  도착 예정 판매자:"
+  - link "페이퍼북스" [ref=e7]: "페이퍼북스 판매자 상품 보러가기"
+  - link "다른 판매자 보기" [ref=e8]: "다른 판매자 보기(14)"
+  - text: "판매자 평가"
+  - image "icon"
+  - text: "98%(8,228)"
+  - text: "배송사: CJ 대한통운 출판사:대원씨아이 시리즈:데스노트 컬러판 적립 최대 1,037원"
+  - button "쿠팡캐시 적립" [ref=e10]
+  - text: "· 쿠페이 머니 결제시"
+  - textbox "1" [ref=e11]
+  - button "수량빼기" [ref=e12]
+  - button "수량더하기" [ref=e13] [disabled]
+  - button "장바구니 담기" [ref=e14]
+  - button "바로구매" [ref=e15]
+  - list:
+    - listitem "세트여부: Y" [ref=e228]
+    - listitem "도서형태: 양장" [ref=e229]
+    - listitem "쿠팡상품번호: 1587662965 - 2713570199" [ref=e230]
+  - generic "상품정보에 문제가 있나요?" [ref=e16]
+  - link "새 상품(17) / 중고(4) 최저 103,680원" [ref=e17]
+  - link [ref=e18]:
+    - image "레이지데이즈 데스노트 깃털펜 포함 공책 비밀 책 쓸모없는 쓸데없는 웃긴 신박한 재미있는 선물, 레이지데이즈 데스노트 1세트, 블랙, 1개"
+    - heading "이런건 어때요?" [level=4]: "추천 이런건 어때요?"
+    - text: "10%레이지데이즈 데스노트 깃털펜 포함 공책 비밀 책 쓸모없는 쓸데없는 웃긴 신박한 재미있는 선물, 레이지데이즈 데스노트 1세트, 블랙, 1개(249)광고"
+    - button "Ad information" [ref=e19]
+  - text: "함께 비교하면 좋을 상품  광고"
+  - button "Ad information" [ref=e20]
+  - list [ref=e21] [scrollable]:
+    - listitem:
+      - link "(오늘 출발) 드래곤볼 초전집 1-4권 전권 세트, 없음, 상세설명 참조 200,000 10%180,000 무료배송 무료반품 내일(월) 도착 보장(3)" [ref=e22]
+    - listitem:
+      - link "(오늘 출발) 나루토 만화책 1-36권 세트 198,000 10%178,200 무료배송 무료반품 내일(월) 도착 보장(13)" [ref=e23]
+    - listitem:
+      - link "명탐정 코난 만화책 1-60권 세트 360,000 10%324,000 무료배송 무료반품 내일(월) 도착 보장(1)" [ref=e24]
+    - listitem:
+      - link "(오늘 출발) 나루토 만화책 37-72권 세트(전36권)198,000 10%178,200 무료배송 무료반품 내일(월) 도착 보장(10)" [ref=e25]
+    - listitem:
+      - link "킹덤 Kingdom 만화책 1-50권 세트 275,000 10%247,500 무료배송 무료반품 내일(월) 도착 보장(3)" [ref=e26]
+    - listitem:
+      - link "열혈강호 1~50권 세트 (전 50권), 전극진, 대원씨아이 275,000 13%237,490 무료배송 무료반품 내일(월) 도착 보장(7)" [ref=e27]
+    - listitem:
+      - link "H2 소장판 세트(1-17권), 대원씨아이 165,500 10%148,950 무료배송 무료반품 내일(월) 도착 보장(80)" [ref=e28]
+    - listitem:
+      - link "날아라 슈퍼보드 세트 전 10권, 허영만, 가디언 80,000 10%72,000 무료배송 무료반품 내일(월) 새벽 도착 보장(15)" [ref=e29]
+    - listitem:
+      - link "(오늘 출발) 블루 자이언트 만화책 1-10권 + 슈프림 1-11권 + 익스플로러 1-9권 + 모멘텀 1-7권 전권 세트(전37권)240,500 10%216,450 무료배송 무료반" [ref=e30]
+    - listitem:
+      - link "첫사랑 짝사랑, 이반 투르게네프, 올리버 15,000 10%13,500 무료배송 무료반품 내일(월) 새벽 도착 보장(12)" [ref=e31]
+  - button [ref=e32]
+  - generic [ref=e33]:
+    - link "상품상세" [ref=e34]
+    - link "상품평 (77)" [ref=e35]
+    - link "상품문의" [ref=e36]
+    - link "배송/교환/반품 안내" [ref=e37]
+  - text: "필수 표기 정보"
+  - table: "도서명 상품 상세페이지 참조 저자, 출판사 상품 상세페이지 참조 크기(파일의 용량)상품 상세페이지 참조 쪽수 상품 상세페이지 참조 제품 구성 상품 상세페이지 참조 발행일 상품 상세페이지 참조"
+  - generic "필수 표기 정보 더보기 더보기" [ref=e38]
+  - text: "판매자가 현금거래를 요구하면 거부하시고 즉시 사기 거래 신고센터 (1670-9832)에 신고하시기 바랍니다."
+  - heading "다른 고객이 함께 본 상품" [level=2]
+  - text: "1/4"
+  - link "데스노트 1~ 13권 + 단편집 세트 전 14권, 대원씨아이, Tsugumi Ohba" [ref=e39]:
+    - image "데스노트 1~ 13권 + 단편집 세트 전 14권, 대원씨아이, Tsugumi Ohba"
+    - text: "데스노트 1~ 13권 + 단편집 세트 전 14권, 대원씨아이, Tsugumi Ohba 90,450 원 100%(25)"
+  - link "데스노트 1~13 세트 [전13권] 만화책 ( 엘 일러스트카드 포함), 대원씨아이, 오바타 다케시" [ref=e40]:
+    - image "데스노트 1~13 세트 [전13권] 만화책 ( 엘 일러스트카드 포함), 대원씨아이, 오바타 다케시"
+    - text: "데스노트 1~13 세트 [전13권] 만화책 ( 엘 일러스트카드 포함), 대원씨아이, 오바타 다케시 84,600 원 90%(24)"
+  - link "데스노트 컬러판 7~12권 세트, 대원씨아이" [ref=e41]:
+    - image "데스노트 컬러판 7~12권 세트, 대원씨아이"
+    - text: "데스노트 컬러판 7~12권 세트, 대원씨아이 78,000 원 100%(2)"
+  - link "데스노트 컬러판 1: 따분함, Takeshi Obata, 대원씨아이" [ref=e42]:
+    - image "데스노트 컬러판 1: 따분함, Takeshi Obata, 대원씨아이"
+    - text: "데스노트 컬러판 1: 따분함, Takeshi Obata, 대원씨아이 10,800 원 100%(10)"
+  - link "Death Note 만화 데스노트 전권 세트 1-13권, CHAMP COMICS, 오바 츠구미" [ref=e43]:
+    - image "Death Note 만화 데스노트 전권 세트 1-13권, CHAMP COMICS, 오바 츠구미"
+    - text: "Death Note 만화 데스노트 전권 세트 1-13권, CHAMP COMICS, 오바 츠구미 84,600 원 100%(56)"
+  - link "데스노트 1권, Tsugumi Oba, 대원씨아이" [ref=e44]:
+    - image "데스노트 1권, Tsugumi Oba, 대원씨아이"
+    - text: "데스노트 1권, Tsugumi Oba, 대원씨아이 6,300 원 100%(49)"
+  - link "데스노트 (깃털펜+목걸이 증정)" [ref=e45]:
+    - image "데스노트 (깃털펜+목걸이 증정)"
+    - text: "데스노트 (깃털펜+목걸이 증정)7,800 원 90%(101)"
+  - link "데스노트 단편집, 대원씨아이, 오바타 타케시" [ref=e46]:
+    - image "데스노트 단편집, 대원씨아이, 오바타 타케시"
+    - text: "데스노트 단편집, 대원씨아이, 오바타 타케시 7,200 원 100%(16)"
+  - link "데스노트 컬러판 2: 합류, Takeshi Obata, 대원씨아이" [ref=e47]:
+    - image "데스노트 컬러판 2: 합류, Takeshi Obata, 대원씨아이"
+    - text: "데스노트 컬러판 2: 합류, Takeshi Obata, 대원씨아이 10,800 원 90%(8)"
+  - link "데스 노트 2권, Tsugumi Oba, 대원씨아이" [ref=e48]:
+    - image "데스 노트 2권, Tsugumi Oba, 대원씨아이"
+    - text: "데스 노트 2권, Tsugumi Oba, 대원씨아이 6,300 원 90%(23)"
+  - link "[대원씨아이] 데스노트 HOW TO READ 13권, 단품" [ref=e49]:
+    - image "[대원씨아이] 데스노트 HOW TO READ 13권, 단품"
+    - text: "[대원씨아이] 데스노트 HOW TO READ 13권, 단품 9,000 원 100%(17)"
+  - link "데스노트 컬러판 1-5권 세트, 대원씨아이" [ref=e50]:
+    - image "데스노트 컬러판 1-5권 세트, 대원씨아이"
+    - text: "데스노트 컬러판 1-5권 세트, 대원씨아이 54,000 원"
+  - link "데스노트 1-13 만화책 전권 + (뽁뽁이 포장), 대원씨아이(만화), 오바 츠구미" [ref=e51]:
+    - image "데스노트 1-13 만화책 전권 + (뽁뽁이 포장), 대원씨아이(만화), 오바 츠구미"
+    - text: "데스노트 1-13 만화책 전권 + (뽁뽁이 포장), 대원씨아이(만화), 오바 츠구미 83,250 원 100%(2)"
+  - link "룩 백, Tatsuki Fujimoto, 학산문화사" [ref=e52]:
+    - image "룩 백, Tatsuki Fujimoto, 학산문화사"
+    - text: "룩 백, Tatsuki Fujimoto, 학산문화사 5,400 원 100%(174)"
+  - link "농심 멸치 칼국수, 98g, 10개" [ref=e53]:
+    - image "농심 멸치 칼국수, 98g, 10개"
+    - text: "농심 멸치 칼국수, 98g, 10개 8,510 원(100g당 868원)100%(85,658)"
+  - generic [ref=e56]:
+    - button [ref=e57]
+    - text: "이런 상품은 어때요?광고"
+    - generic "나 혼자만 레벨업 1 - 8권 세트 추공 소설책 파피루스 - 미니수첩포함 96,000원 10%86,400원 무료배송 무료반품 내일(월) 새벽 도착 보장(26)(오늘 출발) 나루토 " [ref=e58] [scrollable]
+  - heading "상품 리뷰" [level=4]
+  - text: "77 최고 93%좋음 3%보통 0%별로 1%나쁨 3%흥미로움 정말흥미로워요 96%가독성 읽기 편해요 92%두께 보통이에요 62%"
+  - button "자세히 보기" [ref=e59]
+  - text: "동일한 상품에 대해 작성된 상품 리뷰로, 판매자는 다를 수 있습니다."
+  - button "운영정책" [ref=e60]
+  - generic [ref=e61]:
+    - image "갤러리 이미지"
+  - generic [ref=e62]:
+    - image "갤러리 이미지"
+  - generic [ref=e63]:
+    - image "갤러리 이미지"
+  - generic [ref=e64]:
+    - image "갤러리 이미지"
+  - button "베스트순" [ref=e65]
+  - button "최신순" [ref=e66]
+  - textbox "검색어를 입력하세요" [ref=e67] [placeholder="검색어를 입력하세요"]
+  - combobox "모든 별점" [ref=e68]
+  - article:
+    - text: "정*식  2026.11.10 판매자: 쿠팡(주)데스노트 컬러판 1~12권 세트 완결, 대원씨아이 컬러로 다시 만나는 데스노트, 소장 가치 최고 데스노트 컬러판 1~12권 완결 세트를 받았는데, 컬러판이라 표지부터 본문까지 색감이 살아 있어서 흑백판과 분위기가 확실히 다릅니다. 종이 재질…[+193 chars]"
+    - button "도움이 돼요" [ref=e70]
+    - button "신고하기" [ref=e71]
+  - article:
+    - text: "R*r  2022.05.12 판매자: 쿠팡(주)데스노트 컬러판 1~12권 세트 완결, 대원씨아이"
+    - text: "개좋아요 채색 너무 맘에 들엉요 흑백도 있는데 흑백은 그냥 그림만 보고 휙휙 넘기는 것 같은 느낌이 들어서 집중하고 싶어서 사봤는데 역시 전 컬러파.가격만 보지 말고 열분도 갠취에 맞게 소장하시길 비싼 게 값어치 한다고.. 앞에 케이스도 완전 와방 이쁘심여.. 특히 미사 그려진 아마 4…[+347 chars]"
+    - button "10명에게 도움이 됐어요" [ref=e74]
+    - button "신고하기" [ref=e75]
+  - article:
+    - text: "박*경  2026.09.15 판매자: 페이퍼북스 데스노트 컬러판 1~12권 세트 완결, 대원씨아이 아이가 좋아하네요 아이가 원하던 웹툰이에요~^^좋아하네요~흥미로움 정말흥미로워요 가독성 읽기 편해요 두께 보통이에요"
+    - button "도움이 돼요" [ref=e77]
+    - button "신고하기" [ref=e78]
+  - article:
+    - text: "이*원  2025.12.20 판매자: 쿠팡(주)데스노트 컬러판 1~12권 세트 완결, 대원씨아이"
+    - text: "확실히 컬러판이어서 보기가 좋습니다.책 한권마다 플라스틱 커버로 감싸져서 파손을 방지해 놓은게 좋더라구요.소장할만한 가치가 있어요.흥미로움 정말흥미로워요 가독성 읽기 편해요 두께 보통이에요"
+    - button "1명에게 도움이 됐어요" [ref=e81]
+    - button "신고하기" [ref=e82]
+  - article:
+    - text: "박*호  2023.09.24 판매자: 쿠팡(주)데스노트 컬러판 1~12권 세트 완결, 대원씨아이"
+    - text: "포장박스가넘얇은지 전권이모서리가찌그러져서왔어요 흥미로움 내용이 흥미로워요 가독성 읽기 편해요 두께 얇은 편이에요"
+    - button "신고하기" [ref=e85]
+  - article:
+    - text: "청동거인  2021.10.16 판매자: 쿠팡(주)데스노트 컬러판 1~12권 세트 완결, 대원씨아이 소장용 이라 안 읽어보고 표지만 봤는데 너무 고급스러워서 깜놀. 소장용으로 최고 흥미로움 내용이 흥미로워요 가독성 읽기 편해요 두께 보통이에요"
+    - button "1명에게 도움이 됐어요" [ref=e87]
+    - button "신고하기" [ref=e88]
+  - article:
+... [snapshot truncated at 16 KiB; narrow it with { interactive: true }, selector or ref]

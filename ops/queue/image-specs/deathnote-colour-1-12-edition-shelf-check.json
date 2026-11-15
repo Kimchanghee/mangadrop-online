@@ -1,0 +1,103 @@
+{
+  "slot": "20261115-1920-shop",
+  "creatorSessionId": "kuWJU8rq0pCnpQnO",
+  "observedUTC": "2026-11-15T10:53:26.370Z",
+  "visualInspection": "all original files read individually with read_file",
+  "photoCount": 6,
+  "photoIds": [
+    "dn1",
+    "dn2",
+    "dn3",
+    "dn4",
+    "dn5",
+    "dn6"
+  ],
+  "rejected": [],
+  "photos": [
+    {
+      "id": "dn1",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-1920-deathnote/dn1.png",
+      "sourceSHA256": "28aef13905b2be90a7dd08bb9e78ce6b4f6c9e6577cceda6289bce36557947f9",
+      "sourceBytes": 2455585,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "rotation": 0,
+      "target": "ops/queue/images/deathnote-colour-1-12-edition-shelf-check/01-dn1.webp",
+      "targetSHA256": "c82715f4acf8898b2661519e1490399bdd2dcc85a9b327a7b0a1c44e817283ff",
+      "width": 1280,
+      "height": 853,
+      "visualQA": "approved: individually inspected original with read_file"
+    },
+    {
+      "id": "dn2",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-1920-deathnote/dn2.png",
+      "sourceSHA256": "ba1577d7137fb3544db7c130a1ca2ea61787c930c807e098bb57347f7715f4d3",
+      "sourceBytes": 2160088,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "rotation": 0,
+      "target": "ops/queue/images/deathnote-colour-1-12-edition-shelf-check/02-dn2.webp",
+      "targetSHA256": "8532a5755a98a1c914d78cd8f2421c96d42bb0e67291d0a64989e9f9a9bdeca2",
+      "width": 1280,
+      "height": 853,
+      "visualQA": "approved: individually inspected original with read_file"
+    },
+    {
+      "id": "dn3",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-1920-deathnote/dn3.png",
+      "sourceSHA256": "960abe9c0a5fa150c75982261a3eeebd2dacb31a48931c20e7a1adf5ec685afe",
+      "sourceBytes": 1948384,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "rotation": 0,
+      "target": "ops/queue/images/deathnote-colour-1-12-edition-shelf-check/03-dn3.webp",
+      "targetSHA256": "b58e235b8717d88f3590d729f487db6f76bbdbf4b73991245a6fd68dddb95047",
+      "width": 1280,
+      "height": 853,
+      "visualQA": "approved: individually inspected original with read_file"
+    },
+    {
+      "id": "dn4",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-1920-deathnote/dn4.png",
+      "sourceSHA256": "61ce2eecc1899668c3056eb8042b22fc2b4ef131b3e67f70ace27eef49f16c42",
+      "sourceBytes": 2959647,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "rotation": 0,
+      "target": "ops/queue/images/deathnote-colour-1-12-edition-shelf-check/04-dn4.webp",
+      "targetSHA256": "72b8bd2c333b902b9c65f066da1e2ddedde2c4783acc0fa462f307c04ba0998f",
+      "width": 1280,
+      "height": 853,
+      "visualQA": "approved: individually inspected original with read_file"
+    },
+    {
+      "id": "dn5",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-1920-deathnote/dn5.png",
+      "sourceSHA256": "98e973b882ee32e941ca6c5f4677680e904293abedb853a928af611ae866596e",
+      "sourceBytes": 2105293,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "rotation": 0,
+      "target": "ops/queue/images/deathnote-colour-1-12-edition-shelf-check/05-dn5.webp",
+      "targetSHA256": "db88fd9bc08be50c945aba52f1f64e06a1aaf80fb6741c6cf52435aabc7e535c",
+      "width": 1280,
+      "height": 853,
+      "visualQA": "approved: individually inspected original with read_file"
+    },
+    {
+      "id": "dn6",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-1920-deathnote/dn6.png",
+      "sourceSHA256": "830b25339de6c8d70c24fb1526dd2d93ec127bac4674ee69c50be49b9c032a5f",
+      "sourceBytes": 2038878,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "rotation": 0,
+      "target": "ops/queue/images/deathnote-colour-1-12-edition-shelf-check/06-dn6.webp",
+      "targetSHA256": "13073c31a8586a7258efaf0f4b49a2c75482b4b582da534022bb44005ef8e10a",
+      "width": 1280,
+      "height": 853,
+      "visualQA": "approved: individually inspected original with read_file"
+    }
+  ],
+  "inspectedAtUTC": "2026-11-15T10:53:26.864Z"
+}
