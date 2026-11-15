@@ -1,0 +1,87 @@
+{
+  "slug": "spyfamily-5th-box-1-13-edition-check",
+  "observedUTC": "2026-11-15T04:30:53.827Z",
+  "creatorSessionId": "LvnufLFHB9xO1dsJ",
+  "sourceReferencePolicy": "official publisher poster as context only; no artwork reproduction",
+  "visualQA": "read_file original PNGs checked individually before eligibility",
+  "photos": [
+    {
+      "id": "spybox-reading-room",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-spyfamily/spybox-reading-room.png",
+      "sourceSHA256": "27d9c9f9bb74e9e0bef373555212d13c097d1c8b0900140480d8ccbac9c3d859",
+      "sourceBytes": 2286996,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/spyfamily-5th-box-1-13-edition-check/01-spybox-reading-room.webp",
+      "targetSHA256": "74a01a85577dbb639a58e1fff52b7388536f973aa12fd661eb4883b16216710c",
+      "targetBytes": 91856,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "spybox-volume-check-13-corrected",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-spyfamily/spybox-volume-check-13-corrected.png",
+      "sourceSHA256": "49599574010357411edae6c3b05cc88f54b57b244f54951ea4529e21a16a36bb",
+      "sourceBytes": 2349882,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/spyfamily-5th-box-1-13-edition-check/02-spybox-volume-check-13-corrected.webp",
+      "targetSHA256": "674f7dc22174f321aaed19c589f16f7cb816f7b759f78e208f036d4007a707d3",
+      "targetBytes": 104580,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "spybox-shelf-measure",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-spyfamily/spybox-shelf-measure.png",
+      "sourceSHA256": "817aded7b1759c98c120fc146c66e46fd52b3c764761244eb679301ea159b948",
+      "sourceBytes": 1847936,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/spyfamily-5th-box-1-13-edition-check/03-spybox-shelf-measure.webp",
+      "targetSHA256": "2cc2b41494319ba00cb6ad7ae8dd3d738552fcd04ee0dbde9f3f543d6e3e0d31",
+      "targetBytes": 33884,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "spybox-card-storage",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-spyfamily/spybox-card-storage.png",
+      "sourceSHA256": "2d63a609135de5df0ec301b26f135f5e38ff12dafe3523dd339439216f4b66fa",
+      "sourceBytes": 2223505,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/spyfamily-5th-box-1-13-edition-check/04-spybox-card-storage.webp",
+      "targetSHA256": "c9a4fdb7f66681400b6034ff6f86dc9b2f4752ddf0a1a007968ddb08e7d9f448",
+      "targetBytes": 43070,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "spybox-delivery-check",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-spyfamily/spybox-delivery-check.png",
+      "sourceSHA256": "ef269482ad19ac1c4913a6d98d56e089058f35888654e1245bf5e96eae9c152a",
+      "sourceBytes": 2217407,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/spyfamily-5th-box-1-13-edition-check/05-spybox-delivery-check.webp",
+      "targetSHA256": "c3793e22271bc4ea94097d17ae4332b8f1f27bdd9d5331969b80b661321a6fdb",
+      "targetBytes": 60396,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "id": "spybox-page-support",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261115-spyfamily/spybox-page-support.png",
+      "sourceSHA256": "7ddc5c5b7f757b31b2d2cb5818bcf43ffb86de97881e6b12c81c4f74c812b04a",
+      "sourceBytes": 2160972,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/spyfamily-5th-box-1-13-edition-check/06-spybox-page-support.webp",
+      "targetSHA256": "bc03a612084280c17e3b62675b1178f14277c6f2bd3350a61f62ba626aa7868f",
+      "targetBytes": 70330,
+      "width": 1280,
+      "height": 853
+    }
+  ]
+}
