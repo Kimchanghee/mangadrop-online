@@ -1,0 +1,36 @@
+{
+  "slug": "slamdunk-shinsouban-1-edition-isbn-check",
+  "manuscript": "ops/queue/slamdunk-shinsouban-1-edition-isbn-check.md",
+  "jobs": [
+    {
+      "name": "01-sd1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-sd2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-sd3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-sd4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-sd5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-sd6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd6.png",
+      "width": 1280
+    }
+  ]
+}

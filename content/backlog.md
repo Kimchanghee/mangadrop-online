@@ -71,3 +71,5 @@
 | deathnote-colour-1-12-edition-shelf-check | pick | queued | 2026-11-15 exact option verified; 6 photos; dry-run passed |
 
 | 체인소 맨 11, 1부 완결이면 11권 세트일까? | chainsaw-man-11-single-volume-part-one-check | queued | 2026-11-18 SHOP 13:00; 6 photos; native option verified; publication pending |
+
+| 슬램덩크 신장재편판 1, 기존 1권과 같은 책일까? | slamdunk-shinsouban-1-edition-isbn-check | queued | 2026-11-18 SHOP 19:20; 6 photos; isolated dry-run passed; publication pending |

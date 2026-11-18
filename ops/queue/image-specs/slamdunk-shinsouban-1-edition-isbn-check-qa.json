@@ -1,0 +1,87 @@
+{
+  "observedUTC": "2026-11-18T10:42:13.618Z",
+  "creatorSessionId": "VhL995F7QaZyzI0x",
+  "slot": "20261118-1920-shop",
+  "photoCount": 6,
+  "method": "Exact original read_file visual inspection once each; native manufacturer reference matched. No QA collage or resized QA copies.",
+  "photos": [
+    {
+      "id": "sd1",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd1.png",
+      "sourceSHA256": "7bd60f06907cc16925154d2465308e3ddca0fb6170314f059a7d2bbdc39e3771",
+      "sourceBytes": 2378672,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/slamdunk-shinsouban-1-edition-isbn-check/01-sd1.webp",
+      "targetSHA256": "cd4e2b1913a1a1120aa4f6ba006cf131641791ca62d1d3ce40c762a79cfc7ec5",
+      "targetBytes": 70238,
+      "visualQA": "accepted; distinct role; no logo/text/art anomaly; ALT grounded to visible scene; conceptual not actual use/performance proof",
+      "pngCRCChunksVerified": 4
+    },
+    {
+      "id": "sd2",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd2.png",
+      "sourceSHA256": "740673b677a3c6b8dcf234bc1d15f504ec5527fa492785ca486479e24f574b8c",
+      "sourceBytes": 2621899,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/slamdunk-shinsouban-1-edition-isbn-check/02-sd2.webp",
+      "targetSHA256": "d55a72b4b21aecbca96cd648f105929ceed3f87ccfc6a99ff4e63028443e9416",
+      "targetBytes": 104106,
+      "visualQA": "accepted; distinct role; no logo/text/art anomaly; ALT grounded to visible scene; conceptual not actual use/performance proof",
+      "pngCRCChunksVerified": 4
+    },
+    {
+      "id": "sd3",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd3.png",
+      "sourceSHA256": "5e742d3f486d0e0194c164bc368e64413dce53a9afcef906ddf45819a046bb9c",
+      "sourceBytes": 2094143,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/slamdunk-shinsouban-1-edition-isbn-check/03-sd3.webp",
+      "targetSHA256": "ce9ce4123ab3be8e5d3697894213fd4108b73d264919cbfdf5ce2de234190ed5",
+      "targetBytes": 38522,
+      "visualQA": "accepted; distinct role; no logo/text/art anomaly; ALT grounded to visible scene; conceptual not actual use/performance proof",
+      "pngCRCChunksVerified": 4
+    },
+    {
+      "id": "sd4",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd4.png",
+      "sourceSHA256": "c06d87c70cca1c3d42311c9154bb529668b94182b6ecdb805151d9280ee531db",
+      "sourceBytes": 2748240,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/slamdunk-shinsouban-1-edition-isbn-check/04-sd4.webp",
+      "targetSHA256": "991c5eda5241078173c21e6ab28e5ffacd007c3987e3e04e657fe95ff2b428fd",
+      "targetBytes": 88702,
+      "visualQA": "accepted; distinct role; no logo/text/art anomaly; ALT grounded to visible scene; conceptual not actual use/performance proof",
+      "pngCRCChunksVerified": 4
+    },
+    {
+      "id": "sd5",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd5.png",
+      "sourceSHA256": "f7c298094ba6d5d73b3e7caaf413f4beb27c23a961d29909e7d6bd280f762326",
+      "sourceBytes": 2001300,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/slamdunk-shinsouban-1-edition-isbn-check/05-sd5.webp",
+      "targetSHA256": "694d3076ce1d04f55ddb12d8f1c61b0235e98d3a83e0b85a949d1d3a07d63422",
+      "targetBytes": 23942,
+      "visualQA": "accepted; distinct role; no logo/text/art anomaly; ALT grounded to visible scene; conceptual not actual use/performance proof",
+      "pngCRCChunksVerified": 4
+    },
+    {
+      "id": "sd6",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1920/sd6.png",
+      "sourceSHA256": "9e345bb669536a6786724f315486d1c889c26076a325981ba9d31cc4c75a5d3d",
+      "sourceBytes": 2930814,
+      "sourceWidth": 1536,
+      "sourceHeight": 1024,
+      "target": "ops/queue/images/slamdunk-shinsouban-1-edition-isbn-check/06-sd6.webp",
+      "targetSHA256": "0a3b750a7232da1d938867610857ffa265e648ff5c22b82eea7fbc21d6ee36b1",
+      "targetBytes": 160792,
+      "visualQA": "accepted; distinct role; no logo/text/art anomaly; ALT grounded to visible scene; conceptual not actual use/performance proof",
+      "pngCRCChunksVerified": 4
+    }
+  ]
+}
