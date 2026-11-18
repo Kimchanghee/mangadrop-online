@@ -1,0 +1,75 @@
+{
+  "observedUTC": "2026-11-18T04:32:27.010Z",
+  "slot": "20261118-1300-shop",
+  "creatorSessionId": "d8zxn8V3ZO3cCgDc",
+  "photoCount": 6,
+  "method": "read_file exact original each; actual WebP output from selected source. No QA-only image copies",
+  "photos": [
+    {
+      "id": "cm1",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm1.png",
+      "sourceSHA256": "723c257eb5093c59fbca6cf27d559d2a6f84e66fafd7325c88d70cd9bb4ae90e",
+      "sourceBytes": 2354796,
+      "target": "ops/queue/images/chainsaw-man-11-single-volume-part-one-check/01-cm1.webp",
+      "targetSHA256": "19c17da86188685d6e55273b30ef968dddcfbf5fdbf5d0a7595806a06af99fbc",
+      "targetBytes": 69822,
+      "crop": null,
+      "visualQA": "blank-jacket books, no cover art/characters/logos/readable titles; generic shelf/book inspection scenes; no fake set promise"
+    },
+    {
+      "id": "cm2",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm2.png",
+      "sourceSHA256": "4aef9141bf9945e299dd8d79d19252ce72a8c06df92d0cba41045c6a00823c6c",
+      "sourceBytes": 2377529,
+      "target": "ops/queue/images/chainsaw-man-11-single-volume-part-one-check/02-cm2.webp",
+      "targetSHA256": "33b8a115aab6058b521634d5c2ab1272f10da6d8b478e25181b92e8115f3b216",
+      "targetBytes": 83432,
+      "crop": null,
+      "visualQA": "blank-jacket books, no cover art/characters/logos/readable titles; generic shelf/book inspection scenes; no fake set promise"
+    },
+    {
+      "id": "cm3",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm3.png",
+      "sourceSHA256": "84e363bf908e239f10d55b7f8b6604f22dc93b1689a26d94f160799623f5aae0",
+      "sourceBytes": 2454360,
+      "target": "ops/queue/images/chainsaw-man-11-single-volume-part-one-check/03-cm3.webp",
+      "targetSHA256": "475827bfbd04a8ae8c9bcf073c38ad5cf39992f31a8bf20c6f7a6a6dddfa10fa",
+      "targetBytes": 79274,
+      "crop": null,
+      "visualQA": "blank-jacket books, no cover art/characters/logos/readable titles; generic shelf/book inspection scenes; no fake set promise"
+    },
+    {
+      "id": "cm4",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm4.png",
+      "sourceSHA256": "b0639e985ea5132e407021ada7193ca90cf03a4b2ad1b8b8f22f53f0d5af17f7",
+      "sourceBytes": 2887498,
+      "target": "ops/queue/images/chainsaw-man-11-single-volume-part-one-check/04-cm4.webp",
+      "targetSHA256": "d3e9520cd1c4f1a5a8063b4d875dbc3fc480afbf4cc5439ff6faacbcc7873c07",
+      "targetBytes": 120600,
+      "crop": null,
+      "visualQA": "blank-jacket books, no cover art/characters/logos/readable titles; generic shelf/book inspection scenes; no fake set promise"
+    },
+    {
+      "id": "cm5",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm5.png",
+      "sourceSHA256": "f4fbaa200ea62c84568d06dde8ef1a9cc71bc465d57318783cd729db79a824e6",
+      "sourceBytes": 2263790,
+      "target": "ops/queue/images/chainsaw-man-11-single-volume-part-one-check/05-cm5.webp",
+      "targetSHA256": "71d9a9e23acc685e00a6b741058072701695510d57a411c1a6701b76cf763b69",
+      "targetBytes": 69640,
+      "crop": null,
+      "visualQA": "blank-jacket books, no cover art/characters/logos/readable titles; generic shelf/book inspection scenes; no fake set promise"
+    },
+    {
+      "id": "cm6",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm6.png",
+      "sourceSHA256": "aec78415be70b8260704bfa8e64d3939f0e1c1c3b828f443b73440c448a24223",
+      "sourceBytes": 2716839,
+      "target": "ops/queue/images/chainsaw-man-11-single-volume-part-one-check/06-cm6.webp",
+      "targetSHA256": "033d8c789640a18db01833c3da39ba3f3bb6354b6afa3aa2f076b08b5da49ead",
+      "targetBytes": 149130,
+      "crop": null,
+      "visualQA": "blank-jacket books, no cover art/characters/logos/readable titles; generic shelf/book inspection scenes; no fake set promise"
+    }
+  ]
+}

@@ -69,3 +69,5 @@
 | 스파이 패밀리 5주년 박스, 1~13권과 카드 확인 | 정확 옵션·구매버튼 2026-11-15 확인, 제휴 URI 발급, 사진6 원본 시각검수·SHA, 전체 격리검사 60/60 | 상품 노트(제휴) | 대기(queued) | 미발행 (spyfamily-5th-box-1-13-edition-check) |
 
 | deathnote-colour-1-12-edition-shelf-check | pick | queued | 2026-11-15 exact option verified; 6 photos; dry-run passed |
+
+| 체인소 맨 11, 1부 완결이면 11권 세트일까? | chainsaw-man-11-single-volume-part-one-check | queued | 2026-11-18 SHOP 13:00; 6 photos; native option verified; publication pending |

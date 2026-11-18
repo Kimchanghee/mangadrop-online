@@ -1,0 +1,36 @@
+{
+  "slug": "chainsaw-man-11-single-volume-part-one-check",
+  "manuscript": "ops/queue/chainsaw-man-11-single-volume-part-one-check.md",
+  "jobs": [
+    {
+      "name": "01-cm1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-cm2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-cm3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-cm4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-cm5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-cm6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261118-1300/cm6.png",
+      "width": 1280
+    }
+  ]
+}
