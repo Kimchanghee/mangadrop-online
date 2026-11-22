@@ -73,3 +73,5 @@
 | 체인소 맨 11, 1부 완결이면 11권 세트일까? | chainsaw-man-11-single-volume-part-one-check | queued | 2026-11-18 SHOP 13:00; 6 photos; native option verified; publication pending |
 
 | 슬램덩크 신장재편판 1, 기존 1권과 같은 책일까? | slamdunk-shinsouban-1-edition-isbn-check | queued | 2026-11-18 SHOP 19:20; 6 photos; isolated dry-run passed; publication pending |
+
+| goodbye-eri-korean-standard-edition-isbn-check | pick | queued | 안녕, 에리 일반판, 한정판과 무엇부터 구분할까? | 2026-11-22 SHOP evening; exact option; six inspected photos; isolated gate pending |

@@ -1,0 +1,115 @@
+{
+  "slug": "goodbye-eri-korean-standard-edition-isbn-check",
+  "manuscript": "ops/queue/goodbye-eri-korean-standard-edition-isbn-check.md",
+  "jobs": [
+    {
+      "name": "01-er1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-er2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-er3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-er4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-er5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-er6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er6.png",
+      "width": 1280
+    }
+  ],
+  "photos": [
+    {
+      "id": "er1",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er1.png",
+      "sourceSHA256": "65bd6c20f2dc42df12a291cefbdfa06ab9355a42531bbe47d9f60afa525361ce",
+      "sourceBytes": 2283960,
+      "target": "ops/queue/images/goodbye-eri-korean-standard-edition-isbn-check/01-er1.webp",
+      "targetSHA256": "bb65f1ac0ec8d58c429d274b781506d2cf5bfbe234d6fdf725fe09e2064d3403",
+      "targetBytes": 73152,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "er2",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er2.png",
+      "sourceSHA256": "d5eba5c346c3c381e1423eada390933c4bbdfdc9e3acce16f7cd061611e48357",
+      "sourceBytes": 2267728,
+      "target": "ops/queue/images/goodbye-eri-korean-standard-edition-isbn-check/02-er2.webp",
+      "targetSHA256": "f6f0ac20a91af6ec5afaf1b8f56bd5ab812eeb0b5d6ccb64b66a1faaeba470fa",
+      "targetBytes": 73866,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "er3",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er3.png",
+      "sourceSHA256": "163f25a48f448a57c26a35d7b7cb180743a4bbb8ff937574be819795127cfb6a",
+      "sourceBytes": 2793431,
+      "target": "ops/queue/images/goodbye-eri-korean-standard-edition-isbn-check/03-er3.webp",
+      "targetSHA256": "67e176ad2ffb7473435f26ef683b4f6a433561c56c4403b57ddeaf004b03437a",
+      "targetBytes": 142818,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "er4",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er4.png",
+      "sourceSHA256": "22e0874653051b27c91334124428bfa6901a45df2cbfddbab8af6015a4668fbb",
+      "sourceBytes": 2313157,
+      "target": "ops/queue/images/goodbye-eri-korean-standard-edition-isbn-check/04-er4.webp",
+      "targetSHA256": "703ac868bc86772045741566190b38c99ccb512571b9ed83708577d06e1b1127",
+      "targetBytes": 61558,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "er5",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er5.png",
+      "sourceSHA256": "5fb7ffad1573c58b0b4b2b9d7eb4ad8703f0374a84dc44a3fbec20d2418c0ef9",
+      "sourceBytes": 2233505,
+      "target": "ops/queue/images/goodbye-eri-korean-standard-edition-isbn-check/05-er5.webp",
+      "targetSHA256": "e0dec5b8075e19c89e5cfa4a3640123bf488e42347fd60e0325ec477946ddcd8",
+      "targetBytes": 81286,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "er6",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261122-1920/er6.png",
+      "sourceSHA256": "eaec0931f2193e35fb4fbc609ed0193a55583510b1ec0fd9c5974511fe68106f",
+      "sourceBytes": 2270010,
+      "target": "ops/queue/images/goodbye-eri-korean-standard-edition-isbn-check/06-er6.webp",
+      "targetSHA256": "39bf69ec0796e1030b90c19f52e9102be7906f94438add989d94d7e3ddd4228a",
+      "targetBytes": 84492,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    }
+  ],
+  "originalReadFileQA": true,
+  "creatorSessionId": "cI3qaFhcdNyL177Y",
+  "slot": "20261122-1920-shop",
+  "rejected": [],
+  "artwork": "none"
+}
