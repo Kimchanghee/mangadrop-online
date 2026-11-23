@@ -1,0 +1,115 @@
+{
+  "slug": "medalist1-paperback-vs-digital-isbn-check",
+  "manuscript": "ops/queue/medalist1-paperback-vs-digital-isbn-check.md",
+  "jobs": [
+    {
+      "name": "01-md1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-md2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-md3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-md4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-md5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-md6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md6.png",
+      "width": 1280
+    }
+  ],
+  "photos": [
+    {
+      "id": "md1",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md1.png",
+      "sourceSHA256": "2f3fbc6480ec6a7d6ca0e10e1bf94436d683c1ff5f2fa8307f0dfe4ee630817d",
+      "sourceBytes": 2129410,
+      "target": "ops/queue/images/medalist1-paperback-vs-digital-isbn-check/01-md1.webp",
+      "targetSHA256": "b5f458fbb5223183beb15400a3834769a9f925c11509b484355a0b01e1f9932c",
+      "targetBytes": 54424,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "md2",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md2.png",
+      "sourceSHA256": "723767a8b521c4c7872a3139155f5eafc7b41d1c46b519b3b33d1440b215396d",
+      "sourceBytes": 2284676,
+      "target": "ops/queue/images/medalist1-paperback-vs-digital-isbn-check/02-md2.webp",
+      "targetSHA256": "1baf2b7b547c209b92f428389fb0a4ecaadb4f4273bb23bd3f030d71fd01a5a6",
+      "targetBytes": 91466,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "md3",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md3.png",
+      "sourceSHA256": "c86063aa308cb0fc2286b5b2c00fa296debf54f12a275cf9e18674d20da81e28",
+      "sourceBytes": 1907366,
+      "target": "ops/queue/images/medalist1-paperback-vs-digital-isbn-check/03-md3.webp",
+      "targetSHA256": "f9d404d19818505d2ef740ccbc0db325913ee1e5632d961a710c7acbbd9466bb",
+      "targetBytes": 48146,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "md4",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md4.png",
+      "sourceSHA256": "301529bc6ae562529aa1ead8347768624abcd6cbdbd86dd245aaa0094a1c3406",
+      "sourceBytes": 2232920,
+      "target": "ops/queue/images/medalist1-paperback-vs-digital-isbn-check/04-md4.webp",
+      "targetSHA256": "cede9421df10524e72087742f327b25e4c06d5c14d82d9e586bea5fc812698ac",
+      "targetBytes": 70176,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "md5",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md5.png",
+      "sourceSHA256": "e439d24e581aad159ef3810ac8d240b1b3df483a0c650e2960fa6ba16187eb5b",
+      "sourceBytes": 2023320,
+      "target": "ops/queue/images/medalist1-paperback-vs-digital-isbn-check/05-md5.webp",
+      "targetSHA256": "7e42fd442a2a9ddc487f9621e11f3a10924f603cba50f2dd383c73451d79dcb7",
+      "targetBytes": 60384,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "md6",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1920/md6.png",
+      "sourceSHA256": "a0df3cb064036f9f8da32a2c6a7da97230ece78416c2eeead3673cc89c0ef937",
+      "sourceBytes": 2333920,
+      "target": "ops/queue/images/medalist1-paperback-vs-digital-isbn-check/06-md6.webp",
+      "targetSHA256": "be46744f83fc9b924f9792cb406dc19db753dbf9dcfd5d982d723d9f628db2cb",
+      "targetBytes": 86412,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    }
+  ],
+  "originalReadFileQA": true,
+  "creatorSessionId": "Zx2gArertWZu4WiO",
+  "slot": "20261123-1920-shop",
+  "rejected": [],
+  "artwork": "none"
+}
