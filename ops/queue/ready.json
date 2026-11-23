@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "slug": "blue-giant1-original-series-isbn-check",
+    "sourceURL": "https://www.coupang.com/vp/products/6157071816?itemId=11924260378",
+    "issuedURI": "https://link.coupang.com/a/iT8RNXO3oq",
+    "productName": "블루 자이언트 1",
+    "option": "대원 / 이시즈카 신이치 글·그림 / 한국어 종이책 1권 / ISBN 9791157540662",
+    "verifyTokens": [
+      "블루 자이언트 1",
+      "9791157540662",
+      "6157071816 - 11924260378"
+    ],
+    "file": "ops/queue/blue-giant1-original-series-isbn-check.md",
+    "manuscript": "ops/queue/blue-giant1-original-series-isbn-check.md",
+    "evidence": "ops/queue/evidence/blue-giant1-original-series-isbn-check.md",
+    "images": [
+      "ops/queue/images/blue-giant1-original-series-isbn-check/01-bg1.webp",
+      "ops/queue/images/blue-giant1-original-series-isbn-check/02-bg2.webp",
+      "ops/queue/images/blue-giant1-original-series-isbn-check/03-bg3.webp",
+      "ops/queue/images/blue-giant1-original-series-isbn-check/04-bg4.webp",
+      "ops/queue/images/blue-giant1-original-series-isbn-check/05-bg5.webp",
+      "ops/queue/images/blue-giant1-original-series-isbn-check/06-bg6.webp"
+    ],
+    "preparedAt": "2026-11-23T04:17:10.345Z",
+    "verifiedAt": "2026-11-23T04:09:11Z",
+    "creatorSessionId": "ANC24lmpQT4hoGPW",
+    "slot": "20261123-1300-shop"
+  }
+]

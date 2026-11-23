@@ -1,0 +1,115 @@
+{
+  "slug": "blue-giant1-original-series-isbn-check",
+  "manuscript": "ops/queue/blue-giant1-original-series-isbn-check.md",
+  "jobs": [
+    {
+      "name": "01-bg1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-bg2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-bg3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-bg4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-bg5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-bg6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg6.png",
+      "width": 1280
+    }
+  ],
+  "photos": [
+    {
+      "id": "bg1",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg1.png",
+      "sourceSHA256": "c4de1e5aee3f32eb7bc14e515c05c9121aa66f38f5b09708b144b3be1fa10841",
+      "sourceBytes": 1984355,
+      "target": "ops/queue/images/blue-giant1-original-series-isbn-check/01-bg1.webp",
+      "targetSHA256": "ca1fef4301a6da0d01fbd211efa3b49275685aec032c61327b4ca07eeba53de2",
+      "targetBytes": 41076,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "bg2",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg2.png",
+      "sourceSHA256": "17fce149d4b012473c3537bd38015a54c11f7fd667722fef5293e6571308ecf5",
+      "sourceBytes": 2311938,
+      "target": "ops/queue/images/blue-giant1-original-series-isbn-check/02-bg2.webp",
+      "targetSHA256": "b39db00805e0b9aa56d2d7676b901ae20d59a332be6d4bb7d86e73230fc91e11",
+      "targetBytes": 77948,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "bg3",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg3.png",
+      "sourceSHA256": "4e11318867abdc9077dee96132832cb9ed2510bf66df1bc2054f3b89101711ab",
+      "sourceBytes": 2350918,
+      "target": "ops/queue/images/blue-giant1-original-series-isbn-check/03-bg3.webp",
+      "targetSHA256": "573bf8faa827b7e6606128ff4e5eab7905c4cdc8c86824152a4b17dac42726c6",
+      "targetBytes": 94972,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "bg4",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg4.png",
+      "sourceSHA256": "13eff3c2f99e19dc02dda62d153b82b12621288a1df10783a586b4ec70b1004d",
+      "sourceBytes": 2121246,
+      "target": "ops/queue/images/blue-giant1-original-series-isbn-check/04-bg4.webp",
+      "targetSHA256": "8a3b0aec2659c67711f3960b197b1789b62a7d71ebc1eb5f147284e78773a53a",
+      "targetBytes": 57498,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "bg5",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg5.png",
+      "sourceSHA256": "ad64becb35376ffc5c987ad006680773c04ac05275d4d15ebb7b36ee43d536fc",
+      "sourceBytes": 2091023,
+      "target": "ops/queue/images/blue-giant1-original-series-isbn-check/05-bg5.webp",
+      "targetSHA256": "44bd9087d57c103fbcf7a03de0145e50018cc2fa3159920bae5090c7f337f7bc",
+      "targetBytes": 83538,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    },
+    {
+      "id": "bg6",
+      "source": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261123-1300/bg6.png",
+      "sourceSHA256": "9e2048a13768d4e2242016e664ea73c77362a0d8f7f1145d0fc6441c0c6fbc50",
+      "sourceBytes": 2225718,
+      "target": "ops/queue/images/blue-giant1-original-series-isbn-check/06-bg6.webp",
+      "targetSHA256": "0d32dc47118d876d7c53a3dd8f0e853dc593c65da66512fcc013f9458a6b0cb0",
+      "targetBytes": 85842,
+      "width": 1280,
+      "height": 853,
+      "visualQA": "accepted; original read_file once; exact official reference actually attached; shape/count/color/text checked; not physical test evidence"
+    }
+  ],
+  "originalReadFileQA": true,
+  "creatorSessionId": "ANC24lmpQT4hoGPW",
+  "slot": "20261123-1300-shop",
+  "rejected": [],
+  "artwork": "none"
+}

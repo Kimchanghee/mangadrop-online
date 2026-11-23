@@ -75,3 +75,5 @@
 | 슬램덩크 신장재편판 1, 기존 1권과 같은 책일까? | slamdunk-shinsouban-1-edition-isbn-check | queued | 2026-11-18 SHOP 19:20; 6 photos; isolated dry-run passed; publication pending |
 
 | goodbye-eri-korean-standard-edition-isbn-check | pick | queued | 안녕, 에리 일반판, 한정판과 무엇부터 구분할까? | 2026-11-22 SHOP evening; exact option; six inspected photos; isolated gate pending |
+
+| blue-giant1-original-series-isbn-check | pick | queued | 블루 자이언트 1, 슈프림 1권과 어떻게 구분할까? | 2026-11-23 SHOP13:00; exact option; six inspected photos; isolated gate pending |
