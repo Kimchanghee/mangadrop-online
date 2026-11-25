@@ -1,0 +1,36 @@
+{
+  "slug": "dorohedoro-anki-1-26-set-limited-edition-check",
+  "manuscript": "ops/queue/dorohedoro-anki-1-26-set-limited-edition-check.md",
+  "jobs": [
+    {
+      "name": "01-md1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1920/md1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-md2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1920/md2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-md3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1920/md3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-md4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1920/md4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-md5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1920/md5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-md6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1920/md6.png",
+      "width": 1280
+    }
+  ]
+}

@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "slug": "dorohedoro-anki-1-26-set-limited-edition-check",
+    "sourceURL": "https://www.coupang.com/vp/products/9065855493?itemId=26622182508&vendorItemId=93373775871",
+    "issuedURI": "https://link.coupang.com/a/iXUceogZwW",
+    "productName": "도원암귀 만화책 1-26권 전권 세트",
+    "option": "한국어 / 세트 상품 / 1~26권 전권",
+    "verifyTokens": [
+      "도원암귀",
+      "1-26권",
+      "9065855493 - 26622182508"
+    ],
+    "file": "ops/queue/dorohedoro-anki-1-26-set-limited-edition-check.md",
+    "manuscript": "ops/queue/dorohedoro-anki-1-26-set-limited-edition-check.md",
+    "evidence": "ops/queue/evidence/dorohedoro-anki-1-26-set-limited-edition-check.md",
+    "images": [
+      "ops/queue/images/dorohedoro-anki-1-26-set-limited-edition-check/01-md1.webp",
+      "ops/queue/images/dorohedoro-anki-1-26-set-limited-edition-check/02-md2.webp",
+      "ops/queue/images/dorohedoro-anki-1-26-set-limited-edition-check/03-md3.webp",
+      "ops/queue/images/dorohedoro-anki-1-26-set-limited-edition-check/04-md4.webp",
+      "ops/queue/images/dorohedoro-anki-1-26-set-limited-edition-check/05-md5.webp",
+      "ops/queue/images/dorohedoro-anki-1-26-set-limited-edition-check/06-md6.webp"
+    ],
+    "preparedAt": "2026-11-25T10:36:37.577Z",
+    "verifiedAt": "2026-11-25T10:29:03Z",
+    "creatorSessionId": "DkJFOEOUZ4mpTuPc",
+    "slot": "20261125-1920-shop"
+  }
+]
