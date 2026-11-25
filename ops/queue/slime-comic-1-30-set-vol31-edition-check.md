@@ -1,5 +1,5 @@
 ---
-title: "전생했더니 슬라임이었던 건에 대하여 1-30권 세트, 31권은 어떻게 이어 살까?"
+title: "전생슬 1-30권 세트에 31권도 들어 있을까?"
 slug: "slime-comic-1-30-set-vol31-edition-check"
 format: "collector-v2"
 question: "전생했더니 슬라임이었던 건에 대하여 1-30권 전권 세트를 사면 31권도 함께 오나요?"
