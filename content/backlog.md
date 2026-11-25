@@ -85,3 +85,5 @@
 | rurouni-kenshin-kanzenban-1-22-set-edition-check | pick | queued | 바람의 검심 완전판 22권 세트, 검심전수·애장판과 같은 걸까? | 2026-11-25 SHOP 13:00; exact product verified; six inspected photos; isolated gate 78/78 passed; publication pending |
 
 | dorohedoro-anki-1-26-set-limited-edition-check | pick | queued | 도원암귀 1-26권 전권 세트, 한정판과 신간은 어떻게 구분할까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate 80/80 passed; publication pending |
+
+| slime-comic-1-30-set-vol31-edition-check | pick | queued | 전생했더니 슬라임이었던 건에 대하여 1-30권 세트, 31권은 어떻게 이어 살까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate pending |
