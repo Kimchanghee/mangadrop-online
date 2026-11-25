@@ -86,4 +86,4 @@
 
 | dorohedoro-anki-1-26-set-limited-edition-check | pick | queued | 도원암귀 1-26권 전권 세트, 한정판과 신간은 어떻게 구분할까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate 80/80 passed; publication pending |
 
-| slime-comic-1-30-set-vol31-edition-check | pick | queued | 전생슬 1-30권 세트에 31권도 들어 있을까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate pending |
+| slime-comic-1-30-set-vol31-edition-check | pick | queued | 전생슬 1-30권 세트에 31권도 들어 있을까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate 80/80 passed; publication pending |
