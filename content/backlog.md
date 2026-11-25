@@ -74,14 +74,14 @@
 
 | 슬램덩크 신장재편판 1, 기존 1권과 같은 책일까? | slamdunk-shinsouban-1-edition-isbn-check | queued | 2026-11-18 SHOP 19:20; 6 photos; isolated dry-run passed; publication pending |
 
-| goodbye-eri-korean-standard-edition-isbn-check | pick | queued | 안녕, 에리 일반판, 한정판과 무엇부터 구분할까? | 2026-11-22 SHOP evening; exact option; six inspected photos; isolated gate pending |
+| goodbye-eri-korean-standard-edition-isbn-check | pick | queued | 안녕, 에리 일반판, 한정판과 무엇부터 구분할까? | 2026-11-22 SHOP evening; exact option; six inspected photos; isolated gate 80/80 passed; publication pending |
 
-| blue-giant1-original-series-isbn-check | pick | queued | 블루 자이언트 1, 슈프림 1권과 어떻게 구분할까? | 2026-11-23 SHOP13:00; exact option; six inspected photos; isolated gate pending |
+| blue-giant1-original-series-isbn-check | pick | queued | 블루 자이언트 1, 슈프림 1권과 어떻게 구분할까? | 2026-11-23 SHOP13:00; exact option; six inspected photos; isolated gate 80/80 passed; publication pending |
 
-| medalist1-paperback-vs-digital-isbn-check | pick | queued | 메달리스트 1, 종이책 1권과 전자책 1화는 같을까? | 2026-11-23 SHOP evening; exact option; six inspected photos; isolated gate pending |
+| medalist1-paperback-vs-digital-isbn-check | pick | queued | 메달리스트 1, 종이책 1권과 전자책 1화는 같을까? | 2026-11-23 SHOP evening; exact option; six inspected photos; isolated gate 80/80 passed; publication pending |
 
 | hinotori-box-set-1-nine-volumes-edition-check | pick | queued | 불새 박스 세트 1, 구판 1~9 세트와 같은 책일까? | 2026-11-24 SHOP 19:20; exact option verified; six inspected photos; isolated gate 76/76 passed; publication pending |
 
 | rurouni-kenshin-kanzenban-1-22-set-edition-check | pick | queued | 바람의 검심 완전판 22권 세트, 검심전수·애장판과 같은 걸까? | 2026-11-25 SHOP 13:00; exact product verified; six inspected photos; isolated gate 78/78 passed; publication pending |
 
-| dorohedoro-anki-1-26-set-limited-edition-check | pick | queued | 도원암귀 1-26권 전권 세트, 한정판과 신간은 어떻게 구분할까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate pending |
+| dorohedoro-anki-1-26-set-limited-edition-check | pick | queued | 도원암귀 1-26권 전권 세트, 한정판과 신간은 어떻게 구분할까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate 80/80 passed; publication pending |
