@@ -1,0 +1,36 @@
+{
+  "slug": "rurouni-kenshin-kanzenban-1-22-set-edition-check",
+  "manuscript": "ops/queue/rurouni-kenshin-kanzenban-1-22-set-edition-check.md",
+  "jobs": [
+    {
+      "name": "01-mk1.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1300/mk1.png",
+      "width": 1280
+    },
+    {
+      "name": "02-mk2.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1300/mk2.png",
+      "width": 1280
+    },
+    {
+      "name": "03-mk3.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1300/mk3.png",
+      "width": 1280
+    },
+    {
+      "name": "04-mk4.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1300/mk4.png",
+      "width": 1280
+    },
+    {
+      "name": "05-mk5.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1300/mk5.png",
+      "width": 1280
+    },
+    {
+      "name": "06-mk6.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261125-1300/mk6.png",
+      "width": 1280
+    }
+  ]
+}

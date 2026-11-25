@@ -81,3 +81,5 @@
 | medalist1-paperback-vs-digital-isbn-check | pick | queued | 메달리스트 1, 종이책 1권과 전자책 1화는 같을까? | 2026-11-23 SHOP evening; exact option; six inspected photos; isolated gate pending |
 
 | hinotori-box-set-1-nine-volumes-edition-check | pick | queued | 불새 박스 세트 1, 구판 1~9 세트와 같은 책일까? | 2026-11-24 SHOP 19:20; exact option verified; six inspected photos; isolated gate 76/76 passed; publication pending |
+
+| rurouni-kenshin-kanzenban-1-22-set-edition-check | pick | queued | 바람의 검심 완전판 22권 세트, 검심전수·애장판과 같은 걸까? | 2026-11-25 SHOP 13:00; exact product verified; six inspected photos; isolated gate 78/78 passed; publication pending |

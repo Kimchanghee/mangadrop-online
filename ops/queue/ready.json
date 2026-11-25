@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "slug": "rurouni-kenshin-kanzenban-1-22-set-edition-check",
+    "sourceURL": "https://www.coupang.com/vp/products/6334716996?itemId=13262338165&vendorItemId=80520017393",
+    "issuedURI": "https://link.coupang.com/a/iXsZyWARIO",
+    "productName": "바람의 검심 완전판 만화책 1-22권 세트 완결",
+    "option": "한국어 / 세트 상품 / 완전판 1~22권 전22권 완결",
+    "verifyTokens": [
+      "바람의 검심 완전판",
+      "1-22권",
+      "6334716996 - 13262338165"
+    ],
+    "file": "ops/queue/rurouni-kenshin-kanzenban-1-22-set-edition-check.md",
+    "manuscript": "ops/queue/rurouni-kenshin-kanzenban-1-22-set-edition-check.md",
+    "evidence": "ops/queue/evidence/rurouni-kenshin-kanzenban-1-22-set-edition-check.md",
+    "images": [
+      "ops/queue/images/rurouni-kenshin-kanzenban-1-22-set-edition-check/01-mk1.webp",
+      "ops/queue/images/rurouni-kenshin-kanzenban-1-22-set-edition-check/02-mk2.webp",
+      "ops/queue/images/rurouni-kenshin-kanzenban-1-22-set-edition-check/03-mk3.webp",
+      "ops/queue/images/rurouni-kenshin-kanzenban-1-22-set-edition-check/04-mk4.webp",
+      "ops/queue/images/rurouni-kenshin-kanzenban-1-22-set-edition-check/05-mk5.webp",
+      "ops/queue/images/rurouni-kenshin-kanzenban-1-22-set-edition-check/06-mk6.webp"
+    ],
+    "preparedAt": "2026-11-25T04:24:14.318Z",
+    "verifiedAt": "2026-11-25T04:23:19Z",
+    "creatorSessionId": "RRAeiIVoCaUoTZPr",
+    "slot": "20261125-1300-shop",
+    "dryRunPassedAt": "2026-11-25T04:24:46Z"
+  }
+]
