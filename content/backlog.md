@@ -87,3 +87,5 @@
 | dorohedoro-anki-1-26-set-limited-edition-check | pick | queued | 도원암귀 1-26권 전권 세트, 한정판과 신간은 어떻게 구분할까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate 80/80 passed; publication pending |
 
 | slime-comic-1-30-set-vol31-edition-check | pick | queued | 전생슬 1-30권 세트에 31권도 들어 있을까? | 2026-11-25 SHOP 19:20; exact product verified; six inspected photos; isolated gate 80/80 passed; publication pending |
+
+| bleach-1-74-set-vs-remix-edition-check | pick | queued | 블리치 1-74권 세트, 리믹스판과 같은 책일까? | 2026-11-26 SHOP 13:00; exact product verified; six inspected photos; isolated gate 82/82 passed; publication pending |

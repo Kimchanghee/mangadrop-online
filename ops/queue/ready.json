@@ -26,5 +26,32 @@
     "creatorSessionId": "DkJFOEOUZ4mpTuPc",
     "slot": "20261125-1920-shop",
     "dryRunPassedAt": "2026-11-25T10:47:46Z"
+  },
+  {
+    "slug": "bleach-1-74-set-vs-remix-edition-check",
+    "sourceURL": "https://www.coupang.com/vp/products/9580855371?itemId=28598897499&vendorItemId=91390488456",
+    "issuedURI": "https://link.coupang.com/a/iY7PwanNWS",
+    "productName": "블리치 1-74 권 만화 책 완결 전권 세트 (전74권)",
+    "option": "한국어 / 세트 상품 / 1~74권 전74권",
+    "verifyTokens": [
+      "블리치 1-74 권 만화 책 완결 전권 세트 (전74권)",
+      "9580855371 - 28598897499"
+    ],
+    "file": "ops/queue/bleach-1-74-set-vs-remix-edition-check.md",
+    "manuscript": "ops/queue/bleach-1-74-set-vs-remix-edition-check.md",
+    "evidence": "ops/queue/evidence/bleach-1-74-set-vs-remix-edition-check.md",
+    "images": [
+      "ops/queue/images/bleach-1-74-set-vs-remix-edition-check/01-bl1.webp",
+      "ops/queue/images/bleach-1-74-set-vs-remix-edition-check/02-bl2.webp",
+      "ops/queue/images/bleach-1-74-set-vs-remix-edition-check/03-bl3.webp",
+      "ops/queue/images/bleach-1-74-set-vs-remix-edition-check/04-bl4.webp",
+      "ops/queue/images/bleach-1-74-set-vs-remix-edition-check/05-bl5.webp",
+      "ops/queue/images/bleach-1-74-set-vs-remix-edition-check/06-bl6.webp"
+    ],
+    "preparedAt": "2026-11-26T04:21:55.116Z",
+    "verifiedAt": "2026-11-26T04:21:50Z",
+    "creatorSessionId": "ClaudeTakeover1300S-mangadrop-fork",
+    "slot": "20261126-1300-shop",
+    "dryRunPassedAt": "2026-11-26T04:24:30Z"
   }
 ]
