@@ -1,33 +1,5 @@
 [
   {
-    "slug": "slime-comic-1-30-set-vol31-edition-check",
-    "sourceURL": "https://www.coupang.com/vp/products/9557214371?itemId=28518500004&vendorItemId=95466545792",
-    "issuedURI": "https://link.coupang.com/a/iXUU5I3L0m",
-    "productName": "전생했더니 슬라임이었던 건에 대하여 만화책 전권 세트 1-30 (전30권) S코믹스",
-    "option": "한국어 / 세트 상품 / 1~30권 전30권",
-    "verifyTokens": [
-      "전생했더니 슬라임이었던 건에 대하여",
-      "1 - 30 (전30권)",
-      "9557214371 - 28518500004"
-    ],
-    "file": "ops/queue/slime-comic-1-30-set-vol31-edition-check.md",
-    "manuscript": "ops/queue/slime-comic-1-30-set-vol31-edition-check.md",
-    "evidence": "ops/queue/evidence/slime-comic-1-30-set-vol31-edition-check.md",
-    "images": [
-      "ops/queue/images/slime-comic-1-30-set-vol31-edition-check/01-sl1.webp",
-      "ops/queue/images/slime-comic-1-30-set-vol31-edition-check/02-sl2.webp",
-      "ops/queue/images/slime-comic-1-30-set-vol31-edition-check/03-sl3.webp",
-      "ops/queue/images/slime-comic-1-30-set-vol31-edition-check/04-sl4.webp",
-      "ops/queue/images/slime-comic-1-30-set-vol31-edition-check/05-sl5.webp",
-      "ops/queue/images/slime-comic-1-30-set-vol31-edition-check/06-sl6.webp"
-    ],
-    "preparedAt": "2026-11-25T10:45:46.033Z",
-    "verifiedAt": "2026-11-25T10:40:30Z",
-    "creatorSessionId": "DkJFOEOUZ4mpTuPc",
-    "slot": "20261125-1920-shop",
-    "dryRunPassedAt": "2026-11-25T10:47:46Z"
-  },
-  {
     "slug": "bleach-1-74-set-vs-remix-edition-check",
     "sourceURL": "https://www.coupang.com/vp/products/9580855371?itemId=28598897499&vendorItemId=91390488456",
     "issuedURI": "https://link.coupang.com/a/iY7PwanNWS",
