@@ -17,7 +17,7 @@ product:
   provider: "coupang"
   url: "https://link.coupang.com/a/iZy1W6MTNQ"
   landingHost: "www.coupang.com"
-  verifiedAt: "2026-11-26T10:38:20Z"
+  verifiedAt: "2026-11-27T04:02:09Z"
   evidence: "src/content/posts/_evidence/kingdom-1-40-set-vs-vol41-onward-check.md"
   box:
     label: "킹덤"

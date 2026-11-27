@@ -91,3 +91,5 @@
 | bleach-1-74-set-vs-remix-edition-check | pick | queued | 블리치 1-74권 세트, 리믹스판과 같은 책일까? | 2026-11-26 SHOP 13:00; exact product verified; six inspected photos; isolated gate 82/82 passed; publication pending |
 
 | 킹덤 1~40권 세트, 41권부터는 따로 사야 할까? | kingdom-1-40-set-vs-vol41-onward-check | queued | 2026-11-26 SHOP 19:20; exact product verified; six inspected photos; isolated gate 84/84 passed; publication pending |
+
+| kaiju8-1-16-main-series-vs-sideb-count-check | pick | queued | 괴수 8호 전권, 총 16권이면 본편 1~16권일까? | 2026-11-27 SHOP13:00; six blank-book scenes; publication pending |

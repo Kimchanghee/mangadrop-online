@@ -30,3 +30,9 @@
   "sourceNotes": "Coupang page opened 2026-11-26T10:38:20Z (buy button present, no sold-out label; 단 3개 남음 표시); partners simple-link issued from the exact URL (link text only, not visited). 쿠팡 함께 본 상품: 킹덤 1~30권, 41~72권 세트, 1~74권, 1-50권, 1~77권. Kyobo S000061585458 (킹덤 1 ISBN 9791168947795, 220쪽 128*188*20mm), YES24 24769183 (킹덤 40 ISBN 9791168945692, 218쪽 128*188*14mm, 2016-03-07), YES24 29087549 (킹덤 41 ISBN 9791168948006, 214쪽 128*188*20mm). 세트 발행일 2016-02-29 vs 40권 2016-03-07 불일치라 생략. 가격·평점 생략. 쿠팡 상세 이미지는 판독하지 않음. 상품 선정: 귀멸의 칼날 1~23 세트(6568503401, 6925101435, 5409153417, 8104106714)는 partners 링크 생성 제한 상품이라 제외, 킹덤으로 대체.",
   "imageQA": "6 ChatGPT-web originals read_file once each: blank plain covers/spines, no text/logo/art leakage"
 }
+
+
+## 재확인 2026-11-27T04:02:09.710Z / 20261127-1300-shop
+일반 상품 URL: https://www.coupang.com/vp/products/8721492564?itemId=25333935790&vendorItemId=92328706183
+정확 제목: 킹덤 1~40권 세트
+기존 verifyTokens 및 현재 선택 옵션은 이번 native snapshot queue-4-main.txt와 대조. 바로구매 활성 true, 현재 판매중지 아님. 제휴URI 열지 않음.
