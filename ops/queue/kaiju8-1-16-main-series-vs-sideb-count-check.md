@@ -6,8 +6,8 @@ question: 괴수 8호 총 16권 묶음이면 본편 1~16권 완결 범위가 모
 answer: 총수량 16권만으로는 판단할 수 없어요. 본편 1~15권과 별도 제목의 책을 묶어도 총 16권이 될 수 있습니다. 이번 판매 제목은 본편 1~16권이므로 제목과 연속 번호를 확인하고, side B나 한정판 부록은 별도 구성으로 물어보세요.
 description: 괴수 8호 본편 1~16권 전권 세트와 총수량 16권 묶음의 차이, side B의 별도 번호, 다른 서점 한정판 부록을 그대로 적용할 수 없는 이유, 책장 공간과 수령 점검을 정리합니다.
 draft: false
-published: 2026-11-27T04:26:09Z
-updated: 2026-11-27T04:26:09Z
+published: "2026-11-27T04:26:09Z"
+updated: "2026-11-27T04:26:09Z"
 category: editions
 primaryKeyword: 괴수 8호 만화책 전권
 product:
@@ -17,8 +17,8 @@ product:
   provider: coupang
   url: https://link.coupang.com/a/i0NjmZ0BpI
   landingHost: www.coupang.com
-  verifiedAt: 2026-11-27T04:20:17Z
-  evidence: ops/queue/evidence/kaiju8-1-16-main-series-vs-sideb-count-check.md
+  verifiedAt: "2026-11-27T04:20:17Z"
+  evidence: src/content/posts/_evidence/kaiju8-1-16-main-series-vs-sideb-count-check.md
   box:
     label: 괴수 8호 본편
     ranges:
