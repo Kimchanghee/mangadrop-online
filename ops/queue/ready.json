@@ -21,10 +21,38 @@
       "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-care-v2.webp"
     ],
     "preparedAt": "2026-11-27T04:26:09Z",
-    "verifiedAt": "2026-11-27T04:20:17Z",
+    "verifiedAt": "2026-11-27T10:23:18.518Z",
     "creatorSessionId": "Aqecx68OX9WmMbNQ",
     "slot": "20261127-1300-shop",
     "dryRunPassedAt": "2026-11-27T04:33:59.055Z",
     "dryRunReceipt": "rebuild-202610/_mac/bridge/results/20261127-1300-shop-korean-dryrun4.json"
+  },
+  {
+    "slug": "skip-loafer-1-12-set-vs-current-digital-volumes",
+    "sourceURL": "https://www.coupang.com/vp/products/9421515174?itemId=28001692304&vendorItemId=94959183431",
+    "issuedURI": "https://link.coupang.com/a/i1ebyCXVSK",
+    "productName": "스킵과 로퍼 만화책 1-12권 전권 세트 + 단독미니포트서 1종 제공",
+    "option": "한국어 종이책 1~12권 / 판매 제목의 별도 미니포스터 1종",
+    "verifyTokens": [
+      "스킵과 로퍼 만화책 1-12권",
+      "9421515174 - 28001692304"
+    ],
+    "file": "ops/queue/skip-loafer-1-12-set-vs-current-digital-volumes.md",
+    "manuscript": "ops/queue/skip-loafer-1-12-set-vs-current-digital-volumes.md",
+    "evidence": "ops/queue/evidence/skip-loafer-1-12-set-vs-current-digital-volumes.md",
+    "images": [
+      "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-hero.webp",
+      "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-unbox.webp",
+      "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-check.webp",
+      "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-shelf.webp",
+      "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-bonus.webp",
+      "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-care.webp"
+    ],
+    "preparedAt": "2026-11-27T10:47:56Z",
+    "verifiedAt": "2026-11-27T10:31:48.002Z",
+    "creatorSessionId": "eKQADbA5pZWqaBGa",
+    "slot": "20261127-1920-shop",
+    "dryRunPassedAt": "2026-11-27T10:51:36.585Z",
+    "dryRunReceipt": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/20261127-1920-shop-dryrun-v2.log"
   }
 ]

@@ -17,7 +17,7 @@ product:
   provider: coupang
   url: https://link.coupang.com/a/i0NjmZ0BpI
   landingHost: www.coupang.com
-  verifiedAt: "2026-11-27T04:20:17Z"
+  verifiedAt: "2026-11-27T10:23:18Z"
   evidence: src/content/posts/_evidence/kaiju8-1-16-main-series-vs-sideb-count-check.md
   box:
     label: 괴수 8호 본편
