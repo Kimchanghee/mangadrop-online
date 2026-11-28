@@ -1,0 +1,42 @@
+{
+  "slug": "yotsuba-16-single-volume-vs-goods-box-ebook-check",
+  "manuscript": "ops/queue/yotsuba-16-single-volume-vs-goods-box-ebook-check.md",
+  "jobs": [
+    {
+      "name": "mg-hero.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261128-1920-mg/mg-hero.png",
+      "width": 1280,
+      "verdict": "accepted_read_file"
+    },
+    {
+      "name": "mg-reading.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261128-1920-mg/mg-reading.png",
+      "width": 1280,
+      "verdict": "accepted_read_file"
+    },
+    {
+      "name": "mg-edition.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261128-1920-mg/mg-edition.png",
+      "width": 1280,
+      "verdict": "accepted_read_file"
+    },
+    {
+      "name": "mg-digital.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261128-1920-mg/mg-digital.png",
+      "width": 1280,
+      "verdict": "accepted_read_file"
+    },
+    {
+      "name": "mg-gap.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261128-1920-mg/mg-gap.png",
+      "width": 1280,
+      "verdict": "accepted_read_file"
+    },
+    {
+      "name": "mg-parcel.webp",
+      "src": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/channel-ops/ops/content/shop-20261128-1920-mg/mg-parcel.png",
+      "width": 1280,
+      "verdict": "accepted_read_file"
+    }
+  ]
+}

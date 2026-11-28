@@ -97,3 +97,5 @@
 | skip-loafer-1-12-set-vs-current-digital-volumes | pick | queued | 스킵과 로퍼 1~12권 세트, 지금 나온 책 전부일까? | 2026-11-27 SHOP19:20; six inspected photos; publication pending |
 
 | dragonball-newedition-1-42-print-vs-ebook-check | pick | queued | 드래곤볼 신장판 1~42권, 종이책 세트와 전자책 구분하기 | SHOP 2026-11-28 13:00; six inspected photos; publication pending |
+
+| yotsuba-16-single-volume-vs-goods-box-ebook-check | pick | queued | 요츠바랑! 16 낱권, 한정판·박스와 어떻게 다를까? | SHOP 2026-11-28 19:20; six inspected blank-cover photos; publication pending |

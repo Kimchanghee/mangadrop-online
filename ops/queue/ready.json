@@ -26,5 +26,33 @@
     "slot": "20261128-1300-shop",
     "dryRunPassedAt": "2026-11-28T04:33:55.828Z",
     "dryRunReceipt": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/20261128-1300-shop-dryrun.log"
+  },
+  {
+    "slug": "yotsuba-16-single-volume-vs-goods-box-ebook-check",
+    "sourceURL": "https://www.coupang.com/vp/products/9157674561?itemId=26971709333&vendorItemId=93942885403",
+    "issuedURI": "https://link.coupang.com/a/i2S3YVbkZw",
+    "productName": "요츠바랑! 16",
+    "option": "대원씨아이 / 한국어 종이책 / 16권 낱권 1권 / ISBN 9791142332876",
+    "verifyTokens": [
+      "요츠바랑! 16",
+      "9157674561 - 26971709333"
+    ],
+    "file": "ops/queue/yotsuba-16-single-volume-vs-goods-box-ebook-check.md",
+    "manuscript": "ops/queue/yotsuba-16-single-volume-vs-goods-box-ebook-check.md",
+    "evidence": "ops/queue/evidence/yotsuba-16-single-volume-vs-goods-box-ebook-check.md",
+    "images": [
+      "ops/queue/images/yotsuba-16-single-volume-vs-goods-box-ebook-check/mg-hero.webp",
+      "ops/queue/images/yotsuba-16-single-volume-vs-goods-box-ebook-check/mg-reading.webp",
+      "ops/queue/images/yotsuba-16-single-volume-vs-goods-box-ebook-check/mg-edition.webp",
+      "ops/queue/images/yotsuba-16-single-volume-vs-goods-box-ebook-check/mg-digital.webp",
+      "ops/queue/images/yotsuba-16-single-volume-vs-goods-box-ebook-check/mg-gap.webp",
+      "ops/queue/images/yotsuba-16-single-volume-vs-goods-box-ebook-check/mg-parcel.webp"
+    ],
+    "preparedAt": "2026-11-28T10:36:06Z",
+    "verifiedAt": "2026-11-28T10:31:37Z",
+    "creatorSessionId": "ClaudeTakeover1920S",
+    "slot": "20261128-1920-shop",
+    "dryRunPassedAt": "2026-11-28T10:39:57.793Z",
+    "dryRunReceipt": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/20261128-1920-mg-dryrun4.log"
   }
 ]
