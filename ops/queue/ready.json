@@ -21,10 +21,38 @@
       "ops/queue/images/skip-loafer-1-12-set-vs-current-digital-volumes/mg-care.webp"
     ],
     "preparedAt": "2026-11-27T10:47:56Z",
-    "verifiedAt": "2026-11-27T10:31:48.002Z",
+    "verifiedAt": "2026-11-28T04:05:00.386Z",
     "creatorSessionId": "eKQADbA5pZWqaBGa",
     "slot": "20261127-1920-shop",
     "dryRunPassedAt": "2026-11-27T10:51:36.585Z",
     "dryRunReceipt": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/20261127-1920-shop-dryrun-v2.log"
+  },
+  {
+    "slug": "dragonball-newedition-1-42-print-vs-ebook-check",
+    "sourceURL": "https://www.coupang.com/vp/products/266992467?itemId=836832066&vendorItemId=93680692787",
+    "issuedURI": "https://link.coupang.com/a/i2rCSjxTb3",
+    "productName": "드래곤볼 신장판 1-42권 세트",
+    "option": "신장판 / 한국어 종이책 / 1~42권 / 서울미디어코믹스",
+    "verifyTokens": [
+      "드래곤볼 신장판 1-42권 세트",
+      "266992467 - 836832066"
+    ],
+    "file": "ops/queue/dragonball-newedition-1-42-print-vs-ebook-check.md",
+    "manuscript": "ops/queue/dragonball-newedition-1-42-print-vs-ebook-check.md",
+    "evidence": "ops/queue/evidence/dragonball-newedition-1-42-print-vs-ebook-check.md",
+    "images": [
+      "ops/queue/images/dragonball-newedition-1-42-print-vs-ebook-check/mg-hero.webp",
+      "ops/queue/images/dragonball-newedition-1-42-print-vs-ebook-check/mg-sort.webp",
+      "ops/queue/images/dragonball-newedition-1-42-print-vs-ebook-check/mg-inventory.webp",
+      "ops/queue/images/dragonball-newedition-1-42-print-vs-ebook-check/mg-shelf.webp",
+      "ops/queue/images/dragonball-newedition-1-42-print-vs-ebook-check/mg-unbox.webp",
+      "ops/queue/images/dragonball-newedition-1-42-print-vs-ebook-check/mg-care.webp"
+    ],
+    "preparedAt": "2026-11-28T04:30:59.728Z",
+    "verifiedAt": "2026-11-28T04:08:50.594Z",
+    "creatorSessionId": "VC0Fm7u7WTuVKpVw",
+    "slot": "20261128-1300-shop",
+    "dryRunPassedAt": "2026-11-28T04:33:55.828Z",
+    "dryRunReceipt": "/Users/kimchangheemac/Library/Aside/WindowsWorkspace/web-revenue/rebuild-202610/_mac/bridge/logs/20261128-1300-shop-dryrun.log"
   }
 ]

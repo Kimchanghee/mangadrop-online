@@ -9,3 +9,6 @@ YES24 스킵과 로퍼 12 도서 정보 | https://www.yes24.com/Product/Goods/19
 Snapshots and manufacturer references: _mac/shop/20261127-1920 and channel-ops/ops/content/shop-20261127-1920.
 Publisher cover used for blank-book proportions only, all artwork/text prohibited. Current digital13 does not prove print13 in the set; paperback12 range only. Shelf blank strip is illustrative position, not a measured ruler. Blank bonus is not actual poster likeness.
 All six originals inspected once via read_file; no first-hand/product performance/price/rating/stock claim in article.
+
+
+SHOP 20261128-1300 native recheck at 2026-11-28T04:05:00.386Z: exact 스킵과 로퍼 만화책 1-12권 | 9421515174 - 28001692304 and enabled buy button observed. Ordinary product https://www.coupang.com/vp/products/9421515174?itemId=28001692304&vendorItemId=94959183431; own URI never opened. Snapshot _mac/shop/20261128-1300/skip-loafer-1-12-set-vs-current-digital-volumes-main.txt.

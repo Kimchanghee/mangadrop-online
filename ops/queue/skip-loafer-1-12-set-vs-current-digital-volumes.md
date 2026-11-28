@@ -16,7 +16,7 @@ product:
   provider: coupang
   url: https://link.coupang.com/a/i1ebyCXVSK
   landingHost: www.coupang.com
-  verifiedAt: "2026-11-27T10:31:48Z"
+  verifiedAt: "2026-11-28T04:05:00Z"
   evidence: src/content/posts/_evidence/skip-loafer-1-12-set-vs-current-digital-volumes.md
   box:
     label: 스킵과 로퍼 종이책
