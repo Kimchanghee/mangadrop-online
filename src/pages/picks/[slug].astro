@@ -6,7 +6,7 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import { allPosts, allGuides, postPath, guidePath, articleLd, faqLd, ymd, disclosureFor, type Post } from '../../lib/content';
+import { metaDescription, allPosts, allGuides, postPath, guidePath, articleLd, faqLd, ymd, disclosureFor, type Post } from '../../lib/content';
 import { categoryBySlug, providerInfo, site } from '../../site.config';
 
 export async function getStaticPaths() {
@@ -36,7 +36,7 @@ const name = d.product.name.replace(/\s*\([^)]*\)\s*$/, '');
 const opt = d.product.optionDetail.split(' · ').filter((s) => !/쿠팡상품번호|vendorItemId/.test(s)).join(' · ');
 const shortProv = prov.name.replace(' 파트너스', '');
 ---
-<Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} showCrumbs={false} published={d.published} updated={d.updated} preloadImage={portrait ? undefined : cover.src}>
+<Base title={`${d.title} | ${site.name}`} description={metaDescription(d)} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} showCrumbs={false} published={d.published} updated={d.updated} preloadImage={portrait ? undefined : cover.src}>
   <div class="wrap article-grid">
     <article class="article" data-gate="article">
       <p class="disclosure" data-gate="disclosure"><strong>제휴 고지</strong>{disclosure}</p>

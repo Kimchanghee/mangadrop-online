@@ -3,7 +3,7 @@ import { render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Checklist from '../../components/Checklist.astro';
 import AdSlot from '../../components/AdSlot.astro';
-import { allGuides, guidePath, articleLd, faqLd, ymd, type Guide } from '../../lib/content';
+import { metaDescription, allGuides, guidePath, articleLd, faqLd, ymd, type Guide } from '../../lib/content';
 import { categoryBySlug, site } from '../../site.config';
 
 export async function getStaticPaths() {
@@ -24,7 +24,7 @@ const code = `${cat.code}-${String(all.filter((g) => g.data.category === d.categ
 const ld = [articleLd('guide', guide, path, og), faqLd(d.faq)].filter(Boolean) as Record<string, unknown>[];
 const crumbs = [ { name: '홈', href: '/' }, { name: cat.name, href: `/category/${cat.slug}/` }, { name: d.title, href: path } ];
 ---
-<Base title={`${d.title} | ${site.name}`} description={d.description} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} published={d.published} updated={d.updated}>
+<Base title={`${d.title} | ${site.name}`} description={metaDescription(d)} path={path} ogImage={og} ogType="article" jsonld={ld} crumbs={crumbs} published={d.published} updated={d.updated}>
   <div class="wrap article-grid">
     <article class="article" data-gate="article">
       <header class="lede-block">
