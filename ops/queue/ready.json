@@ -1,33 +1,5 @@
 [
   {
-    "slug": "kaiju8-1-16-main-series-vs-sideb-count-check",
-    "sourceURL": "https://www.coupang.com/vp/products/9326471085?itemId=27646747428&vendorItemId=94609280612",
-    "issuedURI": "https://link.coupang.com/a/i0NjmZ0BpI",
-    "productName": "괴수 8호 만화책 1-16권 전권 세트",
-    "option": "한국어 종이책 / 본편 1~16권 / 전권 세트",
-    "verifyTokens": [
-      "괴수 8호 만화책 1-16권 전권 세트",
-      "9326471085 - 27646747428"
-    ],
-    "file": "ops/queue/kaiju8-1-16-main-series-vs-sideb-count-check.md",
-    "manuscript": "ops/queue/kaiju8-1-16-main-series-vs-sideb-count-check.md",
-    "evidence": "ops/queue/evidence/kaiju8-1-16-main-series-vs-sideb-count-check.md",
-    "images": [
-      "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-hero.webp",
-      "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-range.webp",
-      "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-edition.webp",
-      "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-unbox.webp",
-      "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-shelf.webp",
-      "ops/queue/images/kaiju8-1-16-main-series-vs-sideb-count-check/mg-care-v2.webp"
-    ],
-    "preparedAt": "2026-11-27T04:26:09Z",
-    "verifiedAt": "2026-11-27T10:23:18.518Z",
-    "creatorSessionId": "Aqecx68OX9WmMbNQ",
-    "slot": "20261127-1300-shop",
-    "dryRunPassedAt": "2026-11-27T04:33:59.055Z",
-    "dryRunReceipt": "rebuild-202610/_mac/bridge/results/20261127-1300-shop-korean-dryrun4.json"
-  },
-  {
     "slug": "skip-loafer-1-12-set-vs-current-digital-volumes",
     "sourceURL": "https://www.coupang.com/vp/products/9421515174?itemId=28001692304&vendorItemId=94959183431",
     "issuedURI": "https://link.coupang.com/a/i1ebyCXVSK",
