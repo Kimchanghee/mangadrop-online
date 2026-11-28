@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
 import { rehypeAffiliate } from './scripts/lib/rehype-affiliate.mjs';
 import { rehypeCollector } from './scripts/lib/rehype-collector.mjs';
+import { thumbs } from './scripts/lib/thumbs.mjs';
 
 export default defineConfig({
   site: 'https://mangadrop.online',
   output: 'static',
+  integrations: [thumbs()],
   trailingSlash: 'ignore',
   build: { format: 'directory' },
   markdown: { rehypePlugins: [rehypeAffiliate, rehypeCollector] },

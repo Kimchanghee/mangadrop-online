@@ -1,4 +1,5 @@
 ---
+import { heroSrcset, HERO_SIZES } from '../../../scripts/lib/thumbs.mjs';
 // Collector-v2 pick layout. Mobile order: disclosure -> kicker/H1/byline -> hero -> short answer ->
 // inline catalogue card -> body (question H2s, photos, ledger table) -> printed checklist -> FAQ ->
 // dark end CTA -> sources. Desktop: 720px column + sticky 300px card with specs, button and TOC.
@@ -46,7 +47,7 @@ const shortProv = prov.name.replace(' 파트너스', '');
         <p class="byline">{site.name} 편집팀 · <time datetime={d.product.verifiedAt}>{kd(d.product.verifiedAt)}</time> 판매 페이지 확인 · 발행 <time datetime={d.published}>{ymd(d.published)}</time>{d.updated.slice(0, 10) !== d.published.slice(0, 10) && <> · 수정 <time datetime={d.updated}>{ymd(d.updated)}</time></>}</p>
       </header>
       <figure class={portrait ? 'hero hero--portrait' : 'hero'}>
-        <img src={cover.src} alt={cover.alt} width={cw} height={ch} loading="eager" decoding="async" fetchpriority="high" />
+        <img src={cover.src} srcset={heroSrcset(cover.src)} sizes={HERO_SIZES} alt={cover.alt} width={cw} height={ch} loading="eager" decoding="async" fetchpriority="high" />
       </figure>
       <section class="answer-box" aria-labelledby="answer-h">
         <h2 id="answer-h" class="answer-box__label">짧은 답</h2>
